@@ -2,7 +2,7 @@
     "Meta": {
         "season": 2025,
         "race_id": 8,
-        "generated_at": "2026-08-10T13:02:19.595553"
+        "generated_at": "2026-08-10T21:52:13.954421"
     },
     "Drivers": [
         {
@@ -164,7 +164,7 @@
         {
             "Driver_Name": "N. Hulkenberg",
             "Driver_Code": "HUL",
-            "Team_Name": "KCK",
+            "Team_Name": "Kick Sauber",
             "Round_Fantasy_Points": -2.0,
             "Season_Fantasy_Points": 22.0,
             "Selected_Percentage": 0.29,
@@ -224,7 +224,7 @@
         {
             "Driver_Name": "G. Bortoleto",
             "Driver_Code": "BOR",
-            "Team_Name": "KCK",
+            "Team_Name": "Kick Sauber",
             "Round_Fantasy_Points": 3.0,
             "Season_Fantasy_Points": -16.0,
             "Selected_Percentage": 0.23,
@@ -372,7 +372,7 @@
             "Race_Points": -13.0
         },
         {
-            "Team_Name": "KCK",
+            "Team_Name": "Kick Sauber",
             "Team_Code": "KCK",
             "Round_Fantasy_Points": 7.0,
             "Season_Fantasy_Points": 32.0,

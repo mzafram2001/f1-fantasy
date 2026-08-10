@@ -2,7 +2,7 @@
     "Meta": {
         "season": 2024,
         "race_id": 11,
-        "generated_at": "2026-08-10T13:02:07.299066"
+        "generated_at": "2026-08-10T21:52:25.247401"
     },
     "Drivers": [
         {
@@ -188,7 +188,7 @@
         {
             "Driver_Name": "G. Zhou",
             "Driver_Code": "ZHO",
-            "Team_Name": "KCK",
+            "Team_Name": "Kick Sauber",
             "Round_Fantasy_Points": 2.0,
             "Season_Fantasy_Points": 48.0,
             "Selected_Percentage": 0.16,
@@ -200,7 +200,7 @@
         {
             "Driver_Name": "V. Bottas",
             "Driver_Code": "BOT",
-            "Team_Name": "KCK",
+            "Team_Name": "Kick Sauber",
             "Round_Fantasy_Points": 8.0,
             "Season_Fantasy_Points": 28.0,
             "Selected_Percentage": 0.26,
@@ -348,7 +348,7 @@
             "Race_Points": 13.0
         },
         {
-            "Team_Name": "KCK",
+            "Team_Name": "Kick Sauber",
             "Team_Code": "KCK",
             "Round_Fantasy_Points": 9.0,
             "Season_Fantasy_Points": 82.0,
