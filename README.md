@@ -3,10 +3,11 @@
 ![Status](https://img.shields.io/badge/Status-Available-green)
 ![License](https://img.shields.io/badge/License-MIT-blue)
 ![Format](https://img.shields.io/badge/Format-JSON-orange)
+![Stack](https://img.shields.io/badge/Stack-Python-yellow)
 
-An open-source, automated historical dataset of **F1 Fantasy** statistics per race round. 
+An open-source, automated historical dataset of F1 Fantasy statistics.
 
-This repository automatically fetches, cleans, and structures official F1 Fantasy data after every Grand Prix weekend—providing points breakdowns, price fluctuations, selection trends, and constructor stats for sports analytics, machine learning modeling, and data visualization.
+This repository automatically fetches, cleans, and structures official F1 Fantasy data after every Grand Prix weekend. Providing points breakdowns, value fluctuations, selection trends, and constructor stats for analytics, machine learning and data visualization.
 
 ---
 
@@ -47,21 +48,21 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 | Attribute | Type | Description | Range / Format | Example |
 | :--- | :--- | :--- | :--- | :--- |
 | `Driver_Name` / `Team_Name` | `String` | Display name of the driver or team | Text | `"K. Antonelli"`, `"Mercedes"` |
-| `Driver_Code` / `Team_Code` | `String` | Three-letter shorthand identifier (TLA) | Text (3 chars) | `"ANT"`, `"MER"` |
+| `Driver_Code` / `Team_Code` | `String` | Three-letter shorthand identifier (TLA) | Text | `"ANT"`, `"MER"` |
 | `Team_Name` *(Drivers only)* | `String` | Constructor associated with the driver | Text | `"Mercedes"` |
 | `Round_Fantasy_Points` | `Float` | Total fantasy points scored in the current round | Numeric | `55.0` |
 | `Season_Fantasy_Points` | `Float` | Total cumulative fantasy points scored up to this round | Numeric | `305.0` |
-| `Selected_Percentage` | `Float` | Player selection rate across fantasy teams | `0.0` to `1.0` | `0.33` *(33%)* |
+| `Selected_Percentage` | `Float` | Player selection rate across fantasy teams | Numeric | `0.33` *(33%)* |
 | `Value` | `Float` | Current asset price for the round (in $M) | Numeric | `24.7` |
-| `Qualifying_Points` | `Float` | Fantasy points earned in Saturday Qualifying | Numeric | `10.0` |
-| `Sprint_Points` | `Float` | Fantasy points earned in Sprint session (if active) | Numeric | `0.0` |
-| `Race_Points` | `Float` | Fantasy points earned in Sunday Main Race | Numeric | `45.0` |
+| `Qualifying_Points` | `Float` | Fantasy points earned in qualifying | Numeric | `10.0` |
+| `Sprint_Points` | `Float` | Fantasy points earned in sprint | Numeric | `0.0` |
+| `Race_Points` | `Float` | Fantasy points earned in race | Numeric | `45.0` |
 
 ---
 
 ## 💻 Quick start with Python & Pandas
 
-You can load and analyze any round dataset directly from GitHub into a Pandas DataFrame with a few lines of code:
+You can load and analyze any round dataset directly from GitHub into a Pandas dataframe with a few lines of code:
 
 ```python
 import pandas as pd
