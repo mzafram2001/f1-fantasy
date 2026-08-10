@@ -2,7 +2,7 @@
     "Meta": {
         "season": 2025,
         "race_id": 2,
-        "generated_at": "2026-08-10T12:52:18.228255"
+        "generated_at": "2026-08-10T13:02:19.541601"
     },
     "Drivers": [
         {
@@ -186,7 +186,7 @@
             "Race_Points": -20.0
         },
         {
-            "Driver_Name": "DOO",
+            "Driver_Name": "J. Doohan",
             "Driver_Code": "DOO",
             "Team_Name": "Alpine",
             "Round_Fantasy_Points": 11.0,
