@@ -2,7 +2,7 @@
     "Meta": {
         "season": 2023,
         "race_id": 7,
-        "generated_at": "2026-08-10T12:13:40.549203"
+        "generated_at": "2026-08-10T12:51:56.977545"
     },
     "Drivers": [
         {
@@ -249,7 +249,7 @@
     "Teams": [
         {
             "Team_Name": "Red Bull Racing",
-            "Code": "RED",
+            "Team_Code": "RED",
             "Round_Fantasy_Points": 63.0,
             "Season_Fantasy_Points": 539.0,
             "Selected_Percentage": 0.57,
@@ -260,7 +260,7 @@
         },
         {
             "Team_Name": "Mercedes",
-            "Code": "MER",
+            "Team_Code": "MER",
             "Round_Fantasy_Points": 54.0,
             "Season_Fantasy_Points": 281.0,
             "Selected_Percentage": 0.12,
@@ -271,7 +271,7 @@
         },
         {
             "Team_Name": "Ferrari",
-            "Code": "FER",
+            "Team_Code": "FER",
             "Round_Fantasy_Points": 37.0,
             "Season_Fantasy_Points": 249.0,
             "Selected_Percentage": 0.25,
@@ -282,7 +282,7 @@
         },
         {
             "Team_Name": "Aston Martin",
-            "Code": "AST",
+            "Team_Code": "AST",
             "Round_Fantasy_Points": 15.0,
             "Season_Fantasy_Points": 241.0,
             "Selected_Percentage": 0.75,
@@ -293,7 +293,7 @@
         },
         {
             "Team_Name": "Alpine",
-            "Code": "ALP",
+            "Team_Code": "ALP",
             "Round_Fantasy_Points": 42.0,
             "Season_Fantasy_Points": 142.0,
             "Selected_Percentage": 0.1,
@@ -304,7 +304,7 @@
         },
         {
             "Team_Name": "Alfa Romeo",
-            "Code": "ALF",
+            "Team_Code": "ALF",
             "Round_Fantasy_Points": 22.0,
             "Season_Fantasy_Points": 84.0,
             "Selected_Percentage": 0.05,
@@ -315,7 +315,7 @@
         },
         {
             "Team_Name": "Haas F1 Team",
-            "Code": "HAA",
+            "Team_Code": "HAA",
             "Round_Fantasy_Points": 7.0,
             "Season_Fantasy_Points": 82.0,
             "Selected_Percentage": 0.05,
@@ -326,7 +326,7 @@
         },
         {
             "Team_Name": "McLaren",
-            "Code": "MCL",
+            "Team_Code": "MCL",
             "Round_Fantasy_Points": 15.0,
             "Season_Fantasy_Points": 80.0,
             "Selected_Percentage": 0.07,
@@ -337,7 +337,7 @@
         },
         {
             "Team_Name": "AlphaTauri",
-            "Code": "ALT",
+            "Team_Code": "ALT",
             "Round_Fantasy_Points": 1.0,
             "Season_Fantasy_Points": 40.0,
             "Selected_Percentage": 0.02,
@@ -348,7 +348,7 @@
         },
         {
             "Team_Name": "Williams",
-            "Code": "WIL",
+            "Team_Code": "WIL",
             "Round_Fantasy_Points": 1.0,
             "Season_Fantasy_Points": 11.0,
             "Selected_Percentage": 0.02,
