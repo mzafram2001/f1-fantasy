@@ -10,7 +10,7 @@ This repository automatically fetches, cleans, and structures official F1 Fantas
 
 ---
 
-## 📂 Repository Structure
+## 📂 Repository structure
 
 ```text
 f1-fantasy/
@@ -20,10 +20,15 @@ f1-fantasy/
 │       └── getRoundData.yml
 │
 ├── data/
-│   └── 2026/
-│       ├── round_01.json
-│       ├── round_02.json
-│       └── ...
+│   ├── 2023/
+│   │    ├── round_01.json
+│   │    ├── round_02.json
+│   │    └── ...
+│   ├── 2024/
+│   │    ├── round_01.json
+│   │    ├── round_02.json
+│   │    └── ...
+│   └── ...
 │
 ├── scripts/
 │   └── getRoundData.py
@@ -31,6 +36,47 @@ f1-fantasy/
 ├── AUTHORS.md
 ├── LICENSE.md
 └── README.md
+```
+
+---
+
+## 📊 Data schema
+
+Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON schema divided into **Meta**, **Drivers**, and **Teams**. Both driver and team arrays share identical attributes:
+
+| Attribute | Type | Description | Range / Format | Example |
+| :--- | :--- | :--- | :--- | :--- |
+| `Driver_Name` / `Team_Name` | `String` | Display name of the driver or team | Text | `"K. Antonelli"`, `"Mercedes"` |
+| `Driver_Code` / `Code` | `String` | Three-letter shorthand identifier (TLA) | Text (3 chars) | `"ANT"`, `"MER"` |
+| `Team_Name` *(Drivers only)* | `String` | Constructor associated with the driver | Text | `"Mercedes"` |
+| `Round_Fantasy_Points` | `Float` | Total fantasy points scored in the current round | Numeric | `55.0` |
+| `Season_Fantasy_Points` | `Float` | Total cumulative fantasy points scored up to this round | Numeric | `305.0` |
+| `Selected_Percentage` | `Float` | Player selection rate across fantasy teams | `0.0` to `1.0` | `0.33` *(33%)* |
+| `Value` | `Float` | Current asset price for the round (in $M) | Numeric | `24.7` |
+| `Qualifying_Points` | `Float` | Fantasy points earned in Saturday Qualifying | Numeric | `10.0` |
+| `Sprint_Points` | `Float` | Fantasy points earned in Sprint session (if active) | Numeric | `0.0` |
+| `Race_Points` | `Float` | Fantasy points earned in Sunday Main Race | Numeric | `45.0` |
+
+---
+
+## 💻 Quick start with Python & Pandas
+
+You can load and analyze any round dataset directly from GitHub into a Pandas DataFrame with a few lines of code:
+
+```python
+import pandas as pd
+
+# Direct URL to raw dataset file
+url = "[https://raw.githubusercontent.com/mzafram2001/f1-fantasy/main/data/2026/round_06.json](https://raw.githubusercontent.com/mzafram2001/f1-fantasy/main/data/2026/round_06.json)"
+
+# Read JSON payload
+data = pd.read_json(url)
+
+# Convert Drivers list into a DataFrame
+df_drivers = pd.DataFrame(data["Drivers"].tolist())
+
+# View top 5 most expensive drivers in the round
+print(df_drivers[["Driver_Name", "Team_Name", "Round_Fantasy_Points", "Value"]].sort_values(by="Value", ascending=False).head())
 ```
 
 ---
