@@ -47,7 +47,7 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 | Attribute | Type | Description | Range / Format | Example |
 | :--- | :--- | :--- | :--- | :--- |
 | `Driver_Name` / `Team_Name` | `String` | Display name of the driver or team | Text | `"K. Antonelli"`, `"Mercedes"` |
-| `Driver_Code` / `Code` | `String` | Three-letter shorthand identifier (TLA) | Text (3 chars) | `"ANT"`, `"MER"` |
+| `Driver_Code` / `Team_Code` | `String` | Three-letter shorthand identifier (TLA) | Text (3 chars) | `"ANT"`, `"MER"` |
 | `Team_Name` *(Drivers only)* | `String` | Constructor associated with the driver | Text | `"Mercedes"` |
 | `Round_Fantasy_Points` | `Float` | Total fantasy points scored in the current round | Numeric | `55.0` |
 | `Season_Fantasy_Points` | `Float` | Total cumulative fantasy points scored up to this round | Numeric | `305.0` |
