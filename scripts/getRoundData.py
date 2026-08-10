@@ -75,10 +75,6 @@ async def process_single_round(client, race_id, season):
     processed_drivers = []
 
     for d in drivers:
-        old_val = safe_float(d.get("OldPlayerValue"))
-        new_val = safe_float(d.get("Value"))
-        change_val = round(new_val - old_val, 1)
-
         processed_drivers.append({
             "Driver_Name": d.get("DisplayName", "N/A"),
             "Driver_Code": d.get("DriverTLA", "N/A"),
@@ -86,9 +82,7 @@ async def process_single_round(client, race_id, season):
             "Round_Fantasy_Points": safe_float(d.get("GamedayPoints")),
             "Season_Fantasy_Points": safe_float(d.get("OverallPpints")),
             "Selected_Percentage": safe_percentage(d.get("SelectedPercentage")),
-            "Old_Value": old_val,
-            "Change_Value": change_val,
-            "New_Value": new_val,
+            "Value": safe_float(d.get("Value")),
             "Qualifying_Points": safe_float(d.get("QualifyingPoints")),
             "Sprint_Points": safe_float(d.get("SprintPoints")),
             "Race_Points": safe_float(d.get("RacePoints")),
@@ -105,19 +99,13 @@ async def process_single_round(client, race_id, season):
     processed_teams = []
 
     for t in teams:
-        old_val = safe_float(t.get("OldPlayerValue"))
-        new_val = safe_float(t.get("Value"))
-        change_val = round(new_val - old_val, 1)
-
         processed_teams.append({
             "Team_Name": t.get("DisplayName", "N/A"),
             "Code": t.get("DriverTLA", "N/A"),
             "Round_Fantasy_Points": safe_float(t.get("GamedayPoints")),
             "Season_Fantasy_Points": safe_float(t.get("OverallPpints")),
             "Selected_Percentage": safe_percentage(t.get("SelectedPercentage")),
-            "Old_Value": old_val,
-            "Change_Value": change_val,
-            "New_Value": new_val,
+            "Value": safe_float(t.get("Value")),
             "Qualifying_Points": safe_float(t.get("QualifyingPoints")),
             "Sprint_Points": safe_float(t.get("SprintPoints")),
             "Race_Points": safe_float(t.get("RacePoints")),
