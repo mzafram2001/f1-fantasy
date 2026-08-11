@@ -2,7 +2,7 @@
     "Meta": {
         "season": 2025,
         "race_id": 9,
-        "generated_at": "2026-08-10T21:52:13.962503"
+        "generated_at": "2026-08-11T14:35:04.939444"
     },
     "Drivers": [
         {
@@ -244,42 +244,6 @@
             "Qualifying_Points": 1.0,
             "Sprint_Points": 0.0,
             "Race_Points": 13.0
-        },
-        {
-            "Driver_Name": "J. Doohan",
-            "Driver_Code": "DOO",
-            "Team_Name": "Alpine",
-            "Round_Fantasy_Points": -25.0,
-            "Season_Fantasy_Points": -89.0,
-            "Selected_Percentage": 0.12,
-            "Value": 4.5,
-            "Qualifying_Points": -5.0,
-            "Sprint_Points": 0.0,
-            "Race_Points": -20.0
-        },
-        {
-            "Driver_Name": "Y. Tsunoda",
-            "Driver_Code": "TSU",
-            "Team_Name": "Racing Bulls",
-            "Round_Fantasy_Points": -25.0,
-            "Season_Fantasy_Points": -189.0,
-            "Selected_Percentage": 0.13,
-            "Value": 8.4,
-            "Qualifying_Points": -5.0,
-            "Sprint_Points": 0.0,
-            "Race_Points": -20.0
-        },
-        {
-            "Driver_Name": "L. Lawson",
-            "Driver_Code": "LAW",
-            "Team_Name": "Red Bull Racing",
-            "Round_Fantasy_Points": -25.0,
-            "Season_Fantasy_Points": -190.0,
-            "Selected_Percentage": 0.02,
-            "Value": 16.8,
-            "Qualifying_Points": -5.0,
-            "Sprint_Points": 0.0,
-            "Race_Points": -20.0
         }
     ],
     "Teams": [

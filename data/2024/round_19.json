@@ -2,7 +2,7 @@
     "Meta": {
         "season": 2024,
         "race_id": 19,
-        "generated_at": "2026-08-10T21:52:25.315229"
+        "generated_at": "2026-08-11T14:34:56.697574"
     },
     "Drivers": [
         {
@@ -114,6 +114,18 @@
             "Race_Points": -3.0
         },
         {
+            "Driver_Name": "K. Magnussen",
+            "Driver_Code": "MAG",
+            "Team_Name": "Haas F1 Team",
+            "Round_Fantasy_Points": 9.0,
+            "Season_Fantasy_Points": 111.0,
+            "Selected_Percentage": 0.18,
+            "Value": 12.4,
+            "Qualifying_Points": 2.0,
+            "Sprint_Points": 5.0,
+            "Race_Points": 2.0
+        },
+        {
             "Driver_Name": "E. Ocon",
             "Driver_Code": "OCO",
             "Team_Name": "Alpine",
@@ -148,18 +160,6 @@
             "Qualifying_Points": 0.0,
             "Sprint_Points": 1.0,
             "Race_Points": 3.0
-        },
-        {
-            "Driver_Name": "K. Magnussen",
-            "Driver_Code": "MAG",
-            "Team_Name": "Haas F1 Team",
-            "Round_Fantasy_Points": 9.0,
-            "Season_Fantasy_Points": 86.0,
-            "Selected_Percentage": 0.18,
-            "Value": 12.4,
-            "Qualifying_Points": 2.0,
-            "Sprint_Points": 5.0,
-            "Race_Points": 2.0
         },
         {
             "Driver_Name": "G. Zhou",
@@ -222,18 +222,6 @@
             "Race_Points": -3.0
         },
         {
-            "Driver_Name": "D. Ricciardo",
-            "Driver_Code": "RIC",
-            "Team_Name": "Racing Bulls",
-            "Round_Fantasy_Points": -45.0,
-            "Season_Fantasy_Points": 26.0,
-            "Selected_Percentage": 0.32,
-            "Value": 12.0,
-            "Qualifying_Points": -5.0,
-            "Sprint_Points": -20.0,
-            "Race_Points": -20.0
-        },
-        {
             "Driver_Name": "A. Albon",
             "Driver_Code": "ALB",
             "Team_Name": "Williams",
@@ -256,30 +244,6 @@
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
             "Race_Points": 20.0
-        },
-        {
-            "Driver_Name": "O. Bearman",
-            "Driver_Code": "BEA",
-            "Team_Name": "Haas F1 Team",
-            "Round_Fantasy_Points": -45.0,
-            "Season_Fantasy_Points": -63.0,
-            "Selected_Percentage": 0.01,
-            "Value": 13.3,
-            "Qualifying_Points": -5.0,
-            "Sprint_Points": -20.0,
-            "Race_Points": -20.0
-        },
-        {
-            "Driver_Name": "L. Sargeant",
-            "Driver_Code": "SAR",
-            "Team_Name": "Williams",
-            "Round_Fantasy_Points": -45.0,
-            "Season_Fantasy_Points": -87.0,
-            "Selected_Percentage": 0.16,
-            "Value": 4.6,
-            "Qualifying_Points": -5.0,
-            "Sprint_Points": -20.0,
-            "Race_Points": -20.0
         }
     ],
     "Teams": [

@@ -2,7 +2,7 @@
     "Meta": {
         "season": 2024,
         "race_id": 18,
-        "generated_at": "2026-08-10T21:52:25.306968"
+        "generated_at": "2026-08-11T14:34:56.688193"
     },
     "Drivers": [
         {
@@ -114,6 +114,18 @@
             "Race_Points": 5.0
         },
         {
+            "Driver_Name": "K. Magnussen",
+            "Driver_Code": "MAG",
+            "Team_Name": "Haas F1 Team",
+            "Round_Fantasy_Points": -1.0,
+            "Season_Fantasy_Points": 102.0,
+            "Selected_Percentage": 0.18,
+            "Value": 12.6,
+            "Qualifying_Points": 0.0,
+            "Sprint_Points": 0.0,
+            "Race_Points": -1.0
+        },
+        {
             "Driver_Name": "L. Stroll",
             "Driver_Code": "STR",
             "Team_Name": "Aston Martin",
@@ -148,18 +160,6 @@
             "Qualifying_Points": 5.0,
             "Sprint_Points": 0.0,
             "Race_Points": 1.0
-        },
-        {
-            "Driver_Name": "K. Magnussen",
-            "Driver_Code": "MAG",
-            "Team_Name": "Haas F1 Team",
-            "Round_Fantasy_Points": -1.0,
-            "Season_Fantasy_Points": 77.0,
-            "Selected_Percentage": 0.18,
-            "Value": 12.6,
-            "Qualifying_Points": 0.0,
-            "Sprint_Points": 0.0,
-            "Race_Points": -1.0
         },
         {
             "Driver_Name": "D. Ricciardo",
@@ -244,30 +244,6 @@
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
             "Race_Points": -16.0
-        },
-        {
-            "Driver_Name": "O. Bearman",
-            "Driver_Code": "BEA",
-            "Team_Name": "Haas F1 Team",
-            "Round_Fantasy_Points": -25.0,
-            "Season_Fantasy_Points": -18.0,
-            "Selected_Percentage": 0.01,
-            "Value": 13.3,
-            "Qualifying_Points": -5.0,
-            "Sprint_Points": 0.0,
-            "Race_Points": -20.0
-        },
-        {
-            "Driver_Name": "L. Sargeant",
-            "Driver_Code": "SAR",
-            "Team_Name": "Williams",
-            "Round_Fantasy_Points": -25.0,
-            "Season_Fantasy_Points": -42.0,
-            "Selected_Percentage": 0.16,
-            "Value": 4.6,
-            "Qualifying_Points": -5.0,
-            "Sprint_Points": 0.0,
-            "Race_Points": -20.0
         }
     ],
     "Teams": [

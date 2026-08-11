@@ -2,7 +2,7 @@
     "Meta": {
         "season": 2024,
         "race_id": 5,
-        "generated_at": "2026-08-10T21:52:25.197790"
+        "generated_at": "2026-08-11T14:34:56.572643"
     },
     "Drivers": [
         {
@@ -172,18 +172,6 @@
             "Qualifying_Points": 0.0,
             "Sprint_Points": 3.0,
             "Race_Points": 5.0
-        },
-        {
-            "Driver_Name": "O. Bearman",
-            "Driver_Code": "BEA",
-            "Team_Name": "Ferrari",
-            "Round_Fantasy_Points": 0.0,
-            "Season_Fantasy_Points": 26.0,
-            "Selected_Percentage": 0.01,
-            "Value": 15.0,
-            "Qualifying_Points": 0.0,
-            "Sprint_Points": 0.0,
-            "Race_Points": 0.0
         },
         {
             "Driver_Name": "Y. Tsunoda",

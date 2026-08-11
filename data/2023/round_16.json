@@ -2,7 +2,7 @@
     "Meta": {
         "season": 2023,
         "race_id": 16,
-        "generated_at": "2026-08-10T21:52:35.819120"
+        "generated_at": "2026-08-11T14:34:48.387686"
     },
     "Drivers": [
         {
@@ -244,30 +244,6 @@
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
             "Race_Points": 6.0
-        },
-        {
-            "Driver_Name": "N. de Vries",
-            "Driver_Code": "DEV",
-            "Team_Name": "AlphaTauri",
-            "Round_Fantasy_Points": 0.0,
-            "Season_Fantasy_Points": 20.0,
-            "Selected_Percentage": 0.0,
-            "Value": 4.5,
-            "Qualifying_Points": 0.0,
-            "Sprint_Points": 0.0,
-            "Race_Points": 0.0
-        },
-        {
-            "Driver_Name": "D. Ricciardo",
-            "Driver_Code": "RIC",
-            "Team_Name": "AlphaTauri",
-            "Round_Fantasy_Points": 0.0,
-            "Season_Fantasy_Points": 9.0,
-            "Selected_Percentage": 0.0,
-            "Value": 4.5,
-            "Qualifying_Points": 0.0,
-            "Sprint_Points": 0.0,
-            "Race_Points": 0.0
         }
     ],
     "Teams": [
