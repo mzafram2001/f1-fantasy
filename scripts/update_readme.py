@@ -1,17 +1,13 @@
 import os
 import json
 import re
+from datetime import datetime
 
 DATA_DIR = "data"
 README_PATH = "README.md"
 
 
 def get_latest_round_file(season_dir, is_latest_season=False):
-    """
-    Localiza el archivo JSON de la ronda a mostrar:
-    - Si es la temporada actual y hay más de 1 ronda, coge la penúltima (files[-2]).
-    - Para temporadas pasadas (o si solo hay 1 ronda), coge la última (files[-1]).
-    """
     files = [
         f
         for f in os.listdir(season_dir)
@@ -29,7 +25,6 @@ def get_latest_round_file(season_dir, is_latest_season=False):
 
 
 def format_percentage(val):
-    """Convierte un decimal (0.31) en porcentaje formateado (31%)."""
     try:
         return f"{int(float(val) * 100)}%"
     except (ValueError, TypeError):
@@ -37,7 +32,6 @@ def format_percentage(val):
 
 
 def generate_season_markdown(json_path, is_latest_season=False):
-    """Lee un JSON de ronda y construye el bloque Markdown HTML colapsable."""
     with open(json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
@@ -139,19 +133,21 @@ def update_readme():
     with open(README_PATH, "r", encoding="utf-8") as f:
         readme_content = f.read()
 
-    pattern = r"(<!-- SEASONS_SUMMARY_START -->)(.*?)(<!-- SEASONS_SUMMARY_END -->)"
+    # 1. Actualizar las tablas de resumen
+    summary_pattern = r"(<!-- SEASONS_SUMMARY_START -->)(.*?)(<!-- SEASONS_SUMMARY_END -->)"
+    if re.search(summary_pattern, readme_content, flags=re.DOTALL):
+        readme_content = re.sub(summary_pattern, f"\\1\n{full_summary_md}\n\\3", readme_content, flags=re.DOTALL)
 
-    if not re.search(pattern, readme_content, flags=re.DOTALL):
-        print("Error: Could not find HTML markers in README.md")
-        return
-
-    replacement = f"\\1\n{full_summary_md}\n\\3"
-    updated_readme = re.sub(pattern, replacement, readme_content, flags=re.DOTALL)
+    # 2. Actualizar la fecha de última revisión ("Last checked")
+    today_str = datetime.now().strftime("%Y-%m-%d")
+    checked_pattern = r"(<!-- LAST_CHECKED_START -->)(.*?)(<!-- LAST_CHECKED_END -->)"
+    if re.search(checked_pattern, readme_content, flags=re.DOTALL):
+        readme_content = re.sub(checked_pattern, f"\\1Last checked: {today_str}\\3", readme_content, flags=re.DOTALL)
 
     with open(README_PATH, "w", encoding="utf-8") as f:
-        f.write(updated_readme)
+        f.write(readme_content)
 
-    print("README.md updated successfully!")
+    print(f"README.md updated successfully with date {today_str}!")
 
 
 if __name__ == "__main__":
