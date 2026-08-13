@@ -45,6 +45,6 @@ jobs:
         run: |
           git config --local user.email "mzafram2001@gmail.com"
           git config --local user.name "mzafram2001"
-          
-          git add data/
-          git diff --quiet && git diff --staged --quiet || (git commit -m "auto: Update F1 Fantasy data" && git push)
+                
+          git add .
+          git diff --quiet && git diff --staged --quiet || (git commit -m "auto: Update F1 Fantasy data & README" && git push)
