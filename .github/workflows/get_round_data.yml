@@ -38,6 +38,9 @@ jobs:
           F1_TOKEN: ${{ secrets.F1_TOKEN }}
         run: python scripts/get_round_data.py
 
+      - name: Update README with season stats
+        run: python scripts/update_readme.py
+
       - name: Commit and push changes
         run: |
           git config --local user.email "mzafram2001@gmail.com"
