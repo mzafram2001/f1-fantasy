@@ -62,7 +62,7 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 
 ---
 
-## 💻 Example of data
+## 💻 Data results
 
 <!-- SEASONS_SUMMARY_START -->
 <details open>
