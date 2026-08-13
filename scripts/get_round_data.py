@@ -25,7 +25,6 @@ def safe_percentage(value, default=0.0):
     try:
         clean_val = str(value).replace("%", "").strip()
         val = float(clean_val)
-        # Si el valor es mayor a 1.0 (ej. 24.0), se divide por 100
         return round(val / 100.0, 4) if val > 1.0 else round(val, 4)
     except (ValueError, TypeError):
         return default
@@ -43,7 +42,6 @@ def save_round_json(processed_drivers, processed_teams, race_id=1, season=2026):
         "Teams": processed_teams,
     }
 
-    # Asegura la ruta para la estructura del repo (data/YYYY)
     output_dir = f"data/{season}"
     os.makedirs(output_dir, exist_ok=True)
 
