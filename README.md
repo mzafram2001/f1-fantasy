@@ -4,6 +4,7 @@
 ![License](https://img.shields.io/badge/License-MIT-blue)
 ![Format](https://img.shields.io/badge/Format-JSON-orange)
 ![Stack](https://img.shields.io/badge/Stack-Python-yellow)
+![Last updated](https://img.shields.io/github/last-commit/mzafram2001/f1-fantasy?label=Last%20update)
 
 An open-source, automated historical dataset of F1 Fantasy statistics.
 
@@ -18,7 +19,7 @@ f1-fantasy/
 │
 ├── .github/
 │   └── workflows/
-│       └── getRoundData.yml
+│       └── get_round_data.yml
 │
 ├── data/
 │   ├── 2023/
@@ -32,7 +33,8 @@ f1-fantasy/
 │   └── ...
 │
 ├── scripts/
-│   └── getRoundData.py
+│   ├── get_round_data.py
+│   └── update_readme.py
 │
 ├── AUTHORS.md
 ├── LICENSE.md
@@ -60,25 +62,10 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 
 ---
 
-## 💻 Quick start with Python & Pandas
+## 💻 Example of data
 
-You can load and analyze any round dataset directly from GitHub into a Pandas dataframe with a few lines of code:
-
-```python
-import pandas as pd
-
-# Direct URL to raw dataset file
-url = "[https://raw.githubusercontent.com/mzafram2001/f1-fantasy/main/data/2026/round_06.json](https://raw.githubusercontent.com/mzafram2001/f1-fantasy/main/data/2026/round_06.json)"
-
-# Read JSON payload
-data = pd.read_json(url)
-
-# Convert Drivers list into a DataFrame
-df_drivers = pd.DataFrame(data["Drivers"].tolist())
-
-# View top 5 most expensive drivers in the round
-print(df_drivers[["Driver_Name", "Team_Name", "Round_Fantasy_Points", "Value"]].sort_values(by="Value", ascending=False).head())
-```
+<!-- SEASONS_SUMMARY_START -->
+<!-- SEASONS_SUMMARY_END -->
 
 ---
 
