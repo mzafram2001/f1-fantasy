@@ -51,7 +51,7 @@ def generate_season_markdown(json_path, is_latest_season=False):
         teams,
         key=lambda x: x.get("Season_Fantasy_Points", 0),
         reverse=True,
-    )[:3]
+    )[:5]
 
     open_attr = " open" if is_latest_season else ""
 
@@ -61,7 +61,7 @@ def generate_season_markdown(json_path, is_latest_season=False):
         "",
         "#### 👤 Top 5 Drivers",
         "",
-        "| Driver | Team | Total Season Pts | Value | Selected % |",
+        "| Driver | Team | Total fantasy pts | Value | Selected % |",
         "| :--- | :--- | :--- | :--- | :--- |",
     ]
 
@@ -76,9 +76,9 @@ def generate_season_markdown(json_path, is_latest_season=False):
     md.extend(
         [
             "",
-            "#### 🏢 Top 3 Constructors",
+            "#### 🏢 Top 5 Constructors",
             "",
-            "| Team | Total Season Pts | Value | Selected % |",
+            "| Team | Total fantasy pts | Value | Selected % |",
             "| :--- | :--- | :--- | :--- |",
         ]
     )
