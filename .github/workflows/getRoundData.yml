@@ -2,9 +2,8 @@ name: Update F1 Fantasy data
 
 on:
   schedule:
-    # Runs every Monday at 05:00 UTC (after race weekend)
-    - cron: '0 5 * * 1'
-  workflow_dispatch: # Allows manual trigger from the Actions tab
+    - cron: '0 5 * * *'
+  workflow_dispatch:
 
 env:
   ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: 'true'
@@ -19,6 +18,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.MY_PAT }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -39,7 +40,8 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          git config --local user.email "mzafram2001@gmail.com"
+          git config --local user.name "mzafram2001"
+          
           git add data/
           git diff --quiet && git diff --staged --quiet || (git commit -m "auto: Update F1 Fantasy data" && git push)
