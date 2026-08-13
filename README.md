@@ -173,4 +173,6 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 
 ---
 
-*Created by Miguel Zafra*
+<!-- LAST_CHECKED_START -->
+Last checked: 2026-08-13
+<!-- LAST_CHECKED_END -->
