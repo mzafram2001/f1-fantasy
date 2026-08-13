@@ -67,34 +67,36 @@ def generate_season_markdown(json_path, is_latest_season=False):
         "",
         "#### 👤 Top 5 Drivers",
         "",
-        "| Driver | Team | Round Pts | Value | Selected % |",
-        "| :--- | :--- | :--- | :--- | :--- |",
+        "| Driver | Team | Round Pts | Total Season Pts | Value | Selected % |",
+        "| :--- | :--- | :--- | :--- | :--- | :--- |",
     ]
 
     for d in top_drivers:
         name = d.get("Driver_Name", "N/A")
         team = d.get("Team_Name", "N/A")
         pts = d.get("Round_Fantasy_Points", 0)
+        season_pts = d.get("Season_Fantasy_Points", 0)
         val = d.get("Value", 0)
         sel = format_percentage(d.get("Selected_Percentage", 0))
-        md.append(f"| **{name}** | {team} | {pts} pts | ${val}M | {sel} |")
+        md.append(f"| **{name}** | {team} | {pts} pts | {season_pts} pts | ${val}M | {sel} |")
 
     md.extend(
         [
             "",
             "#### 🏢 Top 3 Constructors",
             "",
-            "| Team | Round Pts | Value | Selected % |",
-            "| :--- | :--- | :--- | :--- |",
+            "| Team | Round Pts | Total Season Pts | Value | Selected % |",
+            "| :--- | :--- | :--- | :--- | :--- |",
         ]
     )
 
     for t in top_teams:
         name = t.get("Team_Name", "N/A")
         pts = t.get("Round_Fantasy_Points", 0)
+        season_pts = t.get("Season_Fantasy_Points", 0)
         val = t.get("Value", 0)
         sel = format_percentage(t.get("Selected_Percentage", 0))
-        md.append(f"| **{name}** | {pts} pts | ${val}M | {sel} |")
+        md.append(f"| **{name}** | {pts} pts | {season_pts} pts | ${val}M | {sel} |")
 
     md.extend(["", "</details>", ""])
     return "\n".join(md)
