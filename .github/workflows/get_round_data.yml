@@ -36,7 +36,7 @@ jobs:
         env:
           F1_USER_GUID: ${{ secrets.F1_USER_GUID }}
           F1_TOKEN: ${{ secrets.F1_TOKEN }}
-        run: python scripts/getRoundData.py
+        run: python scripts/get_round_data.py
 
       - name: Commit and push changes
         run: |
