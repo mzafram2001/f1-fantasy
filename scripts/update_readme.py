@@ -6,8 +6,12 @@ DATA_DIR = "data"
 README_PATH = "README.md"
 
 
-def get_latest_round_file(season_dir):
-    """Localiza el archivo JSON correspondiente a la última ronda de una temporada."""
+def get_latest_round_file(season_dir, is_latest_season=False):
+    """
+    Localiza el archivo JSON de la ronda a mostrar:
+    - Si es la temporada actual y hay más de 1 ronda, coge la penúltima (files[-2]).
+    - Para temporadas pasadas (o si solo hay 1 ronda), coge la última (files[-1]).
+    """
     files = [
         f
         for f in os.listdir(season_dir)
@@ -15,8 +19,12 @@ def get_latest_round_file(season_dir):
     ]
     if not files:
         return None
-    # Ordena alfabéticamente/numéricamente (ej: round_01.json < round_02.json)
+
     files.sort()
+
+    if is_latest_season and len(files) > 1:
+        return os.path.join(season_dir, files[-2])
+
     return os.path.join(season_dir, files[-1])
 
 
@@ -37,7 +45,6 @@ def generate_season_markdown(json_path, is_latest_season=False):
     season = meta.get("season", "N/A")
     race_id = meta.get("race_id", 0)
 
-    # 1. Top 5 Pilotos de la ronda
     drivers = data.get("Drivers", [])
     top_drivers = sorted(
         drivers,
@@ -45,7 +52,6 @@ def generate_season_markdown(json_path, is_latest_season=False):
         reverse=True,
     )[:5]
 
-    # 2. Top 3 Escuderías de la ronda
     teams = data.get("Teams", [])
     top_teams = sorted(
         teams,
@@ -53,16 +59,16 @@ def generate_season_markdown(json_path, is_latest_season=False):
         reverse=True,
     )[:3]
 
-    # La temporada más reciente se muestra desplegada por defecto (open)
     open_attr = " open" if is_latest_season else ""
 
     md = [
         f"<details{open_attr}>",
-        f"  <summary><b>🏎️ {season} Season — Round {race_id:02d} (Latest Data)</b></summary>",
-        "  <br>",
-        "  #### 👤 Top 5 Drivers",
-        "  | Driver | Team | Round Pts | Value | Selected % |",
-        "  | :--- | :--- | :--- | :--- | :--- |",
+        f"<summary><b>🏎️ {season} Season — Round {race_id:02d}</b></summary>",
+        "",
+        "#### 👤 Top 5 Drivers",
+        "",
+        "| Driver | Team | Round Pts | Value | Selected % |",
+        "| :--- | :--- | :--- | :--- | :--- |",
     ]
 
     for d in top_drivers:
@@ -71,14 +77,15 @@ def generate_season_markdown(json_path, is_latest_season=False):
         pts = d.get("Round_Fantasy_Points", 0)
         val = d.get("Value", 0)
         sel = format_percentage(d.get("Selected_Percentage", 0))
-        md.append(f"  | **{name}** | {team} | {pts} pts | ${val}M | {sel} |")
+        md.append(f"| **{name}** | {team} | {pts} pts | ${val}M | {sel} |")
 
     md.extend(
         [
             "",
-            "  #### 🏢 Top 3 Constructors",
-            "  | Team | Round Pts | Value | Selected % |",
-            "  | :--- | :--- | :--- | :--- |",
+            "#### 🏢 Top 3 Constructors",
+            "",
+            "| Team | Round Pts | Value | Selected % |",
+            "| :--- | :--- | :--- | :--- |",
         ]
     )
 
@@ -87,9 +94,9 @@ def generate_season_markdown(json_path, is_latest_season=False):
         pts = t.get("Round_Fantasy_Points", 0)
         val = t.get("Value", 0)
         sel = format_percentage(t.get("Selected_Percentage", 0))
-        md.append(f"  | **{name}** | {pts} pts | ${val}M | {sel} |")
+        md.append(f"| **{name}** | {pts} pts | ${val}M | {sel} |")
 
-    md.append("</details>\n")
+    md.extend(["", "</details>", ""])
     return "\n".join(md)
 
 
@@ -98,7 +105,6 @@ def update_readme():
         print(f"Directory '{DATA_DIR}' not found.")
         return
 
-    # Buscar todas las carpetas dentro de data/ que sean números (años)
     seasons = [
         s
         for s in os.listdir(DATA_DIR)
@@ -109,25 +115,23 @@ def update_readme():
         print("No season directories found in data/.")
         return
 
-    # Ordenar de más reciente a más antigua (2026, 2025, 2024...)
     seasons.sort(reverse=True)
 
     summary_blocks = []
     for idx, season in enumerate(seasons):
         season_dir = os.path.join(DATA_DIR, season)
-        latest_file = get_latest_round_file(season_dir)
+        is_latest = (idx == 0)
+        
+        latest_file = get_latest_round_file(season_dir, is_latest_season=is_latest)
 
         if latest_file:
-            # Solo la primera (año más reciente) tendrá 'open_attr'
-            is_latest = idx == 0
             block = generate_season_markdown(
                 latest_file, is_latest_season=is_latest
             )
             summary_blocks.append(block)
 
-    full_summary_md = "\n".join(summary_blocks)
+    full_summary_md = "\n\n".join(summary_blocks)
 
-    # Inyectar el contenido en README.md
     if not os.path.exists(README_PATH):
         print(f"'{README_PATH}' not found.")
         return
@@ -136,7 +140,7 @@ def update_readme():
         readme_content = f.read()
 
     pattern = r"(<!-- SEASONS_SUMMARY_START -->)(.*?)(<!-- SEASONS_SUMMARY_END -->)"
-    
+
     if not re.search(pattern, readme_content, flags=re.DOTALL):
         print("Error: Could not find HTML markers in README.md")
         return
