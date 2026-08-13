@@ -170,7 +170,5 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 > [!TIP]
 > **Want to help?**
 > ⭐ Do you like this project? If you find this data useful, please give it a star! It helps me keep updating it.
-
----
-
+<br>
 <!-- LAST_CHECKED_START -->Last checked: 2026-08-13<!-- LAST_CHECKED_END -->
