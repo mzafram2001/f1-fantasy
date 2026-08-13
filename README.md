@@ -65,6 +65,86 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 ## 💻 Example of data
 
 <!-- SEASONS_SUMMARY_START -->
+<details open>
+  <summary><b>🏎️ 2026 Season — Round 12 (Latest Data)</b></summary>
+  <br>
+  #### 👤 Top 5 Drivers
+  | Driver | Team | Round Pts | Value | Selected % |
+  | :--- | :--- | :--- | :--- | :--- |
+  | **K. Antonelli** | Mercedes | 0.0 pts | $25.7M | 36% |
+  | **L. Hamilton** | Ferrari | 0.0 pts | $25.0M | 20% |
+  | **C. Leclerc** | Ferrari | 0.0 pts | $23.9M | 27% |
+  | **G. Russell** | Mercedes | 0.0 pts | $27.9M | 22% |
+  | **M. Verstappen** | Red Bull Racing | 0.0 pts | $27.6M | 17% |
+
+  #### 🏢 Top 3 Constructors
+  | Team | Round Pts | Value | Selected % |
+  | :--- | :--- | :--- | :--- |
+  | **Mercedes** | 0.0 pts | $32.6M | 35% |
+  | **Ferrari** | 0.0 pts | $26.6M | 43% |
+  | **McLaren** | 0.0 pts | $31.0M | 10% |
+</details>
+
+<details>
+  <summary><b>🏎️ 2025 Season — Round 24 (Latest Data)</b></summary>
+  <br>
+  #### 👤 Top 5 Drivers
+  | Driver | Team | Round Pts | Value | Selected % |
+  | :--- | :--- | :--- | :--- | :--- |
+  | **M. Verstappen** | Red Bull Racing | 46.0 pts | $30.1M | 21% |
+  | **C. Leclerc** | Ferrari | 35.0 pts | $23.0M | 14% |
+  | **L. Norris** | McLaren | 29.0 pts | $30.3M | 23% |
+  | **O. Piastri** | McLaren | 28.0 pts | $25.1M | 35% |
+  | **L. Hamilton** | Ferrari | 28.0 pts | $21.9M | 11% |
+
+  #### 🏢 Top 3 Constructors
+  | Team | Round Pts | Value | Selected % |
+  | :--- | :--- | :--- | :--- |
+  | **Ferrari** | 83.0 pts | $31.8M | 18% |
+  | **McLaren** | 77.0 pts | $36.1M | 38% |
+  | **Red Bull Racing** | 52.0 pts | $31.1M | 11% |
+</details>
+
+<details>
+  <summary><b>🏎️ 2024 Season — Round 24 (Latest Data)</b></summary>
+  <br>
+  #### 👤 Top 5 Drivers
+  | Driver | Team | Round Pts | Value | Selected % |
+  | :--- | :--- | :--- | :--- | :--- |
+  | **C. Leclerc** | Ferrari | 55.0 pts | $26.1M | 31% |
+  | **L. Norris** | McLaren | 35.0 pts | $27.5M | 30% |
+  | **L. Hamilton** | Mercedes | 33.0 pts | $25.8M | 15% |
+  | **C. Sainz** | Ferrari | 27.0 pts | $24.4M | 19% |
+  | **M. Verstappen** | Red Bull Racing | 23.0 pts | $32.3M | 36% |
+
+  #### 🏢 Top 3 Constructors
+  | Team | Round Pts | Value | Selected % |
+  | :--- | :--- | :--- | :--- |
+  | **Ferrari** | 82.0 pts | $25.3M | 37% |
+  | **McLaren** | 65.0 pts | $27.0M | 27% |
+  | **Mercedes** | 55.0 pts | $25.1M | 15% |
+</details>
+
+<details>
+  <summary><b>🏎️ 2023 Season — Round 23 (Latest Data)</b></summary>
+  <br>
+  #### 👤 Top 5 Drivers
+  | Driver | Team | Round Pts | Value | Selected % |
+  | :--- | :--- | :--- | :--- | :--- |
+  | **M. Verstappen** | Red Bull Racing | 47.0 pts | $30.0M | 0% |
+  | **G. Russell** | Mercedes | 32.0 pts | $20.2M | 0% |
+  | **S. Perez** | Red Bull Racing | 30.0 pts | $20.8M | 0% |
+  | **C. Leclerc** | Ferrari | 29.0 pts | $23.5M | 0% |
+  | **L. Norris** | McLaren | 22.0 pts | $19.8M | 0% |
+
+  #### 🏢 Top 3 Constructors
+  | Team | Round Pts | Value | Selected % |
+  | :--- | :--- | :--- | :--- |
+  | **Red Bull Racing** | 87.0 pts | $29.7M | 0% |
+  | **McLaren** | 59.0 pts | $17.1M | 0% |
+  | **Mercedes** | 51.0 pts | $26.0M | 0% |
+</details>
+
 <!-- SEASONS_SUMMARY_END -->
 
 ---
