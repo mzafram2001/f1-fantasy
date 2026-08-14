@@ -2,7 +2,7 @@ name: Update F1 Fantasy data
 
 on:
   schedule:
-    - cron: '0 5 * * *'
+    - cron: '8 2 * * *'
   workflow_dispatch:
 
 env:
