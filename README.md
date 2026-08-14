@@ -172,11 +172,29 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 
 ---
 
+## ⚡ Quick start
+
+```
+import pandas as pd
+
+# Load round data directly from GitHub into a DataFrame
+url = "https://raw.githubusercontent.com/mzafram2001/f1-fantasy/main/data/2026/round_11.json"
+data = pd.read_json(url)
+
+# Convert Drivers into a Pandas DataFrame
+df_drivers = pd.DataFrame(data["Drivers"].tolist())
+print(df_drivers.sort_values(by="Season_Fantasy_Points", ascending=False).head())
+```
+
+---
+
 > [!CAUTION]
 > **Disclaimer:** Data is collected from public sources. This repository is for educational and research purposes only. Not financial advice.
 
 > [!TIP]
 > **Want to help?**
 > ⭐ Do you like this project? If you find this data useful, please give it a star! It helps me keep updating it.
+>
+> ☕ If this dataset saves you time in your analysis or fantasy leagues, you can also [buy me a coffee on Ko-fi](https://ko-fi.com/mzm0102).
 <br>
 <!-- LAST_CHECKED_START -->Last checked: 2026-08-13<!-- LAST_CHECKED_END -->
