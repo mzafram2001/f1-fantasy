@@ -30,8 +30,11 @@ def safe_percentage(value, default=0.0):
         return default
 
 
-def save_round_json(processed_drivers, processed_teams, race_id=1, season=2026):
+def save_round_json(processed_drivers, processed_teams, race_id=1, season=None):
     """Guarda la información de la ronda en un archivo JSON independiente."""
+    if season is None:
+        season = datetime.now().year
+
     payload = {
         "Meta": {
             "season": season,
@@ -60,7 +63,10 @@ async def process_single_round(client, race_id, season):
     try:
         data = await client.api.request("GET", url)
     except Exception as e:
-        print(f"⚠️ Ronda {race_id}: No disponible ({e})")
+        print(f"⚠️ Ronda {race_id}: No disponible o error de red ({e})")
+        return False
+
+    if not data or not isinstance(data, dict):
         return False
 
     items = data.get("Data", {}).get("Value", [])
@@ -73,12 +79,15 @@ async def process_single_round(client, race_id, season):
     processed_drivers = []
 
     for d in drivers:
+        # Fallback defensivo: 'OverallPpints' (typo histórico) u 'OverallPoints'
+        season_points = d.get("OverallPpints") if d.get("OverallPpints") is not None else d.get("OverallPoints")
+
         processed_drivers.append({
             "Driver_Name": d.get("DisplayName", "N/A"),
             "Driver_Code": d.get("DriverTLA", "N/A"),
             "Team_Name": d.get("TeamName", "N/A"),
             "Round_Fantasy_Points": safe_float(d.get("GamedayPoints")),
-            "Season_Fantasy_Points": safe_float(d.get("OverallPpints")),
+            "Season_Fantasy_Points": safe_float(season_points),
             "Selected_Percentage": safe_percentage(d.get("SelectedPercentage")),
             "Value": safe_float(d.get("Value")),
             "Qualifying_Points": safe_float(d.get("QualifyingPoints")),
@@ -97,11 +106,13 @@ async def process_single_round(client, race_id, season):
     processed_teams = []
 
     for t in teams:
+        season_points = t.get("OverallPpints") if t.get("OverallPpints") is not None else t.get("OverallPoints")
+
         processed_teams.append({
             "Team_Name": t.get("DisplayName", "N/A"),
             "Team_Code": t.get("DriverTLA", "N/A"),
             "Round_Fantasy_Points": safe_float(t.get("GamedayPoints")),
-            "Season_Fantasy_Points": safe_float(t.get("OverallPpints")),
+            "Season_Fantasy_Points": safe_float(season_points),
             "Selected_Percentage": safe_percentage(t.get("SelectedPercentage")),
             "Value": safe_float(t.get("Value")),
             "Qualifying_Points": safe_float(t.get("QualifyingPoints")),
@@ -127,7 +138,6 @@ async def process_single_round(client, race_id, season):
 
 
 async def main():
-    # Obtener credenciales estrictamente desde las variables de entorno de GitHub Actions
     user_guid = os.getenv("F1_USER_GUID")
     token = os.getenv("F1_TOKEN")
 
@@ -138,7 +148,8 @@ async def main():
 
     client = Client(APIClient(user_guid=user_guid, token=token))
 
-    season = 2026
+    # Temporada actual dinámica
+    season = datetime.now().year
     max_rondas = 24
 
     print(f"🚀 Descargando e historizando rondas de la temporada {season}...\n")
