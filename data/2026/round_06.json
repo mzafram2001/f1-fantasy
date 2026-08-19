@@ -2,7 +2,7 @@
     "Meta": {
         "season": 2026,
         "race_id": 6,
-        "generated_at": "2026-08-19T03:06:51.098719"
+        "generated_at": "2026-08-19T06:18:11.682367"
     },
     "Drivers": [
         {
@@ -306,7 +306,7 @@
         },
         {
             "Team_Name": "Red Bull Racing",
-            "Team_Code": "RBR",
+            "Team_Code": "RED",
             "Round_Fantasy_Points": 18.0,
             "Season_Fantasy_Points": 264.0,
             "Selected_Percentage": 0.07,
@@ -328,7 +328,7 @@
         },
         {
             "Team_Name": "Racing Bulls",
-            "Team_Code": "RBS",
+            "Team_Code": "VRB",
             "Round_Fantasy_Points": 36.0,
             "Season_Fantasy_Points": 189.0,
             "Selected_Percentage": 0.29,
