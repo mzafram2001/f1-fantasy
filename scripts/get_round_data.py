@@ -4,6 +4,12 @@ import os
 from datetime import datetime
 from fantasy import APIClient, Client
 
+# Mapeo de normalización de códigos de equipo
+TEAM_CODE_OVERRIDES = {
+    "RBS": "VRB",
+    "RBR": "RED",
+}
+
 
 def safe_float(value, default=0.0):
     """Convierte un valor a float de forma segura si está vacío o es nulo."""
@@ -79,7 +85,6 @@ async def process_single_round(client, race_id, season):
     processed_drivers = []
 
     for d in drivers:
-        # Fallback defensivo: 'OverallPpints' (typo histórico) u 'OverallPoints'
         season_points = d.get("OverallPpints") if d.get("OverallPpints") is not None else d.get("OverallPoints")
 
         processed_drivers.append({
@@ -107,10 +112,12 @@ async def process_single_round(client, race_id, season):
 
     for t in teams:
         season_points = t.get("OverallPpints") if t.get("OverallPpints") is not None else t.get("OverallPoints")
+        raw_code = t.get("DriverTLA", "N/A")
+        team_code = TEAM_CODE_OVERRIDES.get(raw_code, raw_code)
 
         processed_teams.append({
             "Team_Name": t.get("DisplayName", "N/A"),
-            "Team_Code": t.get("DriverTLA", "N/A"),
+            "Team_Code": team_code,
             "Round_Fantasy_Points": safe_float(t.get("GamedayPoints")),
             "Season_Fantasy_Points": safe_float(season_points),
             "Selected_Percentage": safe_percentage(t.get("SelectedPercentage")),
@@ -148,7 +155,6 @@ async def main():
 
     client = Client(APIClient(user_guid=user_guid, token=token))
 
-    # Temporada actual dinámica
     season = datetime.now().year
     max_rondas = 24
 
