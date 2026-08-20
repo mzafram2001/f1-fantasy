@@ -232,6 +232,18 @@
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
             "Race_Points": 5.0
+        },
+        {
+            "Driver_Name": "L. Sargeant",
+            "Driver_Code": "SAR",
+            "Team_Name": "Williams",
+            "Round_Fantasy_Points": 0.0,
+            "Season_Fantasy_Points": 10.0,
+            "Selected_Percentage": 0.16,
+            "Value": 5.4,
+            "Qualifying_Points": 0.0,
+            "Sprint_Points": 0.0,
+            "Race_Points": 0.0
         }
     ],
     "Teams": [
