@@ -325,17 +325,6 @@
             "Race_Points": 16.0
         },
         {
-            "Team_Name": "Williams",
-            "Team_Code": "WIL",
-            "Round_Fantasy_Points": 5.0,
-            "Season_Fantasy_Points": 23.0,
-            "Selected_Percentage": 0.18,
-            "Value": 6.7,
-            "Qualifying_Points": 1.0,
-            "Sprint_Points": 0.0,
-            "Race_Points": 4.0
-        },
-        {
             "Team_Name": "Kick Sauber",
             "Team_Code": "KCK",
             "Round_Fantasy_Points": 7.0,
@@ -356,6 +345,17 @@
             "Qualifying_Points": 1.0,
             "Sprint_Points": 0.0,
             "Race_Points": 5.0
+        },
+        {
+            "Team_Name": "Williams",
+            "Team_Code": "WIL",
+            "Round_Fantasy_Points": 5.0,
+            "Season_Fantasy_Points": 23.0,
+            "Selected_Percentage": 0.18,
+            "Value": 6.7,
+            "Qualifying_Points": 1.0,
+            "Sprint_Points": 0.0,
+            "Race_Points": 4.0
         }
     ]
 }
