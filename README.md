@@ -18,18 +18,19 @@ This repository automatically fetches, cleans, and structures official F1 Fantas
 f1-fantasy/
 │
 ├── .github/
-│   └── workflows/
-│       └── get_round_data.yml
-│
+│   ├── workflows/
+│   │   └── get_round_data.yml
+│   └── FUNDING.yml
+│ 
 ├── data/
 │   ├── 2023/
-│   │    ├── round_01.json
-│   │    ├── round_02.json
-│   │    └── ...
+│   │   ├── round_01.json
+│   │   ├── round_02.json
+│   │   └── ...
 │   ├── 2024/
-│   │    ├── round_01.json
-│   │    ├── round_02.json
-│   │    └── ...
+│   │   ├── round_01.json
+│   │   ├── round_02.json
+│   │   └── ...
 │   └── ...
 │
 ├── scripts/
