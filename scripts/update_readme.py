@@ -7,21 +7,23 @@ DATA_DIR = "data"
 README_PATH = "README.md"
 
 
-def get_latest_round_file(season_dir, is_latest_season=False):
+def get_round_files(season_dir, is_latest_season=False):
     files = [
         f
         for f in os.listdir(season_dir)
         if f.startswith("round_") and f.endswith(".json")
     ]
     if not files:
-        return None
+        return None, None
 
     files.sort()
 
     if is_latest_season and len(files) > 1:
-        return os.path.join(season_dir, files[-2])
+        base_file = os.path.join(season_dir, files[-2])
+        latest_file = os.path.join(season_dir, files[-1])
+        return base_file, latest_file
 
-    return os.path.join(season_dir, files[-1])
+    return os.path.join(season_dir, files[-1]), None
 
 
 def format_percentage(val):
@@ -31,9 +33,21 @@ def format_percentage(val):
         return "0%"
 
 
-def generate_season_markdown(json_path, is_latest_season=False):
-    with open(json_path, "r", encoding="utf-8") as f:
+def generate_season_markdown(base_json_path, latest_json_path=None, is_latest_season=False):
+    with open(base_json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
+
+    latest_drivers_map = {}
+    latest_teams_map = {}
+    if latest_json_path and os.path.exists(latest_json_path):
+        with open(latest_json_path, "r", encoding="utf-8") as f:
+            latest_data = json.load(f)
+            latest_drivers_map = {
+                d.get("Driver_Name"): d for d in latest_data.get("Drivers", [])
+            }
+            latest_teams_map = {
+                t.get("Team_Name"): t for t in latest_data.get("Teams", [])
+            }
 
     meta = data.get("Meta", {})
     season = meta.get("season", "N/A")
@@ -69,8 +83,11 @@ def generate_season_markdown(json_path, is_latest_season=False):
         name = d.get("Driver_Name", "N/A")
         team = d.get("Team_Name", "N/A")
         season_pts = d.get("Season_Fantasy_Points", 0)
-        val = d.get("Value", 0)
-        sel = format_percentage(d.get("Selected_Percentage", 0))
+
+        latest_d = latest_drivers_map.get(name, d)
+        val = latest_d.get("Value", d.get("Value", 0))
+        sel = format_percentage(latest_d.get("Selected_Percentage", d.get("Selected_Percentage", 0)))
+        
         md.append(f"| **{name}** | {team} | {season_pts} pts | ${val}M | {sel} |")
 
     md.extend(
@@ -86,8 +103,11 @@ def generate_season_markdown(json_path, is_latest_season=False):
     for t in top_teams:
         name = t.get("Team_Name", "N/A")
         season_pts = t.get("Season_Fantasy_Points", 0)
-        val = t.get("Value", 0)
-        sel = format_percentage(t.get("Selected_Percentage", 0))
+
+        latest_t = latest_teams_map.get(name, t)
+        val = latest_t.get("Value", t.get("Value", 0))
+        sel = format_percentage(latest_t.get("Selected_Percentage", t.get("Selected_Percentage", 0)))
+        
         md.append(f"| **{name}** | {season_pts} pts | ${val}M | {sel} |")
 
     md.extend(["", "</details>", ""])
@@ -116,11 +136,13 @@ def update_readme():
         season_dir = os.path.join(DATA_DIR, season)
         is_latest = (idx == 0)
         
-        latest_file = get_latest_round_file(season_dir, is_latest_season=is_latest)
+        base_file, latest_file = get_round_files(season_dir, is_latest_season=is_latest)
 
-        if latest_file:
+        if base_file:
             block = generate_season_markdown(
-                latest_file, is_latest_season=is_latest
+                base_file,
+                latest_json_path=latest_file,
+                is_latest_season=is_latest,
             )
             summary_blocks.append(block)
 
@@ -133,12 +155,10 @@ def update_readme():
     with open(README_PATH, "r", encoding="utf-8") as f:
         readme_content = f.read()
 
-    # 1. Actualizar las tablas de resumen
     summary_pattern = r"(<!-- SEASONS_SUMMARY_START -->)(.*?)(<!-- SEASONS_SUMMARY_END -->)"
     if re.search(summary_pattern, readme_content, flags=re.DOTALL):
         readme_content = re.sub(summary_pattern, f"\\1\n{full_summary_md}\n\\3", readme_content, flags=re.DOTALL)
 
-    # 2. Actualizar la fecha de última revisión ("Last checked")
     today_str = datetime.now().strftime("%Y-%m-%d")
     checked_pattern = r"(<!-- LAST_CHECKED_START -->)(.*?)(<!-- LAST_CHECKED_END -->)"
     if re.search(checked_pattern, readme_content, flags=re.DOTALL):
