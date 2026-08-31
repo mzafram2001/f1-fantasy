@@ -48,18 +48,18 @@ f1-fantasy/
 
 Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON schema divided into **Meta**, **Drivers**, and **Teams**. Both driver and team arrays share identical attributes:
 
-| Attribute | Type | Description | Format | Example |
-| :--- | :--- | :--- | :--- | :--- |
-| `Driver_Name` / `Team_Name` | `String` | Display name of the driver or team | Text | `"K. Antonelli"` / `"Mercedes"` |
-| `Driver_Code` / `Team_Code` | `String` | Three-letter shorthand identifier (TLA) | Text | `"ANT"` / `"MER"` |
-| `Team_Name` *(Drivers only)* | `String` | Constructor associated with the driver | Text | `"Mercedes"` |
-| `Round_Fantasy_Points` | `Float` | Total fantasy points scored in the current round | Numeric | `55.0` |
-| `Season_Fantasy_Points` | `Float` | Total cumulative fantasy points scored up to this round | Numeric | `305.0` |
-| `Selected_Percentage` | `Float` | Player selection rate across fantasy teams | Numeric | `0.33` *(33%)* |
-| `Value` | `Float` | Current asset price for the round (in $M) | Numeric | `24.7` |
-| `Qualifying_Points` | `Float` | Fantasy points earned in qualifying | Numeric | `10.0` |
-| `Sprint_Points` | `Float` | Fantasy points earned in sprint | Numeric | `0.0` |
-| `Race_Points` | `Float` | Fantasy points earned in race | Numeric | `45.0` |
+| Attribute | Type | Description | Example |
+| :--- | :--- | :--- | :--- |
+| `Driver_Name` / `Team_Name` | `String` | Display name of the driver or team | `"K. Antonelli"` / `"Mercedes"` |
+| `Driver_Code` / `Team_Code` | `String` | Three-letter shorthand identifier (TLA) | `"ANT"` / `"MER"` |
+| `Team_Name` *(Drivers only)* | `String` | Constructor associated with the driver | `"Mercedes"` |
+| `Round_Fantasy_Points` | `Float` | Total fantasy points scored in the current round | `55.0` |
+| `Season_Fantasy_Points` | `Float` | Total cumulative fantasy points scored up to this round | `305.0` |
+| `Selected_Percentage` | `Float` | Player selection rate across fantasy teams | `0.33` *(33%)* |
+| `Value` | `Float` | Current asset price for the round (in $M) | `24.7` |
+| `Qualifying_Points` | `Float` | Fantasy points earned in qualifying | `10.0` |
+| `Sprint_Points` | `Float` | Fantasy points earned in sprint | `0.0` |
+| `Race_Points` | `Float` | Fantasy points earned in race | `45.0` |
 
 ---
 
