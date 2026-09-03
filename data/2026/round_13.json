@@ -2,7 +2,7 @@
     "Meta": {
         "season": 2026,
         "race_id": 13,
-        "generated_at": "2026-09-02T07:03:05.450865"
+        "generated_at": "2026-09-03T07:07:10.104326"
     },
     "Drivers": [
         {
@@ -203,7 +203,7 @@
             "Team_Name": "Aston Martin",
             "Round_Fantasy_Points": 0.0,
             "Season_Fantasy_Points": 29.0,
-            "Selected_Percentage": 0.09,
+            "Selected_Percentage": 0.1,
             "Value": 6.8,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
