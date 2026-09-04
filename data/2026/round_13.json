@@ -2,7 +2,7 @@
     "Meta": {
         "season": 2026,
         "race_id": 13,
-        "generated_at": "2026-09-03T07:07:10.104326"
+        "generated_at": "2026-09-04T07:11:06.986879"
     },
     "Drivers": [
         {
@@ -131,7 +131,7 @@
             "Team_Name": "Racing Bulls",
             "Round_Fantasy_Points": 0.0,
             "Season_Fantasy_Points": 128.0,
-            "Selected_Percentage": 0.28,
+            "Selected_Percentage": 0.27,
             "Value": 10.3,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
@@ -227,7 +227,7 @@
             "Team_Name": "Red Bull Racing",
             "Round_Fantasy_Points": 0.0,
             "Season_Fantasy_Points": 12.0,
-            "Selected_Percentage": 1.0,
+            "Selected_Percentage": 0.02,
             "Value": 14.3,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
