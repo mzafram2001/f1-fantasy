@@ -2,7 +2,7 @@
     "Meta": {
         "season": 2026,
         "race_id": 14,
-        "generated_at": "2026-09-10T07:15:29.167260"
+        "generated_at": "2026-09-11T07:14:26.185478"
     },
     "Drivers": [
         {
@@ -11,7 +11,7 @@
             "Team_Name": "Mercedes",
             "Round_Fantasy_Points": 0.0,
             "Season_Fantasy_Points": 559.0,
-            "Selected_Percentage": 0.36,
+            "Selected_Percentage": 0.37,
             "Value": 26.3,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,

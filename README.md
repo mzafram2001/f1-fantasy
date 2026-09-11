@@ -73,7 +73,7 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 
 | Driver | Team | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- | :--- |
-| **K. Antonelli** | Mercedes | 559.0 pts | $26.3M | 36% |
+| **K. Antonelli** | Mercedes | 559.0 pts | $26.3M | 37% |
 | **L. Hamilton** | Ferrari | 393.0 pts | $25.2M | 19% |
 | **G. Russell** | Mercedes | 341.0 pts | $27.7M | 22% |
 | **L. Norris** | McLaren | 316.0 pts | $26.7M | 9% |
@@ -198,4 +198,4 @@ print(df_drivers.sort_values(by="Season_Fantasy_Points", ascending=False).head()
 >
 > ☕ If this dataset saves you time in your analysis or fantasy leagues, you can also [buy me a coffee on Ko-fi](https://ko-fi.com/mzm0102).
 <br>
-<!-- LAST_CHECKED_START -->Last checked: 2026-09-10<!-- LAST_CHECKED_END -->
+<!-- LAST_CHECKED_START -->Last checked: 2026-09-11<!-- LAST_CHECKED_END -->
