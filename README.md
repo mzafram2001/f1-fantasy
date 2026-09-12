@@ -77,7 +77,7 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 | **L. Hamilton** | Ferrari | 393.0 pts | $25.2M | 19% |
 | **G. Russell** | Mercedes | 341.0 pts | $27.7M | 22% |
 | **L. Norris** | McLaren | 316.0 pts | $26.7M | 9% |
-| **C. Leclerc** | Ferrari | 312.0 pts | $24.1M | 28% |
+| **C. Leclerc** | Ferrari | 312.0 pts | $24.1M | 27% |
 
 #### 🏢 Top 5 Constructors
 
@@ -198,4 +198,4 @@ print(df_drivers.sort_values(by="Season_Fantasy_Points", ascending=False).head()
 >
 > ☕ If this dataset saves you time in your analysis or fantasy leagues, you can also [buy me a coffee on Ko-fi](https://ko-fi.com/mzm0102).
 <br>
-<!-- LAST_CHECKED_START -->Last checked: 2026-09-11<!-- LAST_CHECKED_END -->
+<!-- LAST_CHECKED_START -->Last checked: 2026-09-12<!-- LAST_CHECKED_END -->

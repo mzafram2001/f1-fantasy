@@ -2,7 +2,7 @@
     "Meta": {
         "season": 2026,
         "race_id": 14,
-        "generated_at": "2026-09-11T07:14:26.185478"
+        "generated_at": "2026-09-12T07:06:15.464398"
     },
     "Drivers": [
         {
@@ -59,7 +59,7 @@
             "Team_Name": "Ferrari",
             "Round_Fantasy_Points": 0.0,
             "Season_Fantasy_Points": 312.0,
-            "Selected_Percentage": 0.28,
+            "Selected_Percentage": 0.27,
             "Value": 24.1,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
@@ -179,7 +179,7 @@
             "Team_Name": "Racing Bulls",
             "Round_Fantasy_Points": 0.0,
             "Season_Fantasy_Points": 82.0,
-            "Selected_Percentage": 0.45,
+            "Selected_Percentage": 0.46,
             "Value": 8.0,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
@@ -263,7 +263,7 @@
             "Team_Name": "Audi",
             "Round_Fantasy_Points": 0.0,
             "Season_Fantasy_Points": -13.0,
-            "Selected_Percentage": 0.36,
+            "Selected_Percentage": 0.37,
             "Value": 4.2,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
