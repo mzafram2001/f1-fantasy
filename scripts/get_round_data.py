@@ -36,6 +36,34 @@ def safe_percentage(value, default=0.0):
         return default
 
 
+def merge_driver_records(records):
+    """
+    Si un piloto tiene más de un registro en la misma ronda (por cambio o sustitución de equipo),
+    toma como base la ficha activa en la carrera y consolida los puntos acumulados de la temporada.
+    """
+    if len(records) == 1:
+        return records[0]
+
+    # Priorizamos la ficha que compitió / puntuó en esta ronda; en empate, la de mayor valor de mercado
+    active_record = max(
+        records,
+        key=lambda r: (
+            abs(r["Round_Fantasy_Points"]) > 0,
+            r["Value"]
+        )
+    )
+
+    # Consolidamos los puntos totales acumulados de la temporada y el porcentaje de selección
+    total_season_points = sum(r["Season_Fantasy_Points"] for r in records)
+    total_selected = sum(r["Selected_Percentage"] for r in records)
+
+    merged = dict(active_record)
+    merged["Season_Fantasy_Points"] = round(total_season_points, 1)
+    merged["Selected_Percentage"] = round(min(total_selected, 1.0), 4)
+
+    return merged
+
+
 def save_round_json(processed_drivers, processed_teams, race_id=1, season=None):
     """Guarda la información de la ronda en un archivo JSON independiente."""
     if season is None:
@@ -80,16 +108,17 @@ async def process_single_round(client, race_id, season):
         print(f"ℹ️ Ronda {race_id}: Sin registros devueltos (fin de rondas disponibles).")
         return False
 
-    # 1. PROCESAMIENTO DE PILOTOS
-    drivers = [i for i in items if i.get("PositionName") == "DRIVER"]
-    processed_drivers = []
+    # 1. PROCESAMIENTO DE PILOTOS (con agrupación y fusión por Driver_Code)
+    raw_drivers = [i for i in items if i.get("PositionName") == "DRIVER"]
+    drivers_by_code = {}
 
-    for d in drivers:
+    for d in raw_drivers:
         season_points = d.get("OverallPpints") if d.get("OverallPpints") is not None else d.get("OverallPoints")
+        driver_code = d.get("DriverTLA", "N/A")
 
-        processed_drivers.append({
+        driver_payload = {
             "Driver_Name": d.get("DisplayName", "N/A"),
-            "Driver_Code": d.get("DriverTLA", "N/A"),
+            "Driver_Code": driver_code,
             "Team_Name": d.get("TeamName", "N/A"),
             "Round_Fantasy_Points": safe_float(d.get("GamedayPoints")),
             "Season_Fantasy_Points": safe_float(season_points),
@@ -98,19 +127,26 @@ async def process_single_round(client, race_id, season):
             "Qualifying_Points": safe_float(d.get("QualifyingPoints")),
             "Sprint_Points": safe_float(d.get("SprintPoints")),
             "Race_Points": safe_float(d.get("RacePoints")),
-        })
+        }
 
-    processed_drivers = sorted(
-        processed_drivers,
+        drivers_by_code.setdefault(driver_code, []).append(driver_payload)
+
+    # Fusionamos fichas duplicadas si las hay y ordenamos por puntos de temporada
+    processed_drivers = [
+        merge_driver_records(records)
+        for records in drivers_by_code.values()
+    ]
+
+    processed_drivers.sort(
         key=lambda x: x["Season_Fantasy_Points"],
-        reverse=True,
+        reverse=True
     )
 
     # 2. PROCESAMIENTO DE EQUIPOS
-    teams = [i for i in items if i.get("PositionName") == "CONSTRUCTOR"]
+    raw_teams = [i for i in items if i.get("PositionName") == "CONSTRUCTOR"]
     processed_teams = []
 
-    for t in teams:
+    for t in raw_teams:
         season_points = t.get("OverallPpints") if t.get("OverallPpints") is not None else t.get("OverallPoints")
         raw_code = t.get("DriverTLA", "N/A")
         team_code = TEAM_CODE_OVERRIDES.get(raw_code, raw_code)
@@ -127,10 +163,9 @@ async def process_single_round(client, race_id, season):
             "Race_Points": safe_float(t.get("RacePoints")),
         })
 
-    processed_teams = sorted(
-        processed_teams,
+    processed_teams.sort(
         key=lambda x: x["Season_Fantasy_Points"],
-        reverse=True,
+        reverse=True
     )
 
     # 3. GUARDADO LOCAL EN JSON
