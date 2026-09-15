@@ -36,16 +36,33 @@ def safe_percentage(value, default=0.0):
         return default
 
 
+def load_previous_round_totals(season, previous_race_id):
+    """
+    Si se procesa una ronda individual (no desde la 1), lee el JSON
+    de la ronda anterior para inicializar el acumulado de puntos.
+    """
+    filename = f"data/{season}/round_{previous_race_id:02d}.json"
+    if not os.path.exists(filename):
+        return {}, {}
+    try:
+        with open(filename, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        d_totals = {d["Driver_Code"]: d["Season_Fantasy_Points"] for d in data.get("Drivers", [])}
+        t_totals = {t["Team_Code"]: t["Season_Fantasy_Points"] for t in data.get("Teams", [])}
+        return d_totals, t_totals
+    except Exception:
+        return {}, {}
+
+
 def merge_driver_records(records):
     """
     Si un piloto tiene más de un registro en la misma ronda (por cambio o sustitución de equipo),
-    toma como base la ficha activa en la carrera y consolida los puntos acumulados de la temporada.
+    toma como base la ficha activa en la carrera y consolida el porcentaje de selección.
     """
     if len(records) == 1:
         return records[0]
 
-    # Priorizamos la ficha que registró actividad o puntos en cualquiera de las sesiones;
-    # en caso de empate (o fichas inactivas), desempata por la de mayor valor de mercado.
+    # Priorizamos la ficha activa en pista durante esta ronda
     active_record = max(
         records,
         key=lambda r: (
@@ -59,12 +76,9 @@ def merge_driver_records(records):
         ),
     )
 
-    # Consolidamos los puntos totales acumulados de la temporada y el porcentaje de selección
-    total_season_points = sum(r["Season_Fantasy_Points"] for r in records)
     total_selected = sum(r["Selected_Percentage"] for r in records)
 
     merged = dict(active_record)
-    merged["Season_Fantasy_Points"] = round(total_season_points, 1)
     merged["Selected_Percentage"] = round(min(total_selected, 1.0), 4)
 
     return merged
@@ -96,8 +110,8 @@ def save_round_json(processed_drivers, processed_teams, race_id=1, season=None):
     print(f"📁 Guardado local: {filename}")
 
 
-async def process_single_round(client, race_id, season):
-    """Descarga, procesa y guarda los datos de una única ronda."""
+async def process_single_round(client, race_id, season, cumulative_drivers, cumulative_teams):
+    """Descarga, procesa y guarda los datos de una única ronda con acumulados consistentes."""
     url = f"/feeds/drivers/{race_id}_en.json"
 
     try:
@@ -114,12 +128,17 @@ async def process_single_round(client, race_id, season):
         print(f"ℹ️ Ronda {race_id}: Sin registros devueltos (fin de rondas disponibles).")
         return False
 
-    # 1. PROCESAMIENTO DE PILOTOS (con agrupación y fusión por Driver_Code)
+    # Si se ejecuta una ronda suelta y los diccionarios están vacíos, cargamos el histórico previo
+    if race_id > 1 and not cumulative_drivers:
+        prev_d, prev_t = load_previous_round_totals(season, race_id - 1)
+        cumulative_drivers.update(prev_d)
+        cumulative_teams.update(prev_t)
+
+    # 1. PROCESAMIENTO DE PILOTOS
     raw_drivers = [i for i in items if i.get("PositionName") == "DRIVER"]
     drivers_by_code = {}
 
     for d in raw_drivers:
-        season_points = d.get("OverallPpints") if d.get("OverallPpints") is not None else d.get("OverallPoints")
         driver_code = d.get("DriverTLA", "N/A")
 
         driver_payload = {
@@ -127,7 +146,6 @@ async def process_single_round(client, race_id, season):
             "Driver_Code": driver_code,
             "Team_Name": d.get("TeamName", "N/A"),
             "Round_Fantasy_Points": safe_float(d.get("GamedayPoints")),
-            "Season_Fantasy_Points": safe_float(season_points),
             "Selected_Percentage": safe_percentage(d.get("SelectedPercentage")),
             "Value": safe_float(d.get("Value")),
             "Qualifying_Points": safe_float(d.get("QualifyingPoints")),
@@ -137,11 +155,21 @@ async def process_single_round(client, race_id, season):
 
         drivers_by_code.setdefault(driver_code, []).append(driver_payload)
 
-    # Fusionamos fichas duplicadas si las hay y ordenamos por puntos de temporada
+    # Fusionamos duplicados de equipo si existen
     processed_drivers = [
         merge_driver_records(records)
         for records in drivers_by_code.values()
     ]
+
+    # Recalculamos el acumulado real matemáticamente
+    for d in processed_drivers:
+        code = d["Driver_Code"]
+        prev_points = cumulative_drivers.get(code, 0.0)
+        round_points = d["Round_Fantasy_Points"]
+        total = round(prev_points + round_points, 1)
+
+        cumulative_drivers[code] = total
+        d["Season_Fantasy_Points"] = total
 
     processed_drivers.sort(
         key=lambda x: x["Season_Fantasy_Points"],
@@ -153,7 +181,6 @@ async def process_single_round(client, race_id, season):
     processed_teams = []
 
     for t in raw_teams:
-        season_points = t.get("OverallPpints") if t.get("OverallPpints") is not None else t.get("OverallPoints")
         raw_code = t.get("DriverTLA", "N/A")
         team_code = TEAM_CODE_OVERRIDES.get(raw_code, raw_code)
 
@@ -161,13 +188,22 @@ async def process_single_round(client, race_id, season):
             "Team_Name": t.get("DisplayName", "N/A"),
             "Team_Code": team_code,
             "Round_Fantasy_Points": safe_float(t.get("GamedayPoints")),
-            "Season_Fantasy_Points": safe_float(season_points),
             "Selected_Percentage": safe_percentage(t.get("SelectedPercentage")),
             "Value": safe_float(t.get("Value")),
             "Qualifying_Points": safe_float(t.get("QualifyingPoints")),
             "Sprint_Points": safe_float(t.get("SprintPoints")),
             "Race_Points": safe_float(t.get("RacePoints")),
         })
+
+    # Recalculamos el acumulado real de las escuderías
+    for t in processed_teams:
+        code = t["Team_Code"]
+        prev_points = cumulative_teams.get(code, 0.0)
+        round_points = t["Round_Fantasy_Points"]
+        total = round(prev_points + round_points, 1)
+
+        cumulative_teams[code] = total
+        t["Season_Fantasy_Points"] = total
 
     processed_teams.sort(
         key=lambda x: x["Season_Fantasy_Points"],
@@ -199,11 +235,20 @@ async def main():
     season = datetime.now().year
     max_rondas = 24
 
+    cumulative_drivers = {}
+    cumulative_teams = {}
+
     print(f"🚀 Descargando e historizando rondas de la temporada {season}...\n")
 
     for race_id in range(1, max_rondas + 1):
         print(f"Procesando Ronda {race_id}...")
-        exito = await process_single_round(client, race_id, season)
+        exito = await process_single_round(
+            client,
+            race_id,
+            season,
+            cumulative_drivers,
+            cumulative_teams,
+        )
 
         if not exito:
             print(f"\n⏹️ Bucle finalizado en Ronda {race_id}. Se han procesado todas las rondas jugadas.")
