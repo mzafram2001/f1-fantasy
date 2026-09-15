@@ -2,7 +2,7 @@
     "Meta": {
         "season": 2026,
         "race_id": 14,
-        "generated_at": "2026-09-14T07:50:46.299949"
+        "generated_at": "2026-09-15T05:36:13.864679"
     },
     "Drivers": [
         {
@@ -90,6 +90,18 @@
             "Race_Points": 5.0
         },
         {
+            "Driver_Name": "L. Lawson",
+            "Driver_Code": "LAW",
+            "Team_Name": "Red Bull Racing",
+            "Round_Fantasy_Points": 16.0,
+            "Season_Fantasy_Points": 181.0,
+            "Selected_Percentage": 0.27,
+            "Value": 14.9,
+            "Qualifying_Points": 3.0,
+            "Sprint_Points": 0.0,
+            "Race_Points": 13.0
+        },
+        {
             "Driver_Name": "P. Gasly",
             "Driver_Code": "GAS",
             "Team_Name": "Alpine",
@@ -121,18 +133,6 @@
             "Season_Fantasy_Points": 138.0,
             "Selected_Percentage": 0.26,
             "Value": 14.5,
-            "Qualifying_Points": 0.0,
-            "Sprint_Points": 0.0,
-            "Race_Points": 0.0
-        },
-        {
-            "Driver_Name": "L. Lawson",
-            "Driver_Code": "LAW",
-            "Team_Name": "Racing Bulls",
-            "Round_Fantasy_Points": 0.0,
-            "Season_Fantasy_Points": 128.0,
-            "Selected_Percentage": 0.24,
-            "Value": 10.3,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
             "Race_Points": 0.0
@@ -196,18 +196,6 @@
             "Qualifying_Points": -5.0,
             "Sprint_Points": 0.0,
             "Race_Points": 8.0
-        },
-        {
-            "Driver_Name": "L. Lawson",
-            "Driver_Code": "LAW",
-            "Team_Name": "Red Bull Racing",
-            "Round_Fantasy_Points": 16.0,
-            "Season_Fantasy_Points": 53.0,
-            "Selected_Percentage": 0.03,
-            "Value": 14.9,
-            "Qualifying_Points": 3.0,
-            "Sprint_Points": 0.0,
-            "Race_Points": 13.0
         },
         {
             "Driver_Name": "A. Albon",

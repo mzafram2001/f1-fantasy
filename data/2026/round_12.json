@@ -2,7 +2,7 @@
     "Meta": {
         "season": 2026,
         "race_id": 12,
-        "generated_at": "2026-09-14T07:50:45.517973"
+        "generated_at": "2026-09-15T05:36:13.380839"
     },
     "Drivers": [
         {
@@ -102,6 +102,18 @@
             "Race_Points": 7.0
         },
         {
+            "Driver_Name": "L. Lawson",
+            "Driver_Code": "LAW",
+            "Team_Name": "Red Bull Racing",
+            "Round_Fantasy_Points": 12.0,
+            "Season_Fantasy_Points": 140.0,
+            "Selected_Percentage": 1.0,
+            "Value": 14.5,
+            "Qualifying_Points": 3.0,
+            "Sprint_Points": 0.0,
+            "Race_Points": 9.0
+        },
+        {
             "Driver_Name": "I. Hadjar",
             "Driver_Code": "HAD",
             "Team_Name": "Red Bull Racing",
@@ -124,18 +136,6 @@
             "Qualifying_Points": 0.0,
             "Sprint_Points": 2.0,
             "Race_Points": 4.0
-        },
-        {
-            "Driver_Name": "L. Lawson",
-            "Driver_Code": "LAW",
-            "Team_Name": "Racing Bulls",
-            "Round_Fantasy_Points": 0.0,
-            "Season_Fantasy_Points": 128.0,
-            "Selected_Percentage": 0.29,
-            "Value": 10.3,
-            "Qualifying_Points": 0.0,
-            "Sprint_Points": 0.0,
-            "Race_Points": 0.0
         },
         {
             "Driver_Name": "E. Ocon",
@@ -219,18 +219,6 @@
             "Value": 3.8,
             "Qualifying_Points": 0.0,
             "Sprint_Points": -1.0,
-            "Race_Points": 9.0
-        },
-        {
-            "Driver_Name": "L. Lawson",
-            "Driver_Code": "LAW",
-            "Team_Name": "Red Bull Racing",
-            "Round_Fantasy_Points": 12.0,
-            "Season_Fantasy_Points": 12.0,
-            "Selected_Percentage": 1.0,
-            "Value": 14.5,
-            "Qualifying_Points": 3.0,
-            "Sprint_Points": 0.0,
             "Race_Points": 9.0
         },
         {

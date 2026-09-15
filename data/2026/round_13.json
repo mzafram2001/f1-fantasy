@@ -2,7 +2,7 @@
     "Meta": {
         "season": 2026,
         "race_id": 13,
-        "generated_at": "2026-09-14T07:50:45.885267"
+        "generated_at": "2026-09-15T05:36:13.623860"
     },
     "Drivers": [
         {
@@ -90,6 +90,18 @@
             "Race_Points": 27.0
         },
         {
+            "Driver_Name": "L. Lawson",
+            "Driver_Code": "LAW",
+            "Team_Name": "Red Bull Racing",
+            "Round_Fantasy_Points": 25.0,
+            "Season_Fantasy_Points": 165.0,
+            "Selected_Percentage": 0.28,
+            "Value": 14.3,
+            "Qualifying_Points": 0.0,
+            "Sprint_Points": 0.0,
+            "Race_Points": 25.0
+        },
+        {
             "Driver_Name": "P. Gasly",
             "Driver_Code": "GAS",
             "Team_Name": "Alpine",
@@ -121,18 +133,6 @@
             "Season_Fantasy_Points": 138.0,
             "Selected_Percentage": 0.27,
             "Value": 14.5,
-            "Qualifying_Points": 0.0,
-            "Sprint_Points": 0.0,
-            "Race_Points": 0.0
-        },
-        {
-            "Driver_Name": "L. Lawson",
-            "Driver_Code": "LAW",
-            "Team_Name": "Racing Bulls",
-            "Round_Fantasy_Points": 0.0,
-            "Season_Fantasy_Points": 128.0,
-            "Selected_Percentage": 0.26,
-            "Value": 10.3,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
             "Race_Points": 0.0
@@ -196,18 +196,6 @@
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
             "Race_Points": 4.0
-        },
-        {
-            "Driver_Name": "L. Lawson",
-            "Driver_Code": "LAW",
-            "Team_Name": "Red Bull Racing",
-            "Round_Fantasy_Points": 25.0,
-            "Season_Fantasy_Points": 37.0,
-            "Selected_Percentage": 0.02,
-            "Value": 14.3,
-            "Qualifying_Points": 0.0,
-            "Sprint_Points": 0.0,
-            "Race_Points": 25.0
         },
         {
             "Driver_Name": "S. Perez",
