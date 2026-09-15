@@ -44,13 +44,19 @@ def merge_driver_records(records):
     if len(records) == 1:
         return records[0]
 
-    # Priorizamos la ficha que compitió / puntuó en esta ronda; en empate, la de mayor valor de mercado
+    # Priorizamos la ficha que registró actividad o puntos en cualquiera de las sesiones;
+    # en caso de empate (o fichas inactivas), desempata por la de mayor valor de mercado.
     active_record = max(
         records,
         key=lambda r: (
-            abs(r["Round_Fantasy_Points"]) > 0,
-            r["Value"]
-        )
+            any([
+                abs(r["Round_Fantasy_Points"]) > 0,
+                abs(r["Qualifying_Points"]) > 0,
+                abs(r["Sprint_Points"]) > 0,
+                abs(r["Race_Points"]) > 0,
+            ]),
+            r["Value"],
+        ),
     )
 
     # Consolidamos los puntos totales acumulados de la temporada y el porcentaje de selección
@@ -139,7 +145,7 @@ async def process_single_round(client, race_id, season):
 
     processed_drivers.sort(
         key=lambda x: x["Season_Fantasy_Points"],
-        reverse=True
+        reverse=True,
     )
 
     # 2. PROCESAMIENTO DE EQUIPOS
@@ -165,7 +171,7 @@ async def process_single_round(client, race_id, season):
 
     processed_teams.sort(
         key=lambda x: x["Season_Fantasy_Points"],
-        reverse=True
+        reverse=True,
     )
 
     # 3. GUARDADO LOCAL EN JSON
