@@ -2,7 +2,7 @@
     "Meta": {
         "season": 2026,
         "race_id": 15,
-        "generated_at": "2026-09-15T20:37:26.350459"
+        "generated_at": "2026-09-16T06:20:40.573180"
     },
     "Drivers": [
         {
@@ -95,7 +95,7 @@
             "Team_Name": "Red Bull Racing",
             "Round_Fantasy_Points": 0.0,
             "Season_Fantasy_Points": 181.0,
-            "Selected_Percentage": 0.27,
+            "Selected_Percentage": 0.03,
             "Value": 15.1,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
@@ -121,18 +121,6 @@
             "Season_Fantasy_Points": 156.0,
             "Selected_Percentage": 0.2,
             "Value": 10.6,
-            "Qualifying_Points": 0.0,
-            "Sprint_Points": 0.0,
-            "Race_Points": 0.0
-        },
-        {
-            "Driver_Name": "I. Hadjar",
-            "Driver_Code": "HAD",
-            "Team_Name": "Red Bull Racing",
-            "Round_Fantasy_Points": 0.0,
-            "Season_Fantasy_Points": 138.0,
-            "Selected_Percentage": 0.26,
-            "Value": 14.5,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
             "Race_Points": 0.0
@@ -227,7 +215,7 @@
             "Team_Name": "Racing Bulls",
             "Round_Fantasy_Points": 0.0,
             "Season_Fantasy_Points": 23.0,
-            "Selected_Percentage": 1.0,
+            "Selected_Percentage": 0.01,
             "Value": 9.7,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,

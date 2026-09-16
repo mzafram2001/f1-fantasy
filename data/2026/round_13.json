@@ -2,7 +2,7 @@
     "Meta": {
         "season": 2026,
         "race_id": 13,
-        "generated_at": "2026-09-15T20:37:25.510744"
+        "generated_at": "2026-09-16T06:20:39.651108"
     },
     "Drivers": [
         {
@@ -95,7 +95,7 @@
             "Team_Name": "Red Bull Racing",
             "Round_Fantasy_Points": 25.0,
             "Season_Fantasy_Points": 165.0,
-            "Selected_Percentage": 0.28,
+            "Selected_Percentage": 0.02,
             "Value": 14.3,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
@@ -124,18 +124,6 @@
             "Qualifying_Points": 3.0,
             "Sprint_Points": 0.0,
             "Race_Points": 11.0
-        },
-        {
-            "Driver_Name": "I. Hadjar",
-            "Driver_Code": "HAD",
-            "Team_Name": "Red Bull Racing",
-            "Round_Fantasy_Points": 0.0,
-            "Season_Fantasy_Points": 138.0,
-            "Selected_Percentage": 0.27,
-            "Value": 14.5,
-            "Qualifying_Points": 0.0,
-            "Sprint_Points": 0.0,
-            "Race_Points": 0.0
         },
         {
             "Driver_Name": "E. Ocon",
@@ -227,7 +215,7 @@
             "Team_Name": "Racing Bulls",
             "Round_Fantasy_Points": 17.0,
             "Season_Fantasy_Points": 22.0,
-            "Selected_Percentage": 1.0,
+            "Selected_Percentage": 0.01,
             "Value": 9.7,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
