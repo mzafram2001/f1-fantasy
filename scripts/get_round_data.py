@@ -23,17 +23,22 @@ def safe_float(value, default=0.0):
 
 def safe_percentage(value, default=0.0):
     """
-    Convierte un valor de porcentaje a float relativo (0.0 a 1.0).
-    Acepta strings como "24%", "24", o enteros/floats directamente.
+    Convierte un valor de porcentaje (0 a 100) a float relativo (0.0 a 1.0).
+    Ejemplo: '36' -> 0.36, '1' -> 0.01, '0.5' -> 0.005.
     """
     if value is None or value == "":
         return default
     try:
         clean_val = str(value).replace("%", "").strip()
         val = float(clean_val)
-        return round(val / 100.0, 4) if val > 1.0 else round(val, 4)
+        return round(val / 100.0, 4)
     except (ValueError, TypeError):
         return default
+
+
+def is_active(item):
+    """Comprueba si la entidad está activa en el gran premio actual."""
+    return str(item.get("IsActive", "")).strip() == "1"
 
 
 def load_previous_round_totals(season, previous_race_id):
@@ -56,8 +61,8 @@ def load_previous_round_totals(season, previous_race_id):
 
 def merge_driver_records(records):
     """
-    Si un piloto tiene más de un registro en la misma ronda (por cambio de equipo),
-    toma como base la ficha activa en la carrera y consolida el porcentaje de selección.
+    Si existiese más de un registro activo para el mismo piloto,
+    prioriza la ficha con actividad en pista y consolida la selección.
     """
     if len(records) == 1:
         return records[0]
@@ -110,7 +115,7 @@ def save_round_json(processed_drivers, processed_teams, race_id=1, season=None):
 
 
 async def process_single_round(client, race_id, season, cumulative_drivers, cumulative_teams):
-    """Descarga, procesa y guarda los datos de una única ronda respetando el esquema de campos."""
+    """Descarga, procesa y guarda los datos activos de una ronda."""
     url = f"/feeds/drivers/{race_id}_en.json"
 
     try:
@@ -132,14 +137,17 @@ async def process_single_round(client, race_id, season, cumulative_drivers, cumu
         cumulative_drivers.update(prev_d)
         cumulative_teams.update(prev_t)
 
-    # 1. PROCESAMIENTO DE PILOTOS
-    raw_drivers = [i for i in items if i.get("PositionName") == "DRIVER"]
+    # 1. PROCESAMIENTO DE PILOTOS ACTIVOS
+    raw_drivers = [
+        i for i in items 
+        if i.get("PositionName") == "DRIVER" and is_active(i)
+    ]
     drivers_by_code = {}
 
     for d in raw_drivers:
         driver_code = d.get("DriverTLA", "N/A")
 
-        # Se declara Season_Fantasy_Points en su orden exacto
+        # Se define Season_Fantasy_Points en su posición exacta
         driver_payload = {
             "Driver_Name": d.get("DisplayName", "N/A"),
             "Driver_Code": driver_code,
@@ -174,15 +182,17 @@ async def process_single_round(client, race_id, season, cumulative_drivers, cumu
         reverse=True,
     )
 
-    # 2. PROCESAMIENTO DE EQUIPOS
-    raw_teams = [i for i in items if i.get("PositionName") == "CONSTRUCTOR"]
+    # 2. PROCESAMIENTO DE EQUIPOS ACTIVOS
+    raw_teams = [
+        i for i in items 
+        if i.get("PositionName") == "CONSTRUCTOR" and is_active(i)
+    ]
     processed_teams = []
 
     for t in raw_teams:
         raw_code = t.get("DriverTLA", "N/A")
         team_code = TEAM_CODE_OVERRIDES.get(raw_code, raw_code)
 
-        # Se declara Season_Fantasy_Points en su orden exacto
         processed_teams.append({
             "Team_Name": t.get("DisplayName", "N/A"),
             "Team_Code": team_code,
