@@ -73,7 +73,7 @@ def generate_season_markdown(base_json_path, latest_json_path=None, is_latest_se
         f"<details{open_attr}>",
         f"<summary><b>🏎️ {season} Season — Round {race_id:02d}</b></summary>",
         "",
-        "#### 👤 Top 5 Drivers",
+        "#### 👤 Top 10 Drivers",
         "",
         "| Driver | Team | Total fantasy pts | Value | Selected % |",
         "| :--- | :--- | :--- | :--- | :--- |",
