@@ -69,7 +69,7 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 <details open>
 <summary><b>🏎️ 2026 Season — Round 14</b></summary>
 
-#### 👤 Top 5 Drivers
+#### 👤 Top 10 Drivers
 
 | Driver | Team | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- | :--- |
@@ -100,7 +100,7 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 <details>
 <summary><b>🏎️ 2025 Season — Round 24</b></summary>
 
-#### 👤 Top 5 Drivers
+#### 👤 Top 10 Drivers
 
 | Driver | Team | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- | :--- |
@@ -131,7 +131,7 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 <details>
 <summary><b>🏎️ 2024 Season — Round 24</b></summary>
 
-#### 👤 Top 5 Drivers
+#### 👤 Top 10 Drivers
 
 | Driver | Team | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- | :--- |
@@ -162,7 +162,7 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 <details>
 <summary><b>🏎️ 2023 Season — Round 22</b></summary>
 
-#### 👤 Top 5 Drivers
+#### 👤 Top 10 Drivers
 
 | Driver | Team | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- | :--- |
