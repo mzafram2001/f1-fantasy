@@ -78,6 +78,11 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 | **G. Russell** | Mercedes | 368.0 pts | $27.8M | 22% |
 | **L. Norris** | McLaren | 339.0 pts | $27.0M | 9% |
 | **M. Verstappen** | Red Bull Racing | 333.0 pts | $27.3M | 17% |
+| **C. Leclerc** | Ferrari | 331.0 pts | $24.0M | 27% |
+| **O. Piastri** | McLaren | 225.0 pts | $24.1M | 9% |
+| **L. Lawson** | Red Bull Racing | 181.0 pts | $15.1M | 3% |
+| **P. Gasly** | Alpine | 161.0 pts | $12.0M | 20% |
+| **F. Colapinto** | Alpine | 156.0 pts | $10.6M | 20% |
 
 #### 🏢 Top 5 Constructors
 
@@ -104,6 +109,11 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 | **O. Piastri** | McLaren | 644.0 pts | $25.1M | 35% |
 | **G. Russell** | Mercedes | 580.0 pts | $23.7M | 12% |
 | **C. Leclerc** | Ferrari | 407.0 pts | $23.0M | 14% |
+| **L. Hamilton** | Ferrari | 391.0 pts | $21.9M | 11% |
+| **K. Antonelli** | Mercedes | 311.0 pts | $18.1M | 21% |
+| **O. Bearman** | Haas F1 Team | 206.0 pts | $9.3M | 43% |
+| **A. Albon** | Williams | 198.0 pts | $12.6M | 27% |
+| **E. Ocon** | Haas F1 Team | 177.0 pts | $7.9M | 22% |
 
 #### 🏢 Top 5 Constructors
 
@@ -130,6 +140,11 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 | **C. Leclerc** | Ferrari | 684.0 pts | $26.1M | 31% |
 | **O. Piastri** | McLaren | 584.0 pts | $25.7M | 19% |
 | **C. Sainz** | Ferrari | 504.0 pts | $24.4M | 19% |
+| **L. Hamilton** | Mercedes | 495.0 pts | $25.8M | 15% |
+| **G. Russell** | Mercedes | 455.0 pts | $23.2M | 13% |
+| **S. Perez** | Red Bull Racing | 319.0 pts | $23.2M | 8% |
+| **F. Alonso** | Aston Martin | 173.0 pts | $15.3M | 28% |
+| **K. Magnussen** | Haas F1 Team | 165.0 pts | $14.3M | 18% |
 
 #### 🏢 Top 5 Constructors
 
@@ -156,6 +171,11 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 | **L. Hamilton** | Mercedes | 506.0 pts | $25.3M | 18% |
 | **L. Norris** | McLaren | 438.0 pts | $19.8M | 25% |
 | **F. Alonso** | Aston Martin | 403.0 pts | $15.8M | 77% |
+| **C. Sainz** | Ferrari | 394.0 pts | $20.4M | 23% |
+| **G. Russell** | Mercedes | 384.0 pts | $20.2M | 20% |
+| **C. Leclerc** | Ferrari | 335.0 pts | $23.5M | 28% |
+| **O. Piastri** | McLaren | 279.0 pts | $15.4M | 17% |
+| **L. Stroll** | Aston Martin | 231.0 pts | $14.0M | 26% |
 
 #### 🏢 Top 5 Constructors
 
@@ -198,4 +218,4 @@ print(df_drivers.sort_values(by="Season_Fantasy_Points", ascending=False).head()
 >
 > ☕ If this dataset saves you time in your analysis or fantasy leagues, you can also [buy me a coffee on Ko-fi](https://ko-fi.com/mzm0102).
 <br>
-<!-- LAST_CHECKED_START -->Last checked: 2026-09-16<!-- LAST_CHECKED_END -->
+<!-- LAST_CHECKED_START -->Last checked: 2026-09-17<!-- LAST_CHECKED_END -->
