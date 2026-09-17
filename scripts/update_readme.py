@@ -58,7 +58,7 @@ def generate_season_markdown(base_json_path, latest_json_path=None, is_latest_se
         drivers,
         key=lambda x: x.get("Season_Fantasy_Points", 0),
         reverse=True,
-    )[:5]
+    )[:10]
 
     teams = data.get("Teams", [])
     top_teams = sorted(
