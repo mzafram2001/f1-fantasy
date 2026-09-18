@@ -2,7 +2,7 @@
     "Meta": {
         "season": 2026,
         "race_id": 13,
-        "generated_at": "2026-09-17T07:33:23.592122"
+        "generated_at": "2026-09-18T07:03:36.816015"
     },
     "Drivers": [
         {
@@ -82,7 +82,7 @@
             "Driver_Code": "PIA",
             "Team_Name": "McLaren",
             "Round_Fantasy_Points": 35.0,
-            "Season_Fantasy_Points": 216.0,
+            "Season_Fantasy_Points": 219.0,
             "Selected_Percentage": 0.09,
             "Value": 24.1,
             "Qualifying_Points": 8.0,
@@ -94,7 +94,7 @@
             "Driver_Code": "LAW",
             "Team_Name": "Red Bull Racing",
             "Round_Fantasy_Points": 25.0,
-            "Season_Fantasy_Points": 165.0,
+            "Season_Fantasy_Points": 168.0,
             "Selected_Percentage": 0.02,
             "Value": 14.3,
             "Qualifying_Points": 0.0,
@@ -106,7 +106,7 @@
             "Driver_Code": "GAS",
             "Team_Name": "Alpine",
             "Round_Fantasy_Points": 14.0,
-            "Season_Fantasy_Points": 157.0,
+            "Season_Fantasy_Points": 144.0,
             "Selected_Percentage": 0.2,
             "Value": 12.4,
             "Qualifying_Points": 10.0,
@@ -150,6 +150,18 @@
             "Race_Points": 14.0
         },
         {
+            "Driver_Name": "A. Lindblad",
+            "Driver_Code": "LIN",
+            "Team_Name": "Racing Bulls",
+            "Round_Fantasy_Points": 11.0,
+            "Season_Fantasy_Points": 85.0,
+            "Selected_Percentage": 0.45,
+            "Value": 7.8,
+            "Qualifying_Points": 1.0,
+            "Sprint_Points": 0.0,
+            "Race_Points": 10.0
+        },
+        {
             "Driver_Name": "G. Bortoleto",
             "Driver_Code": "BOR",
             "Team_Name": "Audi",
@@ -160,18 +172,6 @@
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
             "Race_Points": 14.0
-        },
-        {
-            "Driver_Name": "A. Lindblad",
-            "Driver_Code": "LIN",
-            "Team_Name": "Racing Bulls",
-            "Round_Fantasy_Points": 11.0,
-            "Season_Fantasy_Points": 82.0,
-            "Selected_Percentage": 0.45,
-            "Value": 7.8,
-            "Qualifying_Points": 1.0,
-            "Sprint_Points": 0.0,
-            "Race_Points": 10.0
         },
         {
             "Driver_Name": "O. Bearman",
@@ -297,7 +297,7 @@
             "Team_Name": "McLaren",
             "Team_Code": "MCL",
             "Round_Fantasy_Points": 77.0,
-            "Season_Fantasy_Points": 695.0,
+            "Season_Fantasy_Points": 698.0,
             "Selected_Percentage": 0.1,
             "Value": 31.3,
             "Qualifying_Points": 20.0,
@@ -308,7 +308,7 @@
             "Team_Name": "Red Bull Racing",
             "Team_Code": "RED",
             "Round_Fantasy_Points": 69.0,
-            "Season_Fantasy_Points": 582.0,
+            "Season_Fantasy_Points": 586.0,
             "Selected_Percentage": 0.07,
             "Value": 31.2,
             "Qualifying_Points": 10.0,
@@ -319,7 +319,7 @@
             "Team_Name": "Racing Bulls",
             "Team_Code": "VRB",
             "Round_Fantasy_Points": 33.0,
-            "Season_Fantasy_Points": 399.0,
+            "Season_Fantasy_Points": 405.0,
             "Selected_Percentage": 0.33,
             "Value": 13.5,
             "Qualifying_Points": 6.0,
@@ -330,7 +330,7 @@
             "Team_Name": "Alpine",
             "Team_Code": "ALP",
             "Round_Fantasy_Points": 38.0,
-            "Season_Fantasy_Points": 383.0,
+            "Season_Fantasy_Points": 370.0,
             "Selected_Percentage": 0.07,
             "Value": 18.9,
             "Qualifying_Points": 23.0,

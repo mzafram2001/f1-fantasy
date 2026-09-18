@@ -2,7 +2,7 @@
     "Meta": {
         "season": 2026,
         "race_id": 12,
-        "generated_at": "2026-09-17T07:33:23.353661"
+        "generated_at": "2026-09-18T07:03:36.421280"
     },
     "Drivers": [
         {
@@ -82,7 +82,7 @@
             "Driver_Code": "PIA",
             "Team_Name": "McLaren",
             "Round_Fantasy_Points": 21.0,
-            "Season_Fantasy_Points": 181.0,
+            "Season_Fantasy_Points": 184.0,
             "Selected_Percentage": 0.09,
             "Value": 24.4,
             "Qualifying_Points": 7.0,
@@ -90,28 +90,28 @@
             "Race_Points": 11.0
         },
         {
-            "Driver_Name": "P. Gasly",
-            "Driver_Code": "GAS",
-            "Team_Name": "Alpine",
-            "Round_Fantasy_Points": 8.0,
-            "Season_Fantasy_Points": 143.0,
-            "Selected_Percentage": 0.19,
-            "Value": 13.0,
-            "Qualifying_Points": 0.0,
-            "Sprint_Points": 1.0,
-            "Race_Points": 7.0
-        },
-        {
             "Driver_Name": "L. Lawson",
             "Driver_Code": "LAW",
             "Team_Name": "Red Bull Racing",
             "Round_Fantasy_Points": 12.0,
-            "Season_Fantasy_Points": 140.0,
+            "Season_Fantasy_Points": 143.0,
             "Selected_Percentage": 0.01,
             "Value": 14.5,
             "Qualifying_Points": 3.0,
             "Sprint_Points": 0.0,
             "Race_Points": 9.0
+        },
+        {
+            "Driver_Name": "P. Gasly",
+            "Driver_Code": "GAS",
+            "Team_Name": "Alpine",
+            "Round_Fantasy_Points": 8.0,
+            "Season_Fantasy_Points": 130.0,
+            "Selected_Percentage": 0.19,
+            "Value": 13.0,
+            "Qualifying_Points": 0.0,
+            "Sprint_Points": 1.0,
+            "Race_Points": 7.0
         },
         {
             "Driver_Name": "F. Colapinto",
@@ -154,7 +154,7 @@
             "Driver_Code": "LIN",
             "Team_Name": "Racing Bulls",
             "Round_Fantasy_Points": 7.0,
-            "Season_Fantasy_Points": 71.0,
+            "Season_Fantasy_Points": 74.0,
             "Selected_Percentage": 0.45,
             "Value": 8.0,
             "Qualifying_Points": 1.0,
@@ -297,7 +297,7 @@
             "Team_Name": "McLaren",
             "Team_Code": "MCL",
             "Round_Fantasy_Points": 80.0,
-            "Season_Fantasy_Points": 618.0,
+            "Season_Fantasy_Points": 621.0,
             "Selected_Percentage": 0.11,
             "Value": 31.0,
             "Qualifying_Points": 27.0,
@@ -308,7 +308,7 @@
             "Team_Name": "Red Bull Racing",
             "Team_Code": "RED",
             "Round_Fantasy_Points": 11.0,
-            "Season_Fantasy_Points": 513.0,
+            "Season_Fantasy_Points": 517.0,
             "Selected_Percentage": 0.07,
             "Value": 30.9,
             "Qualifying_Points": 17.0,
@@ -319,7 +319,7 @@
             "Team_Name": "Racing Bulls",
             "Team_Code": "VRB",
             "Round_Fantasy_Points": 22.0,
-            "Season_Fantasy_Points": 366.0,
+            "Season_Fantasy_Points": 372.0,
             "Selected_Percentage": 0.33,
             "Value": 12.9,
             "Qualifying_Points": 6.0,
@@ -330,7 +330,7 @@
             "Team_Name": "Alpine",
             "Team_Code": "ALP",
             "Round_Fantasy_Points": 19.0,
-            "Season_Fantasy_Points": 345.0,
+            "Season_Fantasy_Points": 332.0,
             "Selected_Percentage": 0.07,
             "Value": 18.8,
             "Qualifying_Points": 3.0,
