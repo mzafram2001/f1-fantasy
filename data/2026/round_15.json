@@ -2,7 +2,7 @@
     "Meta": {
         "season": 2026,
         "race_id": 15,
-        "generated_at": "2026-09-22T07:39:02.744067"
+        "generated_at": "2026-09-23T07:40:25.573063"
     },
     "Drivers": [
         {
@@ -92,11 +92,11 @@
         {
             "Driver_Name": "L. Lawson",
             "Driver_Code": "LAW",
-            "Team_Name": "Red Bull Racing",
+            "Team_Name": "Racing Bulls",
             "Round_Fantasy_Points": 0.0,
             "Season_Fantasy_Points": 184.0,
-            "Selected_Percentage": 0.03,
-            "Value": 15.1,
+            "Selected_Percentage": 0.24,
+            "Value": 9.7,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
             "Race_Points": 0.0
@@ -121,6 +121,18 @@
             "Season_Fantasy_Points": 148.0,
             "Selected_Percentage": 0.2,
             "Value": 12.0,
+            "Qualifying_Points": 0.0,
+            "Sprint_Points": 0.0,
+            "Race_Points": 0.0
+        },
+        {
+            "Driver_Name": "I. Hadjar",
+            "Driver_Code": "HAD",
+            "Team_Name": "Red Bull Racing",
+            "Round_Fantasy_Points": 0.0,
+            "Season_Fantasy_Points": 142.0,
+            "Selected_Percentage": 0.26,
+            "Value": 14.5,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
             "Race_Points": 0.0
@@ -205,18 +217,6 @@
             "Season_Fantasy_Points": 23.0,
             "Selected_Percentage": 0.09,
             "Value": 6.8,
-            "Qualifying_Points": 0.0,
-            "Sprint_Points": 0.0,
-            "Race_Points": 0.0
-        },
-        {
-            "Driver_Name": "Y. Tsunoda",
-            "Driver_Code": "TSU",
-            "Team_Name": "Racing Bulls",
-            "Round_Fantasy_Points": 0.0,
-            "Season_Fantasy_Points": 23.0,
-            "Selected_Percentage": 0.02,
-            "Value": 9.7,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
             "Race_Points": 0.0
