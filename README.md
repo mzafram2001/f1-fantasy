@@ -77,12 +77,12 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 | **L. Hamilton** | Ferrari | 380.0 pts | $24.9M | 18% |
 | **G. Russell** | Mercedes | 368.0 pts | $27.8M | 22% |
 | **L. Norris** | McLaren | 339.0 pts | $27.0M | 9% |
-| **M. Verstappen** | Red Bull Racing | 333.0 pts | $27.3M | 17% |
-| **C. Leclerc** | Ferrari | 331.0 pts | $24.0M | 27% |
+| **M. Verstappen** | Red Bull Racing | 333.0 pts | $27.3M | 18% |
+| **C. Leclerc** | Ferrari | 331.0 pts | $24.0M | 26% |
 | **O. Piastri** | McLaren | 228.0 pts | $24.1M | 9% |
 | **L. Lawson** | Red Bull Racing | 184.0 pts | $9.7M | 25% |
 | **F. Colapinto** | Alpine | 156.0 pts | $10.6M | 21% |
-| **P. Gasly** | Alpine | 148.0 pts | $12.0M | 20% |
+| **P. Gasly** | Alpine | 148.0 pts | $12.0M | 21% |
 
 #### 🏢 Top 5 Constructors
 
@@ -218,4 +218,4 @@ print(df_drivers.sort_values(by="Season_Fantasy_Points", ascending=False).head()
 >
 > ☕ If this dataset saves you time in your analysis or fantasy leagues, you can also [buy me a coffee on Ko-fi](https://ko-fi.com/mzm0102).
 <br>
-<!-- LAST_CHECKED_START -->Last checked: 2026-09-25<!-- LAST_CHECKED_END -->
+<!-- LAST_CHECKED_START -->Last checked: 2026-09-26<!-- LAST_CHECKED_END -->
