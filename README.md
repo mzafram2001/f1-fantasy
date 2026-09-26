@@ -67,32 +67,32 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 
 <!-- SEASONS_SUMMARY_START -->
 <details open>
-<summary><b>🏎️ 2026 Season — Round 14</b></summary>
+<summary><b>🏎️ 2026 Season — Round 15</b></summary>
 
 #### 👤 Top 10 Drivers
 
 | Driver | Team | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- | :--- |
-| **K. Antonelli** | Mercedes | 594.0 pts | $26.6M | 38% |
-| **L. Hamilton** | Ferrari | 380.0 pts | $24.9M | 18% |
-| **G. Russell** | Mercedes | 368.0 pts | $27.8M | 22% |
-| **L. Norris** | McLaren | 339.0 pts | $27.0M | 9% |
-| **M. Verstappen** | Red Bull Racing | 333.0 pts | $27.3M | 18% |
-| **C. Leclerc** | Ferrari | 331.0 pts | $24.0M | 26% |
-| **O. Piastri** | McLaren | 228.0 pts | $24.1M | 9% |
-| **L. Lawson** | Red Bull Racing | 184.0 pts | $9.7M | 25% |
-| **F. Colapinto** | Alpine | 156.0 pts | $10.6M | 21% |
-| **P. Gasly** | Alpine | 148.0 pts | $12.0M | 21% |
+| **K. Antonelli** | Mercedes | 622.0 pts | $26.9M | 0% |
+| **G. Russell** | Mercedes | 413.0 pts | $28.1M | 0% |
+| **L. Hamilton** | Ferrari | 395.0 pts | $24.6M | 0% |
+| **M. Verstappen** | Red Bull Racing | 376.0 pts | $27.6M | 0% |
+| **C. Leclerc** | Ferrari | 351.0 pts | $23.7M | 0% |
+| **L. Norris** | McLaren | 328.0 pts | $26.7M | 0% |
+| **O. Piastri** | McLaren | 228.0 pts | $24.0M | 0% |
+| **L. Lawson** | Racing Bulls | 187.0 pts | $9.1M | 0% |
+| **I. Hadjar** | Red Bull Racing | 168.0 pts | $15.1M | 0% |
+| **F. Colapinto** | Alpine | 138.0 pts | $10.0M | 0% |
 
 #### 🏢 Top 5 Constructors
 
 | Team | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- |
-| **Mercedes** | 1181.0 pts | $33.5M | 36% |
-| **Ferrari** | 882.0 pts | $27.5M | 41% |
-| **McLaren** | 742.0 pts | $31.9M | 10% |
-| **Red Bull Racing** | 645.0 pts | $31.8M | 7% |
-| **Racing Bulls** | 418.0 pts | $14.7M | 33% |
+| **Mercedes** | 1269.0 pts | $33.8M | 0% |
+| **Ferrari** | 927.0 pts | $27.6M | 0% |
+| **McLaren** | 743.0 pts | $32.2M | 0% |
+| **Red Bull Racing** | 716.0 pts | $32.1M | 0% |
+| **Racing Bulls** | 441.0 pts | $15.3M | 0% |
 
 </details>
 
