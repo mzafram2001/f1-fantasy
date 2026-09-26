@@ -49,6 +49,22 @@ def generate_season_markdown(base_json_path, latest_json_path=None, is_latest_se
                 t.get("Team_Name"): t for t in latest_data.get("Teams", [])
             }
 
+    # 🔥 HELPER 100% SÓLIDO: Distingue entre ceros reales y ceros de API sin actualizar
+    def get_best_val(item_name, key, maps, base_item, default=0, is_market_data=False):
+        latest_item = maps.get(item_name, base_item)
+        val = latest_item.get(key)
+        
+        # 1. Si la clave literalmente no existe o está vacía (None o "")
+        if val is None or val == "":
+            return base_item.get(key, default)
+            
+        # 2. Si es un dato de "Mercado" (Porcentaje o Valor) y la API manda 0.0 por error o falta de update
+        if is_market_data and (val == 0 or val == 0.0):
+            return base_item.get(key, default)
+            
+        # 3. Si son Puntos, equipos, etc. Devolvemos el valor (incluso si es 0.0 real)
+        return val
+
     meta = data.get("Meta", {})
     season = meta.get("season", "N/A")
     race_id = meta.get("race_id", 0)
@@ -81,12 +97,15 @@ def generate_season_markdown(base_json_path, latest_json_path=None, is_latest_se
 
     for d in top_drivers:
         name = d.get("Driver_Name", "N/A")
-        team = d.get("Team_Name", "N/A")
-        season_pts = d.get("Season_Fantasy_Points", 0)
-
-        latest_d = latest_drivers_map.get(name, d)
-        val = latest_d.get("Value", d.get("Value", 0))
-        sel = format_percentage(latest_d.get("Selected_Percentage", d.get("Selected_Percentage", 0)))
+        
+        team = get_best_val(name, "Team_Name", latest_drivers_map, d, "N/A")
+        
+        # Los puntos respetarán el 0 si el piloto puntúa 0 (is_market_data=False por defecto)
+        season_pts = get_best_val(name, "Season_Fantasy_Points", latest_drivers_map, d)
+        
+        # El precio y el porcentaje de selección NO pueden ser 0, si lo son, usamos is_market_data=True
+        val = get_best_val(name, "Value", latest_drivers_map, d, is_market_data=True)
+        sel = format_percentage(get_best_val(name, "Selected_Percentage", latest_drivers_map, d, is_market_data=True))
         
         md.append(f"| **{name}** | {team} | {season_pts} pts | ${val}M | {sel} |")
 
@@ -102,11 +121,11 @@ def generate_season_markdown(base_json_path, latest_json_path=None, is_latest_se
 
     for t in top_teams:
         name = t.get("Team_Name", "N/A")
-        season_pts = t.get("Season_Fantasy_Points", 0)
-
-        latest_t = latest_teams_map.get(name, t)
-        val = latest_t.get("Value", t.get("Value", 0))
-        sel = format_percentage(latest_t.get("Selected_Percentage", t.get("Selected_Percentage", 0)))
+        
+        # Aplicamos la misma lógica súper segura a los constructores
+        season_pts = get_best_val(name, "Season_Fantasy_Points", latest_teams_map, t)
+        val = get_best_val(name, "Value", latest_teams_map, t, is_market_data=True)
+        sel = format_percentage(get_best_val(name, "Selected_Percentage", latest_teams_map, t, is_market_data=True))
         
         md.append(f"| **{name}** | {season_pts} pts | ${val}M | {sel} |")
 
