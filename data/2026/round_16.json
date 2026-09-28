@@ -2,7 +2,7 @@
     "Meta": {
         "season": 2026,
         "race_id": 16,
-        "generated_at": "2026-09-27T08:01:10.562980"
+        "generated_at": "2026-09-28T08:36:49.833994"
     },
     "Drivers": [
         {
@@ -215,7 +215,7 @@
             "Team_Name": "Williams",
             "Round_Fantasy_Points": 0.0,
             "Season_Fantasy_Points": 13.0,
-            "Selected_Percentage": 0.11,
+            "Selected_Percentage": 0.1,
             "Value": 5.8,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
