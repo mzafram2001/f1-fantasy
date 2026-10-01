@@ -2,7 +2,7 @@
     "Meta": {
         "season": 2026,
         "race_id": 16,
-        "generated_at": "2026-09-30T08:21:41.838669"
+        "generated_at": "2026-10-01T08:44:51.283989"
     },
     "Drivers": [
         {
@@ -179,7 +179,7 @@
             "Team_Name": "Audi",
             "Round_Fantasy_Points": 0.0,
             "Season_Fantasy_Points": 92.0,
-            "Selected_Percentage": 0.33,
+            "Selected_Percentage": 0.32,
             "Value": 8.2,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
