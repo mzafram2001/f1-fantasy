@@ -113,7 +113,7 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 | **K. Antonelli** | Mercedes | 311.0 pts | $18.1M | 21% |
 | **O. Bearman** | Haas F1 Team | 206.0 pts | $9.3M | 43% |
 | **A. Albon** | Williams | 198.0 pts | $12.6M | 27% |
-| **E. Ocon** | Haas F1 Team | 177.0 pts | $7.9M | 22% |
+| **Y. Tsunoda** | Red Bull Racing | 183.0 pts | $11.4M | 6% |
 
 #### 🏢 Top 5 Constructors
 
