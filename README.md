@@ -73,26 +73,26 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 
 | Driver | Team | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- | :--- |
-| **K. Antonelli** | Mercedes | 622.0 pts | $26.9M | 38% |
-| **G. Russell** | Mercedes | 413.0 pts | $28.1M | 22% |
-| **L. Hamilton** | Ferrari | 395.0 pts | $24.6M | 18% |
-| **M. Verstappen** | Red Bull Racing | 376.0 pts | $27.6M | 19% |
-| **C. Leclerc** | Ferrari | 351.0 pts | $23.7M | 26% |
-| **L. Norris** | McLaren | 328.0 pts | $26.7M | 9% |
-| **O. Piastri** | McLaren | 228.0 pts | $24.0M | 9% |
+| **K. Antonelli** | Mercedes | 629.0 pts | $26.9M | 38% |
+| **G. Russell** | Mercedes | 416.0 pts | $28.1M | 22% |
+| **L. Hamilton** | Ferrari | 404.0 pts | $24.6M | 18% |
+| **M. Verstappen** | Red Bull Racing | 386.0 pts | $27.6M | 19% |
+| **C. Leclerc** | Ferrari | 357.0 pts | $23.7M | 26% |
+| **L. Norris** | McLaren | 333.0 pts | $26.7M | 9% |
+| **O. Piastri** | McLaren | 232.0 pts | $24.0M | 9% |
 | **L. Lawson** | Racing Bulls | 187.0 pts | $9.1M | 26% |
-| **I. Hadjar** | Red Bull Racing | 168.0 pts | $15.1M | 28% |
+| **I. Hadjar** | Red Bull Racing | 176.0 pts | $15.1M | 28% |
 | **F. Colapinto** | Alpine | 138.0 pts | $10.0M | 20% |
 
 #### 🏢 Top 5 Constructors
 
 | Team | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- |
-| **Mercedes** | 1269.0 pts | $33.8M | 36% |
-| **Ferrari** | 927.0 pts | $27.6M | 40% |
-| **McLaren** | 743.0 pts | $32.2M | 10% |
-| **Red Bull Racing** | 716.0 pts | $32.1M | 8% |
-| **Racing Bulls** | 441.0 pts | $15.3M | 33% |
+| **Mercedes** | 1289.0 pts | $33.8M | 36% |
+| **Ferrari** | 952.0 pts | $27.6M | 40% |
+| **McLaren** | 762.0 pts | $32.2M | 10% |
+| **Red Bull Racing** | 744.0 pts | $32.1M | 8% |
+| **Racing Bulls** | 444.0 pts | $15.3M | 33% |
 
 </details>
 
