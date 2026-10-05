@@ -74,9 +74,9 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 | Driver | Team | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- | :--- |
 | **K. Antonelli** | Mercedes | 648.0 pts | $26.9M | 38% |
-| **G. Russell** | Mercedes | 403.0 pts | $28.1M | 22% |
-| **L. Hamilton** | Ferrari | 418.0 pts | $24.6M | 18% |
 | **M. Verstappen** | Red Bull Racing | 431.0 pts | $27.6M | 19% |
+| **L. Hamilton** | Ferrari | 418.0 pts | $24.6M | 18% |
+| **G. Russell** | Mercedes | 403.0 pts | $28.1M | 22% |
 | **C. Leclerc** | Ferrari | 369.0 pts | $23.7M | 26% |
 | **L. Norris** | McLaren | 331.0 pts | $26.7M | 9% |
 | **O. Piastri** | McLaren | 240.0 pts | $24.0M | 9% |
@@ -90,8 +90,8 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 | :--- | :--- | :--- | :--- |
 | **Mercedes** | 1295.0 pts | $33.8M | 36% |
 | **Ferrari** | 978.0 pts | $27.6M | 40% |
-| **McLaren** | 768.0 pts | $32.2M | 10% |
 | **Red Bull Racing** | 792.0 pts | $32.1M | 8% |
+| **McLaren** | 768.0 pts | $32.2M | 10% |
 | **Racing Bulls** | 467.0 pts | $15.3M | 33% |
 
 </details>
