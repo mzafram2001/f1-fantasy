@@ -67,32 +67,32 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 
 <!-- SEASONS_SUMMARY_START -->
 <details open>
-<summary><b>🏎️ 2026 Season — Round 15</b></summary>
+<summary><b>🏎️ 2026 Season — Round 16</b></summary>
 
 #### 👤 Top 10 Drivers
 
 | Driver | Team | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- | :--- |
-| **K. Antonelli** | Mercedes | 648.0 pts | $26.9M | 38% |
-| **M. Verstappen** | Red Bull Racing | 431.0 pts | $27.6M | 19% |
-| **L. Hamilton** | Ferrari | 418.0 pts | $24.6M | 18% |
-| **G. Russell** | Mercedes | 403.0 pts | $28.1M | 22% |
-| **C. Leclerc** | Ferrari | 369.0 pts | $23.7M | 26% |
-| **L. Norris** | McLaren | 331.0 pts | $26.7M | 9% |
-| **O. Piastri** | McLaren | 240.0 pts | $24.0M | 9% |
-| **L. Lawson** | Racing Bulls | 197.0 pts | $9.1M | 26% |
-| **I. Hadjar** | Red Bull Racing | 189.0 pts | $15.1M | 28% |
-| **F. Colapinto** | Alpine | 146.0 pts | $10.0M | 20% |
+| **K. Antonelli** | Mercedes | 651.0 pts | $27.0M | 38% |
+| **M. Verstappen** | Red Bull Racing | 433.0 pts | $27.9M | 19% |
+| **L. Hamilton** | Ferrari | 427.0 pts | $24.3M | 18% |
+| **G. Russell** | Mercedes | 408.0 pts | $28.0M | 22% |
+| **C. Leclerc** | Ferrari | 384.0 pts | $23.8M | 26% |
+| **L. Norris** | McLaren | 344.0 pts | $26.4M | 9% |
+| **O. Piastri** | McLaren | 257.0 pts | $23.7M | 9% |
+| **L. Lawson** | Racing Bulls | 204.0 pts | $9.3M | 26% |
+| **I. Hadjar** | Red Bull Racing | 193.0 pts | $15.7M | 28% |
+| **F. Colapinto** | Alpine | 151.0 pts | $9.4M | 20% |
 
 #### 🏢 Top 5 Constructors
 
 | Team | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- |
-| **Mercedes** | 1295.0 pts | $33.8M | 36% |
-| **Ferrari** | 978.0 pts | $27.6M | 40% |
-| **Red Bull Racing** | 792.0 pts | $32.1M | 8% |
-| **McLaren** | 768.0 pts | $32.2M | 10% |
-| **Racing Bulls** | 467.0 pts | $15.3M | 33% |
+| **Mercedes** | 1308.0 pts | $34.0M | 36% |
+| **Ferrari** | 1007.0 pts | $27.9M | 40% |
+| **Red Bull Racing** | 813.0 pts | $32.4M | 8% |
+| **McLaren** | 800.0 pts | $32.3M | 10% |
+| **Racing Bulls** | 494.0 pts | $15.9M | 33% |
 
 </details>
 
