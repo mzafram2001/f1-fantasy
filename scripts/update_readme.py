@@ -70,16 +70,18 @@ def generate_season_markdown(base_json_path, latest_json_path=None, is_latest_se
     race_id = meta.get("race_id", 0)
 
     drivers = data.get("Drivers", [])
+    # Ordenar usando el valor que da get_best_val (el más actualizado)
     top_drivers = sorted(
         drivers,
-        key=lambda x: x.get("Season_Fantasy_Points", 0),
+        key=lambda x: get_best_val(x.get("Driver_Name"), "Season_Fantasy_Points", latest_drivers_map, x, default=0),
         reverse=True,
     )[:10]
 
     teams = data.get("Teams", [])
+    # Ordenar constructores igual usando el valor más actualizado
     top_teams = sorted(
         teams,
-        key=lambda x: x.get("Season_Fantasy_Points", 0),
+        key=lambda x: get_best_val(x.get("Team_Name"), "Season_Fantasy_Points", latest_teams_map, x, default=0),
         reverse=True,
     )[:5]
 
