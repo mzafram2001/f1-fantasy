@@ -2,7 +2,7 @@
     "Meta": {
         "season": 2026,
         "race_id": 17,
-        "generated_at": "2026-10-09T08:53:02.920704"
+        "generated_at": "2026-10-10T08:23:51.328822"
     },
     "Drivers": [
         {
@@ -11,7 +11,7 @@
             "Team_Name": "Mercedes",
             "Round_Fantasy_Points": 0.0,
             "Season_Fantasy_Points": 651.0,
-            "Selected_Percentage": 0.38,
+            "Selected_Percentage": 0.36,
             "Value": 27.0,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
@@ -23,7 +23,7 @@
             "Team_Name": "Red Bull Racing",
             "Round_Fantasy_Points": 0.0,
             "Season_Fantasy_Points": 433.0,
-            "Selected_Percentage": 0.19,
+            "Selected_Percentage": 0.21,
             "Value": 27.9,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
@@ -95,7 +95,7 @@
             "Team_Name": "Racing Bulls",
             "Round_Fantasy_Points": 0.0,
             "Season_Fantasy_Points": 204.0,
-            "Selected_Percentage": 0.26,
+            "Selected_Percentage": 0.27,
             "Value": 9.3,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
@@ -276,7 +276,7 @@
             "Team_Code": "MER",
             "Round_Fantasy_Points": 0.0,
             "Season_Fantasy_Points": 1308.0,
-            "Selected_Percentage": 0.36,
+            "Selected_Percentage": 0.35,
             "Value": 34.0,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
@@ -287,7 +287,7 @@
             "Team_Code": "FER",
             "Round_Fantasy_Points": 0.0,
             "Season_Fantasy_Points": 1007.0,
-            "Selected_Percentage": 0.4,
+            "Selected_Percentage": 0.41,
             "Value": 27.9,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
@@ -298,7 +298,7 @@
             "Team_Code": "RED",
             "Round_Fantasy_Points": 0.0,
             "Season_Fantasy_Points": 813.0,
-            "Selected_Percentage": 0.08,
+            "Selected_Percentage": 0.09,
             "Value": 32.4,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
