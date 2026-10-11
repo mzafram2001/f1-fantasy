@@ -73,26 +73,26 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 
 | Driver | Team | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- | :--- |
-| **K. Antonelli** | Mercedes | 651.0 pts | $27.0M | 36% |
-| **M. Verstappen** | Red Bull Racing | 433.0 pts | $27.9M | 21% |
-| **L. Hamilton** | Ferrari | 427.0 pts | $24.3M | 18% |
-| **G. Russell** | Mercedes | 408.0 pts | $28.0M | 21% |
-| **C. Leclerc** | Ferrari | 384.0 pts | $23.8M | 26% |
-| **L. Norris** | McLaren | 344.0 pts | $26.4M | 8% |
-| **O. Piastri** | McLaren | 257.0 pts | $23.7M | 9% |
-| **L. Lawson** | Racing Bulls | 204.0 pts | $9.3M | 27% |
-| **I. Hadjar** | Red Bull Racing | 193.0 pts | $15.7M | 28% |
-| **F. Colapinto** | Alpine | 151.0 pts | $9.4M | 20% |
+| **K. Antonelli** | Mercedes | 666.0 pts | $27.0M | 36% |
+| **L. Hamilton** | Ferrari | 454.0 pts | $24.3M | 18% |
+| **M. Verstappen** | Red Bull Racing | 451.0 pts | $27.9M | 21% |
+| **G. Russell** | Mercedes | 404.0 pts | $28.0M | 21% |
+| **C. Leclerc** | Ferrari | 399.0 pts | $23.8M | 26% |
+| **L. Norris** | McLaren | 348.0 pts | $26.4M | 8% |
+| **O. Piastri** | McLaren | 251.0 pts | $23.7M | 9% |
+| **L. Lawson** | Racing Bulls | 214.0 pts | $9.3M | 27% |
+| **I. Hadjar** | Red Bull Racing | 179.0 pts | $15.7M | 28% |
+| **E. Ocon** | Haas F1 Team | 157.0 pts | $9.3M | 13% |
 
 #### 🏢 Top 5 Constructors
 
 | Team | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- |
-| **Mercedes** | 1308.0 pts | $34.0M | 35% |
-| **Ferrari** | 1007.0 pts | $27.9M | 41% |
-| **Red Bull Racing** | 813.0 pts | $32.4M | 9% |
-| **McLaren** | 800.0 pts | $32.3M | 10% |
-| **Racing Bulls** | 494.0 pts | $15.9M | 33% |
+| **Mercedes** | 1329.0 pts | $34.0M | 35% |
+| **Ferrari** | 1059.0 pts | $27.9M | 41% |
+| **Red Bull Racing** | 822.0 pts | $32.4M | 9% |
+| **McLaren** | 808.0 pts | $32.3M | 10% |
+| **Racing Bulls** | 521.0 pts | $15.9M | 33% |
 
 </details>
 
@@ -218,4 +218,4 @@ print(df_drivers.sort_values(by="Season_Fantasy_Points", ascending=False).head()
 >
 > ☕ If this dataset saves you time in your analysis or fantasy leagues, you can also [buy me a coffee on Ko-fi](https://ko-fi.com/mzm0102).
 <br>
-<!-- LAST_CHECKED_START -->Last checked: 2026-10-10<!-- LAST_CHECKED_END -->
+<!-- LAST_CHECKED_START -->Last checked: 2026-10-11<!-- LAST_CHECKED_END -->
