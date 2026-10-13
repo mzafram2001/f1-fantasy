@@ -2,7 +2,7 @@
     "Meta": {
         "season": 2026,
         "race_id": 18,
-        "generated_at": "2026-10-12T09:03:18.968340"
+        "generated_at": "2026-10-13T09:18:00.282816"
     },
     "Drivers": [
         {
@@ -143,7 +143,7 @@
             "Team_Name": "Racing Bulls",
             "Round_Fantasy_Points": 0.0,
             "Season_Fantasy_Points": 136.0,
-            "Selected_Percentage": 0.45,
+            "Selected_Percentage": 0.44,
             "Value": 10.0,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
@@ -179,7 +179,7 @@
             "Team_Name": "Haas F1 Team",
             "Round_Fantasy_Points": 0.0,
             "Season_Fantasy_Points": 94.0,
-            "Selected_Percentage": 0.51,
+            "Selected_Percentage": 0.52,
             "Value": 6.4,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
