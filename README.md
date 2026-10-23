@@ -80,7 +80,7 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 | **G. Russell** | Mercedes | 425.0 pts | $27.9M | 21% |
 | **L. Norris** | McLaren | 362.0 pts | $26.1M | 8% |
 | **O. Piastri** | McLaren | 263.0 pts | $23.4M | 9% |
-| **L. Lawson** | Racing Bulls | 222.0 pts | $9.9M | 27% |
+| **L. Lawson** | Racing Bulls | 222.0 pts | $9.9M | 28% |
 | **I. Hadjar** | Red Bull Racing | 201.0 pts | $16.3M | 28% |
 | **E. Ocon** | Haas F1 Team | 161.0 pts | $9.9M | 13% |
 
@@ -218,4 +218,4 @@ print(df_drivers.sort_values(by="Season_Fantasy_Points", ascending=False).head()
 >
 > ☕ If this dataset saves you time in your analysis or fantasy leagues, you can also [buy me a coffee on Ko-fi](https://ko-fi.com/mzm0102).
 <br>
-<!-- LAST_CHECKED_START -->Last checked: 2026-10-22<!-- LAST_CHECKED_END -->
+<!-- LAST_CHECKED_START -->Last checked: 2026-10-23<!-- LAST_CHECKED_END -->
