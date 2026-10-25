@@ -73,26 +73,26 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 
 | Driver | Team | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- | :--- |
-| **K. Antonelli** | Mercedes | 684.0 pts | $27.1M | 36% |
-| **M. Verstappen** | Red Bull Racing | 486.0 pts | $28.2M | 22% |
-| **L. Hamilton** | Ferrari | 460.0 pts | $24.4M | 18% |
-| **C. Leclerc** | Ferrari | 427.0 pts | $24.1M | 26% |
-| **G. Russell** | Mercedes | 425.0 pts | $27.9M | 21% |
-| **L. Norris** | McLaren | 362.0 pts | $26.1M | 8% |
-| **O. Piastri** | McLaren | 263.0 pts | $23.4M | 9% |
-| **L. Lawson** | Racing Bulls | 222.0 pts | $9.9M | 28% |
-| **I. Hadjar** | Red Bull Racing | 201.0 pts | $16.3M | 28% |
+| **K. Antonelli** | Mercedes | 694.0 pts | $27.1M | 36% |
+| **M. Verstappen** | Red Bull Racing | 495.0 pts | $28.2M | 22% |
+| **L. Hamilton** | Ferrari | 466.0 pts | $24.4M | 18% |
+| **C. Leclerc** | Ferrari | 434.0 pts | $24.1M | 26% |
+| **G. Russell** | Mercedes | 430.0 pts | $27.9M | 21% |
+| **L. Norris** | McLaren | 365.0 pts | $26.1M | 8% |
+| **O. Piastri** | McLaren | 267.0 pts | $23.4M | 9% |
+| **L. Lawson** | Racing Bulls | 223.0 pts | $9.9M | 28% |
+| **I. Hadjar** | Red Bull Racing | 209.0 pts | $16.3M | 28% |
 | **E. Ocon** | Haas F1 Team | 161.0 pts | $9.9M | 13% |
 
 #### 🏢 Top 5 Constructors
 
 | Team | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- |
-| **Mercedes** | 1373.0 pts | $34.0M | 35% |
-| **Ferrari** | 1098.0 pts | $28.2M | 41% |
-| **Red Bull Racing** | 879.0 pts | $32.7M | 9% |
-| **McLaren** | 836.0 pts | $32.4M | 10% |
-| **Racing Bulls** | 528.0 pts | $16.5M | 33% |
+| **Mercedes** | 1398.0 pts | $34.0M | 35% |
+| **Ferrari** | 1121.0 pts | $28.2M | 41% |
+| **Red Bull Racing** | 906.0 pts | $32.7M | 9% |
+| **McLaren** | 853.0 pts | $32.4M | 10% |
+| **Racing Bulls** | 541.0 pts | $16.5M | 33% |
 
 </details>
 
@@ -218,4 +218,4 @@ print(df_drivers.sort_values(by="Season_Fantasy_Points", ascending=False).head()
 >
 > ☕ If this dataset saves you time in your analysis or fantasy leagues, you can also [buy me a coffee on Ko-fi](https://ko-fi.com/mzm0102).
 <br>
-<!-- LAST_CHECKED_START -->Last checked: 2026-10-24<!-- LAST_CHECKED_END -->
+<!-- LAST_CHECKED_START -->Last checked: 2026-10-25<!-- LAST_CHECKED_END -->
