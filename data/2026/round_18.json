@@ -2,224 +2,224 @@
     "Meta": {
         "season": 2026,
         "race_id": 18,
-        "generated_at": "2026-10-25T07:31:38.247175"
+        "generated_at": "2026-10-26T07:42:36.102175"
     },
     "Drivers": [
         {
             "Driver_Name": "K. Antonelli",
             "Driver_Code": "ANT",
             "Team_Name": "Mercedes",
-            "Round_Fantasy_Points": 10.0,
-            "Season_Fantasy_Points": 694.0,
+            "Round_Fantasy_Points": 36.0,
+            "Season_Fantasy_Points": 720.0,
             "Selected_Percentage": 0.36,
             "Value": 27.1,
             "Qualifying_Points": 10.0,
             "Sprint_Points": 0.0,
-            "Race_Points": 0.0
+            "Race_Points": 26.0
         },
         {
             "Driver_Name": "M. Verstappen",
             "Driver_Code": "VER",
             "Team_Name": "Red Bull Racing",
-            "Round_Fantasy_Points": 9.0,
-            "Season_Fantasy_Points": 495.0,
+            "Round_Fantasy_Points": 27.0,
+            "Season_Fantasy_Points": 513.0,
             "Selected_Percentage": 0.22,
             "Value": 28.2,
             "Qualifying_Points": 9.0,
             "Sprint_Points": 0.0,
-            "Race_Points": 0.0
+            "Race_Points": 18.0
         },
         {
             "Driver_Name": "L. Hamilton",
             "Driver_Code": "HAM",
             "Team_Name": "Ferrari",
-            "Round_Fantasy_Points": 6.0,
-            "Season_Fantasy_Points": 466.0,
+            "Round_Fantasy_Points": 23.0,
+            "Season_Fantasy_Points": 483.0,
             "Selected_Percentage": 0.18,
             "Value": 24.4,
             "Qualifying_Points": 6.0,
             "Sprint_Points": 0.0,
-            "Race_Points": 0.0
+            "Race_Points": 17.0
         },
         {
             "Driver_Name": "C. Leclerc",
             "Driver_Code": "LEC",
             "Team_Name": "Ferrari",
-            "Round_Fantasy_Points": 7.0,
-            "Season_Fantasy_Points": 434.0,
+            "Round_Fantasy_Points": 53.0,
+            "Season_Fantasy_Points": 480.0,
             "Selected_Percentage": 0.26,
             "Value": 24.1,
             "Qualifying_Points": 7.0,
             "Sprint_Points": 0.0,
-            "Race_Points": 0.0
+            "Race_Points": 46.0
         },
         {
             "Driver_Name": "G. Russell",
             "Driver_Code": "RUS",
             "Team_Name": "Mercedes",
-            "Round_Fantasy_Points": 5.0,
-            "Season_Fantasy_Points": 430.0,
+            "Round_Fantasy_Points": 9.0,
+            "Season_Fantasy_Points": 434.0,
             "Selected_Percentage": 0.21,
             "Value": 27.9,
             "Qualifying_Points": 5.0,
             "Sprint_Points": 0.0,
-            "Race_Points": 0.0
+            "Race_Points": 4.0
         },
         {
             "Driver_Name": "L. Norris",
             "Driver_Code": "NOR",
             "Team_Name": "McLaren",
-            "Round_Fantasy_Points": 3.0,
-            "Season_Fantasy_Points": 365.0,
+            "Round_Fantasy_Points": 18.0,
+            "Season_Fantasy_Points": 380.0,
             "Selected_Percentage": 0.08,
             "Value": 26.1,
             "Qualifying_Points": 3.0,
             "Sprint_Points": 0.0,
-            "Race_Points": 0.0
+            "Race_Points": 15.0
         },
         {
             "Driver_Name": "O. Piastri",
             "Driver_Code": "PIA",
             "Team_Name": "McLaren",
-            "Round_Fantasy_Points": 4.0,
-            "Season_Fantasy_Points": 267.0,
+            "Round_Fantasy_Points": 15.0,
+            "Season_Fantasy_Points": 278.0,
             "Selected_Percentage": 0.09,
             "Value": 23.4,
             "Qualifying_Points": 4.0,
             "Sprint_Points": 0.0,
-            "Race_Points": 0.0
+            "Race_Points": 11.0
         },
         {
             "Driver_Name": "L. Lawson",
             "Driver_Code": "LAW",
             "Team_Name": "Racing Bulls",
-            "Round_Fantasy_Points": 1.0,
-            "Season_Fantasy_Points": 223.0,
+            "Round_Fantasy_Points": 5.0,
+            "Season_Fantasy_Points": 227.0,
             "Selected_Percentage": 0.28,
             "Value": 9.9,
             "Qualifying_Points": 1.0,
             "Sprint_Points": 0.0,
-            "Race_Points": 0.0
+            "Race_Points": 4.0
         },
         {
             "Driver_Name": "I. Hadjar",
             "Driver_Code": "HAD",
             "Team_Name": "Red Bull Racing",
-            "Round_Fantasy_Points": 8.0,
-            "Season_Fantasy_Points": 209.0,
+            "Round_Fantasy_Points": 13.0,
+            "Season_Fantasy_Points": 214.0,
             "Selected_Percentage": 0.29,
             "Value": 16.3,
             "Qualifying_Points": 8.0,
             "Sprint_Points": 0.0,
-            "Race_Points": 0.0
+            "Race_Points": 5.0
         },
         {
             "Driver_Name": "E. Ocon",
             "Driver_Code": "OCO",
             "Team_Name": "Haas F1 Team",
-            "Round_Fantasy_Points": 0.0,
-            "Season_Fantasy_Points": 161.0,
+            "Round_Fantasy_Points": 7.0,
+            "Season_Fantasy_Points": 168.0,
             "Selected_Percentage": 0.13,
             "Value": 9.9,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
-            "Race_Points": 0.0
+            "Race_Points": 7.0
         },
         {
             "Driver_Name": "A. Lindblad",
             "Driver_Code": "LIN",
             "Team_Name": "Racing Bulls",
-            "Round_Fantasy_Points": 2.0,
-            "Season_Fantasy_Points": 138.0,
+            "Round_Fantasy_Points": 11.0,
+            "Season_Fantasy_Points": 147.0,
             "Selected_Percentage": 0.44,
             "Value": 10.0,
             "Qualifying_Points": 2.0,
             "Sprint_Points": 0.0,
-            "Race_Points": 0.0
+            "Race_Points": 9.0
         },
         {
             "Driver_Name": "P. Gasly",
             "Driver_Code": "GAS",
             "Team_Name": "Alpine",
-            "Round_Fantasy_Points": 0.0,
-            "Season_Fantasy_Points": 136.0,
+            "Round_Fantasy_Points": 3.0,
+            "Season_Fantasy_Points": 139.0,
             "Selected_Percentage": 0.2,
             "Value": 10.2,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
-            "Race_Points": 0.0
-        },
-        {
-            "Driver_Name": "F. Colapinto",
-            "Driver_Code": "COL",
-            "Team_Name": "Alpine",
-            "Round_Fantasy_Points": 0.0,
-            "Season_Fantasy_Points": 123.0,
-            "Selected_Percentage": 0.19,
-            "Value": 8.8,
-            "Qualifying_Points": 0.0,
-            "Sprint_Points": 0.0,
-            "Race_Points": 0.0
+            "Race_Points": 3.0
         },
         {
             "Driver_Name": "C. Sainz",
             "Driver_Code": "SAI",
             "Team_Name": "Williams",
-            "Round_Fantasy_Points": 0.0,
-            "Season_Fantasy_Points": 117.0,
+            "Round_Fantasy_Points": 3.0,
+            "Season_Fantasy_Points": 120.0,
             "Selected_Percentage": 0.22,
             "Value": 8.4,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
-            "Race_Points": 0.0
+            "Race_Points": 3.0
         },
         {
-            "Driver_Name": "O. Bearman",
-            "Driver_Code": "BEA",
-            "Team_Name": "Haas F1 Team",
-            "Round_Fantasy_Points": 0.0,
-            "Season_Fantasy_Points": 94.0,
-            "Selected_Percentage": 0.52,
-            "Value": 6.4,
+            "Driver_Name": "F. Colapinto",
+            "Driver_Code": "COL",
+            "Team_Name": "Alpine",
+            "Round_Fantasy_Points": -18.0,
+            "Season_Fantasy_Points": 105.0,
+            "Selected_Percentage": 0.19,
+            "Value": 8.8,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
-            "Race_Points": 0.0
+            "Race_Points": -18.0
         },
         {
             "Driver_Name": "G. Bortoleto",
             "Driver_Code": "BOR",
             "Team_Name": "Audi",
-            "Round_Fantasy_Points": 0.0,
-            "Season_Fantasy_Points": 67.0,
+            "Round_Fantasy_Points": 17.0,
+            "Season_Fantasy_Points": 84.0,
             "Selected_Percentage": 0.31,
             "Value": 7.0,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
-            "Race_Points": 0.0
+            "Race_Points": 17.0
+        },
+        {
+            "Driver_Name": "O. Bearman",
+            "Driver_Code": "BEA",
+            "Team_Name": "Haas F1 Team",
+            "Round_Fantasy_Points": -13.0,
+            "Season_Fantasy_Points": 81.0,
+            "Selected_Percentage": 0.52,
+            "Value": 6.4,
+            "Qualifying_Points": 0.0,
+            "Sprint_Points": 0.0,
+            "Race_Points": -13.0
         },
         {
             "Driver_Name": "N. Hulkenberg",
             "Driver_Code": "HUL",
             "Team_Name": "Audi",
-            "Round_Fantasy_Points": 0.0,
-            "Season_Fantasy_Points": 40.0,
+            "Round_Fantasy_Points": 7.0,
+            "Season_Fantasy_Points": 47.0,
             "Selected_Percentage": 0.36,
             "Value": 6.6,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
-            "Race_Points": 0.0
+            "Race_Points": 7.0
         },
         {
             "Driver_Name": "F. Alonso",
             "Driver_Code": "ALO",
             "Team_Name": "Aston Martin",
-            "Round_Fantasy_Points": 0.0,
-            "Season_Fantasy_Points": 37.0,
+            "Round_Fantasy_Points": 2.0,
+            "Season_Fantasy_Points": 39.0,
             "Selected_Percentage": 0.1,
             "Value": 5.4,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
-            "Race_Points": 0.0
+            "Race_Points": 2.0
         },
         {
             "Driver_Name": "S. Perez",
@@ -237,160 +237,160 @@
             "Driver_Name": "A. Albon",
             "Driver_Code": "ALB",
             "Team_Name": "Williams",
-            "Round_Fantasy_Points": 0.0,
-            "Season_Fantasy_Points": -7.0,
+            "Round_Fantasy_Points": 7.0,
+            "Season_Fantasy_Points": 0.0,
             "Selected_Percentage": 0.1,
             "Value": 4.6,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
-            "Race_Points": 0.0
+            "Race_Points": 7.0
         },
         {
             "Driver_Name": "V. Bottas",
             "Driver_Code": "BOT",
             "Team_Name": "Cadillac",
-            "Round_Fantasy_Points": 0.0,
-            "Season_Fantasy_Points": -98.0,
+            "Round_Fantasy_Points": -19.0,
+            "Season_Fantasy_Points": -117.0,
             "Selected_Percentage": 0.2,
             "Value": 3.0,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
-            "Race_Points": 0.0
+            "Race_Points": -19.0
         },
         {
             "Driver_Name": "L. Stroll",
             "Driver_Code": "STR",
             "Team_Name": "Aston Martin",
-            "Round_Fantasy_Points": 0.0,
-            "Season_Fantasy_Points": -159.0,
+            "Round_Fantasy_Points": 12.0,
+            "Season_Fantasy_Points": -147.0,
             "Selected_Percentage": 0.04,
             "Value": 3.0,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
-            "Race_Points": 0.0
+            "Race_Points": 12.0
         }
     ],
     "Teams": [
         {
             "Team_Name": "Mercedes",
             "Team_Code": "MER",
-            "Round_Fantasy_Points": 25.0,
-            "Season_Fantasy_Points": 1398.0,
+            "Round_Fantasy_Points": 57.0,
+            "Season_Fantasy_Points": 1430.0,
             "Selected_Percentage": 0.35,
             "Value": 34.0,
             "Qualifying_Points": 25.0,
             "Sprint_Points": 0.0,
-            "Race_Points": 0.0
+            "Race_Points": 32.0
         },
         {
             "Team_Name": "Ferrari",
             "Team_Code": "FER",
-            "Round_Fantasy_Points": 23.0,
-            "Season_Fantasy_Points": 1121.0,
+            "Round_Fantasy_Points": 81.0,
+            "Season_Fantasy_Points": 1179.0,
             "Selected_Percentage": 0.41,
             "Value": 28.2,
             "Qualifying_Points": 23.0,
             "Sprint_Points": 0.0,
-            "Race_Points": 0.0
+            "Race_Points": 58.0
         },
         {
             "Team_Name": "Red Bull Racing",
             "Team_Code": "RED",
-            "Round_Fantasy_Points": 27.0,
-            "Season_Fantasy_Points": 906.0,
+            "Round_Fantasy_Points": 55.0,
+            "Season_Fantasy_Points": 934.0,
             "Selected_Percentage": 0.09,
             "Value": 32.7,
             "Qualifying_Points": 27.0,
             "Sprint_Points": 0.0,
-            "Race_Points": 0.0
+            "Race_Points": 28.0
         },
         {
             "Team_Name": "McLaren",
             "Team_Code": "MCL",
-            "Round_Fantasy_Points": 17.0,
-            "Season_Fantasy_Points": 853.0,
+            "Round_Fantasy_Points": 58.0,
+            "Season_Fantasy_Points": 894.0,
             "Selected_Percentage": 0.1,
             "Value": 32.4,
             "Qualifying_Points": 17.0,
             "Sprint_Points": 0.0,
-            "Race_Points": 0.0
+            "Race_Points": 41.0
         },
         {
             "Team_Name": "Racing Bulls",
             "Team_Code": "VRB",
-            "Round_Fantasy_Points": 13.0,
-            "Season_Fantasy_Points": 541.0,
+            "Round_Fantasy_Points": 31.0,
+            "Season_Fantasy_Points": 559.0,
             "Selected_Percentage": 0.33,
             "Value": 16.5,
             "Qualifying_Points": 13.0,
             "Sprint_Points": 0.0,
-            "Race_Points": 0.0
+            "Race_Points": 18.0
         },
         {
             "Team_Name": "Alpine",
             "Team_Code": "ALP",
-            "Round_Fantasy_Points": 3.0,
-            "Season_Fantasy_Points": 387.0,
+            "Round_Fantasy_Points": -12.0,
+            "Season_Fantasy_Points": 372.0,
             "Selected_Percentage": 0.07,
             "Value": 18.8,
             "Qualifying_Points": 3.0,
             "Sprint_Points": 0.0,
-            "Race_Points": 0.0
+            "Race_Points": -15.0
         },
         {
             "Team_Name": "Haas F1 Team",
             "Team_Code": "HAA",
-            "Round_Fantasy_Points": 1.0,
-            "Season_Fantasy_Points": 301.0,
+            "Round_Fantasy_Points": -3.0,
+            "Season_Fantasy_Points": 297.0,
             "Selected_Percentage": 0.24,
             "Value": 12.0,
             "Qualifying_Points": 1.0,
             "Sprint_Points": 0.0,
-            "Race_Points": 0.0
+            "Race_Points": -4.0
         },
         {
             "Team_Name": "Audi",
             "Team_Code": "AUD",
-            "Round_Fantasy_Points": 3.0,
-            "Season_Fantasy_Points": 241.0,
+            "Round_Fantasy_Points": 29.0,
+            "Season_Fantasy_Points": 267.0,
             "Selected_Percentage": 0.21,
             "Value": 10.4,
             "Qualifying_Points": 3.0,
             "Sprint_Points": 0.0,
-            "Race_Points": 0.0
+            "Race_Points": 26.0
         },
         {
             "Team_Name": "Williams",
             "Team_Code": "WIL",
-            "Round_Fantasy_Points": -1.0,
-            "Season_Fantasy_Points": 186.0,
+            "Round_Fantasy_Points": 11.0,
+            "Season_Fantasy_Points": 198.0,
             "Selected_Percentage": 0.09,
             "Value": 12.6,
             "Qualifying_Points": -1.0,
             "Sprint_Points": 0.0,
-            "Race_Points": 0.0
-        },
-        {
-            "Team_Name": "Cadillac",
-            "Team_Code": "CAD",
-            "Round_Fantasy_Points": -1.0,
-            "Season_Fantasy_Points": -85.0,
-            "Selected_Percentage": 0.09,
-            "Value": 3.0,
-            "Qualifying_Points": -1.0,
-            "Sprint_Points": 0.0,
-            "Race_Points": 0.0
+            "Race_Points": 12.0
         },
         {
             "Team_Name": "Aston Martin",
             "Team_Code": "AST",
-            "Round_Fantasy_Points": 1.0,
-            "Season_Fantasy_Points": -89.0,
+            "Round_Fantasy_Points": 17.0,
+            "Season_Fantasy_Points": -73.0,
             "Selected_Percentage": 0.03,
             "Value": 4.5,
             "Qualifying_Points": 1.0,
             "Sprint_Points": 0.0,
-            "Race_Points": 0.0
+            "Race_Points": 16.0
+        },
+        {
+            "Team_Name": "Cadillac",
+            "Team_Code": "CAD",
+            "Round_Fantasy_Points": -18.0,
+            "Season_Fantasy_Points": -102.0,
+            "Selected_Percentage": 0.09,
+            "Value": 3.0,
+            "Qualifying_Points": -1.0,
+            "Sprint_Points": 0.0,
+            "Race_Points": -17.0
         }
     ]
 }

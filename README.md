@@ -67,32 +67,32 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 
 <!-- SEASONS_SUMMARY_START -->
 <details open>
-<summary><b>🏎️ 2026 Season — Round 17</b></summary>
+<summary><b>🏎️ 2026 Season — Round 18</b></summary>
 
 #### 👤 Top 10 Drivers
 
 | Driver | Team | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- | :--- |
-| **K. Antonelli** | Mercedes | 694.0 pts | $27.1M | 36% |
-| **M. Verstappen** | Red Bull Racing | 495.0 pts | $28.2M | 22% |
-| **L. Hamilton** | Ferrari | 466.0 pts | $24.4M | 18% |
-| **C. Leclerc** | Ferrari | 434.0 pts | $24.1M | 26% |
-| **G. Russell** | Mercedes | 430.0 pts | $27.9M | 21% |
-| **L. Norris** | McLaren | 365.0 pts | $26.1M | 8% |
-| **O. Piastri** | McLaren | 267.0 pts | $23.4M | 9% |
-| **L. Lawson** | Racing Bulls | 223.0 pts | $9.9M | 28% |
-| **I. Hadjar** | Red Bull Racing | 209.0 pts | $16.3M | 28% |
-| **E. Ocon** | Haas F1 Team | 161.0 pts | $9.9M | 13% |
+| **K. Antonelli** | Mercedes | 720.0 pts | $27.4M | 36% |
+| **M. Verstappen** | Red Bull Racing | 513.0 pts | $28.5M | 22% |
+| **L. Hamilton** | Ferrari | 483.0 pts | $24.7M | 18% |
+| **C. Leclerc** | Ferrari | 480.0 pts | $24.4M | 27% |
+| **G. Russell** | Mercedes | 434.0 pts | $27.6M | 21% |
+| **L. Norris** | McLaren | 380.0 pts | $26.0M | 8% |
+| **O. Piastri** | McLaren | 278.0 pts | $23.3M | 9% |
+| **L. Lawson** | Racing Bulls | 227.0 pts | $10.5M | 28% |
+| **I. Hadjar** | Red Bull Racing | 214.0 pts | $16.5M | 28% |
+| **E. Ocon** | Haas F1 Team | 168.0 pts | $10.1M | 13% |
 
 #### 🏢 Top 5 Constructors
 
 | Team | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- |
-| **Mercedes** | 1398.0 pts | $34.0M | 35% |
-| **Ferrari** | 1121.0 pts | $28.2M | 41% |
-| **Red Bull Racing** | 906.0 pts | $32.7M | 9% |
-| **McLaren** | 853.0 pts | $32.4M | 10% |
-| **Racing Bulls** | 541.0 pts | $16.5M | 33% |
+| **Mercedes** | 1430.0 pts | $34.0M | 35% |
+| **Ferrari** | 1179.0 pts | $28.5M | 41% |
+| **Red Bull Racing** | 934.0 pts | $33.0M | 9% |
+| **McLaren** | 894.0 pts | $32.7M | 10% |
+| **Racing Bulls** | 559.0 pts | $17.1M | 33% |
 
 </details>
 
@@ -218,4 +218,4 @@ print(df_drivers.sort_values(by="Season_Fantasy_Points", ascending=False).head()
 >
 > ☕ If this dataset saves you time in your analysis or fantasy leagues, you can also [buy me a coffee on Ko-fi](https://ko-fi.com/mzm0102).
 <br>
-<!-- LAST_CHECKED_START -->Last checked: 2026-10-25<!-- LAST_CHECKED_END -->
+<!-- LAST_CHECKED_START -->Last checked: 2026-10-26<!-- LAST_CHECKED_END -->
