@@ -73,26 +73,26 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 
 | Driver | Team | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- | :--- |
-| <img src='src/drivers/ant-mer-2026.svg' width='44' height='32' align='center'> **K. Antonelli** | <img src='src/constructors/mer-2026.svg' width='44' height='32' align='center'> Mercedes | 720.0 pts | $27.4M | 36% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **M. Verstappen** | <img src='src/constructors/red-2026.svg' width='44' height='32' align='center'> Red Bull Racing | 513.0 pts | $28.5M | 22% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **L. Hamilton** | <img src='src/constructors/fer-2026.svg' width='44' height='32' align='center'> Ferrari | 483.0 pts | $24.7M | 18% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **C. Leclerc** | <img src='src/constructors/fer-2026.svg' width='44' height='32' align='center'> Ferrari | 480.0 pts | $24.4M | 27% |
-| <img src='src/drivers/rus-mer-2026.svg' width='44' height='32' align='center'> **G. Russell** | <img src='src/constructors/mer-2026.svg' width='44' height='32' align='center'> Mercedes | 434.0 pts | $27.6M | 21% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **L. Norris** | <img src='src/constructors/mcl-2026.svg' width='44' height='32' align='center'> McLaren | 380.0 pts | $26.0M | 8% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **O. Piastri** | <img src='src/constructors/mcl-2026.svg' width='44' height='32' align='center'> McLaren | 278.0 pts | $23.3M | 9% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **L. Lawson** | <img src='src/constructors/vrb-2026.svg' width='44' height='32' align='center'> Racing Bulls | 227.0 pts | $10.5M | 28% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **I. Hadjar** | <img src='src/constructors/red-2026.svg' width='44' height='32' align='center'> Red Bull Racing | 214.0 pts | $16.5M | 28% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **E. Ocon** | <img src='src/constructors/haa-2026.svg' width='44' height='32' align='center'> Haas F1 Team | 168.0 pts | $10.1M | 13% |
+| <img src='src/drivers/ant-mer-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/mer-2026.svg' width='44' height='32' align='center'> | 720.0 pts | $27.4M | 36% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/red-2026.svg' width='44' height='32' align='center'> | 513.0 pts | $28.5M | 22% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/fer-2026.svg' width='44' height='32' align='center'> | 483.0 pts | $24.7M | 18% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/fer-2026.svg' width='44' height='32' align='center'> | 480.0 pts | $24.4M | 27% |
+| <img src='src/drivers/rus-mer-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/mer-2026.svg' width='44' height='32' align='center'> | 434.0 pts | $27.6M | 21% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/mcl-2026.svg' width='44' height='32' align='center'> | 380.0 pts | $26.0M | 8% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/mcl-2026.svg' width='44' height='32' align='center'> | 278.0 pts | $23.3M | 9% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/vrb-2026.svg' width='44' height='32' align='center'> | 227.0 pts | $10.5M | 28% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/red-2026.svg' width='44' height='32' align='center'> | 214.0 pts | $16.5M | 28% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/haa-2026.svg' width='44' height='32' align='center'> | 168.0 pts | $10.1M | 13% |
 
 #### 🏢 Top 5 Constructors
 
 | Team | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- |
-| <img src='src/constructors/mer-2026.svg' width='44' height='32' align='center'> **Mercedes** | 1430.0 pts | $34.0M | 35% |
-| <img src='src/constructors/fer-2026.svg' width='44' height='32' align='center'> **Ferrari** | 1179.0 pts | $28.5M | 41% |
-| <img src='src/constructors/red-2026.svg' width='44' height='32' align='center'> **Red Bull Racing** | 934.0 pts | $33.0M | 9% |
-| <img src='src/constructors/mcl-2026.svg' width='44' height='32' align='center'> **McLaren** | 894.0 pts | $32.7M | 10% |
-| <img src='src/constructors/vrb-2026.svg' width='44' height='32' align='center'> **Racing Bulls** | 559.0 pts | $17.1M | 33% |
+| <img src='src/constructors/mer-2026.svg' width='44' height='32' align='center'> | 1430.0 pts | $34.0M | 35% |
+| <img src='src/constructors/fer-2026.svg' width='44' height='32' align='center'> | 1179.0 pts | $28.5M | 41% |
+| <img src='src/constructors/red-2026.svg' width='44' height='32' align='center'> | 934.0 pts | $33.0M | 9% |
+| <img src='src/constructors/mcl-2026.svg' width='44' height='32' align='center'> | 894.0 pts | $32.7M | 10% |
+| <img src='src/constructors/vrb-2026.svg' width='44' height='32' align='center'> | 559.0 pts | $17.1M | 33% |
 
 </details>
 
@@ -104,26 +104,26 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 
 | Driver | Team | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- | :--- |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **M. Verstappen** | <img src='src/constructors/default.svg' width='44' height='32' align='center'> Red Bull Racing | 776.0 pts | $30.1M | 21% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **L. Norris** | <img src='src/constructors/default.svg' width='44' height='32' align='center'> McLaren | 707.0 pts | $30.3M | 23% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **O. Piastri** | <img src='src/constructors/default.svg' width='44' height='32' align='center'> McLaren | 644.0 pts | $25.1M | 35% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **G. Russell** | <img src='src/constructors/default.svg' width='44' height='32' align='center'> Mercedes | 580.0 pts | $23.7M | 12% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **C. Leclerc** | <img src='src/constructors/default.svg' width='44' height='32' align='center'> Ferrari | 407.0 pts | $23.0M | 14% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **L. Hamilton** | <img src='src/constructors/default.svg' width='44' height='32' align='center'> Ferrari | 391.0 pts | $21.9M | 11% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **K. Antonelli** | <img src='src/constructors/default.svg' width='44' height='32' align='center'> Mercedes | 311.0 pts | $18.1M | 21% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **O. Bearman** | <img src='src/constructors/default.svg' width='44' height='32' align='center'> Haas F1 Team | 206.0 pts | $9.3M | 43% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **A. Albon** | <img src='src/constructors/default.svg' width='44' height='32' align='center'> Williams | 198.0 pts | $12.6M | 27% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **Y. Tsunoda** | <img src='src/constructors/default.svg' width='44' height='32' align='center'> Red Bull Racing | 183.0 pts | $11.4M | 6% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 776.0 pts | $30.1M | 21% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 707.0 pts | $30.3M | 23% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 644.0 pts | $25.1M | 35% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 580.0 pts | $23.7M | 12% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 407.0 pts | $23.0M | 14% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 391.0 pts | $21.9M | 11% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 311.0 pts | $18.1M | 21% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 206.0 pts | $9.3M | 43% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 198.0 pts | $12.6M | 27% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 183.0 pts | $11.4M | 6% |
 
 #### 🏢 Top 5 Constructors
 
 | Team | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- |
-| <img src='src/constructors/default.svg' width='44' height='32' align='center'> **McLaren** | 1744.0 pts | $36.1M | 38% |
-| <img src='src/constructors/default.svg' width='44' height='32' align='center'> **Red Bull Racing** | 1227.0 pts | $31.1M | 11% |
-| <img src='src/constructors/default.svg' width='44' height='32' align='center'> **Mercedes** | 1185.0 pts | $28.4M | 19% |
-| <img src='src/constructors/default.svg' width='44' height='32' align='center'> **Ferrari** | 1145.0 pts | $31.8M | 18% |
-| <img src='src/constructors/default.svg' width='44' height='32' align='center'> **Williams** | 490.0 pts | $19.5M | 25% |
+| <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 1744.0 pts | $36.1M | 38% |
+| <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 1227.0 pts | $31.1M | 11% |
+| <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 1185.0 pts | $28.4M | 19% |
+| <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 1145.0 pts | $31.8M | 18% |
+| <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 490.0 pts | $19.5M | 25% |
 
 </details>
 
@@ -135,26 +135,26 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 
 | Driver | Team | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- | :--- |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **M. Verstappen** | <img src='src/constructors/default.svg' width='44' height='32' align='center'> Red Bull Racing | 754.0 pts | $32.3M | 36% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **L. Norris** | <img src='src/constructors/default.svg' width='44' height='32' align='center'> McLaren | 695.0 pts | $27.5M | 30% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **C. Leclerc** | <img src='src/constructors/default.svg' width='44' height='32' align='center'> Ferrari | 684.0 pts | $26.1M | 31% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **O. Piastri** | <img src='src/constructors/default.svg' width='44' height='32' align='center'> McLaren | 584.0 pts | $25.7M | 19% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **C. Sainz** | <img src='src/constructors/default.svg' width='44' height='32' align='center'> Ferrari | 504.0 pts | $24.4M | 19% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **L. Hamilton** | <img src='src/constructors/default.svg' width='44' height='32' align='center'> Mercedes | 495.0 pts | $25.8M | 15% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **G. Russell** | <img src='src/constructors/default.svg' width='44' height='32' align='center'> Mercedes | 455.0 pts | $23.2M | 13% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **S. Perez** | <img src='src/constructors/default.svg' width='44' height='32' align='center'> Red Bull Racing | 319.0 pts | $23.2M | 8% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **F. Alonso** | <img src='src/constructors/default.svg' width='44' height='32' align='center'> Aston Martin | 173.0 pts | $15.3M | 28% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **K. Magnussen** | <img src='src/constructors/default.svg' width='44' height='32' align='center'> Haas F1 Team | 165.0 pts | $14.3M | 18% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 754.0 pts | $32.3M | 36% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 695.0 pts | $27.5M | 30% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 684.0 pts | $26.1M | 31% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 584.0 pts | $25.7M | 19% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 504.0 pts | $24.4M | 19% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 495.0 pts | $25.8M | 15% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 455.0 pts | $23.2M | 13% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 319.0 pts | $23.2M | 8% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 173.0 pts | $15.3M | 28% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 165.0 pts | $14.3M | 18% |
 
 #### 🏢 Top 5 Constructors
 
 | Team | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- |
-| <img src='src/constructors/default.svg' width='44' height='32' align='center'> **McLaren** | 1506.0 pts | $27.0M | 27% |
-| <img src='src/constructors/default.svg' width='44' height='32' align='center'> **Red Bull Racing** | 1421.0 pts | $29.7M | 22% |
-| <img src='src/constructors/default.svg' width='44' height='32' align='center'> **Ferrari** | 1414.0 pts | $25.3M | 37% |
-| <img src='src/constructors/default.svg' width='44' height='32' align='center'> **Mercedes** | 1146.0 pts | $25.1M | 15% |
-| <img src='src/constructors/default.svg' width='44' height='32' align='center'> **Aston Martin** | 395.0 pts | $14.4M | 18% |
+| <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 1506.0 pts | $27.0M | 27% |
+| <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 1421.0 pts | $29.7M | 22% |
+| <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 1414.0 pts | $25.3M | 37% |
+| <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 1146.0 pts | $25.1M | 15% |
+| <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 395.0 pts | $14.4M | 18% |
 
 </details>
 
@@ -166,26 +166,26 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 
 | Driver | Team | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- | :--- |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **M. Verstappen** | <img src='src/constructors/default.svg' width='44' height='32' align='center'> Red Bull Racing | 1014.0 pts | $30.0M | 65% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **S. Perez** | <img src='src/constructors/default.svg' width='44' height='32' align='center'> Red Bull Racing | 579.0 pts | $20.8M | 43% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **L. Hamilton** | <img src='src/constructors/default.svg' width='44' height='32' align='center'> Mercedes | 506.0 pts | $25.3M | 18% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **L. Norris** | <img src='src/constructors/default.svg' width='44' height='32' align='center'> McLaren | 438.0 pts | $19.8M | 25% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **F. Alonso** | <img src='src/constructors/default.svg' width='44' height='32' align='center'> Aston Martin | 403.0 pts | $15.8M | 77% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **C. Sainz** | <img src='src/constructors/default.svg' width='44' height='32' align='center'> Ferrari | 394.0 pts | $20.4M | 23% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **G. Russell** | <img src='src/constructors/default.svg' width='44' height='32' align='center'> Mercedes | 384.0 pts | $20.2M | 20% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **C. Leclerc** | <img src='src/constructors/default.svg' width='44' height='32' align='center'> Ferrari | 335.0 pts | $23.5M | 28% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **O. Piastri** | <img src='src/constructors/default.svg' width='44' height='32' align='center'> McLaren | 279.0 pts | $15.4M | 17% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> **L. Stroll** | <img src='src/constructors/default.svg' width='44' height='32' align='center'> Aston Martin | 231.0 pts | $14.0M | 26% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 1014.0 pts | $30.0M | 65% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 579.0 pts | $20.8M | 43% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 506.0 pts | $25.3M | 18% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 438.0 pts | $19.8M | 25% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 403.0 pts | $15.8M | 77% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 394.0 pts | $20.4M | 23% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 384.0 pts | $20.2M | 20% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 335.0 pts | $23.5M | 28% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 279.0 pts | $15.4M | 17% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 231.0 pts | $14.0M | 26% |
 
 #### 🏢 Top 5 Constructors
 
 | Team | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- |
-| <img src='src/constructors/default.svg' width='44' height='32' align='center'> **Red Bull Racing** | 1847.0 pts | $29.7M | 56% |
-| <img src='src/constructors/default.svg' width='44' height='32' align='center'> **Mercedes** | 1060.0 pts | $26.0M | 13% |
-| <img src='src/constructors/default.svg' width='44' height='32' align='center'> **Ferrari** | 1007.0 pts | $25.0M | 23% |
-| <img src='src/constructors/default.svg' width='44' height='32' align='center'> **McLaren** | 899.0 pts | $17.1M | 15% |
-| <img src='src/constructors/default.svg' width='44' height='32' align='center'> **Aston Martin** | 757.0 pts | $13.4M | 68% |
+| <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 1847.0 pts | $29.7M | 56% |
+| <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 1060.0 pts | $26.0M | 13% |
+| <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 1007.0 pts | $25.0M | 23% |
+| <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 899.0 pts | $17.1M | 15% |
+| <img src='src/constructors/default.svg' width='44' height='32' align='center'> | 757.0 pts | $13.4M | 68% |
 
 </details>
 
