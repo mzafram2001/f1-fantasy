@@ -6,6 +6,7 @@ from datetime import datetime
 DATA_DIR = "data"
 README_PATH = "README.md"
 
+
 def get_round_files(season_dir, is_latest_season=False):
     files = [
         f
@@ -70,18 +71,20 @@ def generate_season_markdown(base_json_path, latest_json_path=None, is_latest_se
     race_id = meta.get("race_id", 0)
 
     drivers = data.get("Drivers", [])
-    top_drivers = sorted(
+    # ELIMINADO EL CORTE [:10] para mostrar todos
+    sorted_drivers = sorted(
         drivers,
         key=lambda x: get_best_val(x.get("Driver_Name"), "Season_Fantasy_Points", latest_drivers_map, x, default=0),
         reverse=True,
-    )[:10]
+    )
 
     teams = data.get("Teams", [])
-    top_teams = sorted(
+    # ELIMINADO EL CORTE [:5] para mostrar todos
+    sorted_teams = sorted(
         teams,
         key=lambda x: get_best_val(x.get("Team_Name"), "Season_Fantasy_Points", latest_teams_map, x, default=0),
         reverse=True,
-    )[:5]
+    )
 
     open_attr = " open" if is_latest_season else ""
 
@@ -89,13 +92,13 @@ def generate_season_markdown(base_json_path, latest_json_path=None, is_latest_se
         f"<details{open_attr}>",
         f"<summary><b>🏎️ {season} Season — Round {race_id:02d}</b></summary>",
         "",
-        "#### 👤 Top 10 Drivers",
+        "#### 👤 Drivers Standings",  # Título actualizado
         "",
         "| Driver | Team | Total fantasy pts | Value | Selected % |",
         "| :--- | :--- | :--- | :--- | :--- |",
     ]
 
-    for d in top_drivers:
+    for d in sorted_drivers:
         name = d.get("Driver_Name", "N/A")
         team = get_best_val(name, "Team_Name", latest_drivers_map, d, "N/A")
         
@@ -120,20 +123,19 @@ def generate_season_markdown(base_json_path, latest_json_path=None, is_latest_se
             
         img_team = f"<img src='{svg_team_path}' width='44' height='32' align='center'>"
         
-        # ELIMINADOS: **{name}** y {team} de las columnas correspondientes
         md.append(f"| {img_driver} | {img_team} | {season_pts} pts | ${val}M | {sel} |")
 
     md.extend(
         [
             "",
-            "#### 🏢 Top 5 Constructors",
+            "#### 🏢 Constructors Standings",  # Título actualizado
             "",
             "| Team | Total fantasy pts | Value | Selected % |",
             "| :--- | :--- | :--- | :--- |",
         ]
     )
 
-    for t in top_teams:
+    for t in sorted_teams:
         name = t.get("Team_Name", "N/A")
         
         season_pts = get_best_val(name, "Season_Fantasy_Points", latest_teams_map, t)
@@ -148,7 +150,6 @@ def generate_season_markdown(base_json_path, latest_json_path=None, is_latest_se
             
         img_team = f"<img src='{svg_path}' width='44' height='32' align='center'>"
         
-        # ELIMINADO: **{name}** de la primera columna
         md.append(f"| {img_team} | {season_pts} pts | ${val}M | {sel} |")
 
     md.extend(["", "</details>", ""])
@@ -208,7 +209,7 @@ def update_readme():
     with open(README_PATH, "w", encoding="utf-8") as f:
         f.write(readme_content)
 
-    print(f"README.md updated successfully solo con imágenes!")
+    print(f"README.md updated successfully con tablas completas!")
 
 
 if __name__ == "__main__":
