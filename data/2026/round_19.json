@@ -2,7 +2,7 @@
     "Meta": {
         "season": 2026,
         "race_id": 19,
-        "generated_at": "2026-10-29T08:21:30.974216"
+        "generated_at": "2026-10-30T08:30:42.079294"
     },
     "Drivers": [
         {
@@ -227,7 +227,7 @@
             "Team_Name": "Cadillac",
             "Round_Fantasy_Points": 0.0,
             "Season_Fantasy_Points": 19.0,
-            "Selected_Percentage": 0.2,
+            "Selected_Percentage": 0.21,
             "Value": 3.0,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
