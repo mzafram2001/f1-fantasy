@@ -71,30 +71,30 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 
 #### 👤 Drivers Standings
 
-| Driver | Team | Total fantasy pts | Value | Selected % |
-| :--- | :--- | :--- | :--- | :--- |
-| <img src='src/drivers/ant-mer-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/mer-2026.svg' width='44' height='32' align='center'> | 720.0 pts | $27.4M | 36% |
-| <img src='src/drivers/ver-red-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/red-2026.svg' width='44' height='32' align='center'> | 513.0 pts | $28.5M | 22% |
-| <img src='src/drivers/ham-fer-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/fer-2026.svg' width='44' height='32' align='center'> | 483.0 pts | $24.7M | 18% |
-| <img src='src/drivers/lec-fer-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/fer-2026.svg' width='44' height='32' align='center'> | 480.0 pts | $24.4M | 27% |
-| <img src='src/drivers/rus-mer-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/mer-2026.svg' width='44' height='32' align='center'> | 434.0 pts | $27.6M | 21% |
-| <img src='src/drivers/nor-mcl-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/mcl-2026.svg' width='44' height='32' align='center'> | 380.0 pts | $26.0M | 8% |
-| <img src='src/drivers/pia-mcl-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/mcl-2026.svg' width='44' height='32' align='center'> | 278.0 pts | $23.3M | 9% |
-| <img src='src/drivers/law-vrb-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/vrb-2026.svg' width='44' height='32' align='center'> | 227.0 pts | $10.5M | 28% |
-| <img src='src/drivers/had-red-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/red-2026.svg' width='44' height='32' align='center'> | 214.0 pts | $16.5M | 28% |
-| <img src='src/drivers/oco-haa-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/haa-2026.svg' width='44' height='32' align='center'> | 168.0 pts | $10.1M | 13% |
-| <img src='src/drivers/lin-vrb-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/vrb-2026.svg' width='44' height='32' align='center'> | 147.0 pts | $10.6M | 44% |
-| <img src='src/drivers/gas-alp-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/alp-2026.svg' width='44' height='32' align='center'> | 139.0 pts | $9.6M | 20% |
-| <img src='src/drivers/sai-wil-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/wil-2026.svg' width='44' height='32' align='center'> | 120.0 pts | $8.2M | 22% |
-| <img src='src/drivers/col-alp-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/alp-2026.svg' width='44' height='32' align='center'> | 105.0 pts | $8.2M | 19% |
-| <img src='src/drivers/bor-aud-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/aud-2026.svg' width='44' height='32' align='center'> | 84.0 pts | $6.4M | 31% |
-| <img src='src/drivers/bea-haa-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/haa-2026.svg' width='44' height='32' align='center'> | 81.0 pts | $6.2M | 52% |
-| <img src='src/drivers/hul-aud-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/aud-2026.svg' width='44' height='32' align='center'> | 47.0 pts | $7.2M | 36% |
-| <img src='src/drivers/alo-ast-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/ast-2026.svg' width='44' height='32' align='center'> | 39.0 pts | $6.0M | 10% |
-| <img src='src/drivers/per-cad-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/cad-2026.svg' width='44' height='32' align='center'> | 19.0 pts | $3.0M | 21% |
-| <img src='src/drivers/alb-wil-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/wil-2026.svg' width='44' height='32' align='center'> | 0.0 pts | $4.0M | 10% |
-| <img src='src/drivers/bot-cad-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/cad-2026.svg' width='44' height='32' align='center'> | -117.0 pts | $3.0M | 20% |
-| <img src='src/drivers/str-ast-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/ast-2026.svg' width='44' height='32' align='center'> | -147.0 pts | $3.0M | 4% |
+| Driver | Total fantasy pts | Value | Selected % |
+| :--- | :--- | :--- | :--- |
+| <img src='src/drivers/ant-mer-2026.svg' width='44' height='32' align='center'> | 720.0 pts | $27.4M | 36% |
+| <img src='src/drivers/ver-red-2026.svg' width='44' height='32' align='center'> | 513.0 pts | $28.5M | 22% |
+| <img src='src/drivers/ham-fer-2026.svg' width='44' height='32' align='center'> | 483.0 pts | $24.7M | 18% |
+| <img src='src/drivers/lec-fer-2026.svg' width='44' height='32' align='center'> | 480.0 pts | $24.4M | 27% |
+| <img src='src/drivers/rus-mer-2026.svg' width='44' height='32' align='center'> | 434.0 pts | $27.6M | 21% |
+| <img src='src/drivers/nor-mcl-2026.svg' width='44' height='32' align='center'> | 380.0 pts | $26.0M | 8% |
+| <img src='src/drivers/pia-mcl-2026.svg' width='44' height='32' align='center'> | 278.0 pts | $23.3M | 9% |
+| <img src='src/drivers/law-vrb-2026.svg' width='44' height='32' align='center'> | 227.0 pts | $10.5M | 28% |
+| <img src='src/drivers/had-red-2026.svg' width='44' height='32' align='center'> | 214.0 pts | $16.5M | 28% |
+| <img src='src/drivers/oco-haa-2026.svg' width='44' height='32' align='center'> | 168.0 pts | $10.1M | 13% |
+| <img src='src/drivers/lin-vrb-2026.svg' width='44' height='32' align='center'> | 147.0 pts | $10.6M | 44% |
+| <img src='src/drivers/gas-alp-2026.svg' width='44' height='32' align='center'> | 139.0 pts | $9.6M | 20% |
+| <img src='src/drivers/sai-wil-2026.svg' width='44' height='32' align='center'> | 120.0 pts | $8.2M | 22% |
+| <img src='src/drivers/col-alp-2026.svg' width='44' height='32' align='center'> | 105.0 pts | $8.2M | 19% |
+| <img src='src/drivers/bor-aud-2026.svg' width='44' height='32' align='center'> | 84.0 pts | $6.4M | 31% |
+| <img src='src/drivers/bea-haa-2026.svg' width='44' height='32' align='center'> | 81.0 pts | $6.2M | 52% |
+| <img src='src/drivers/hul-aud-2026.svg' width='44' height='32' align='center'> | 47.0 pts | $7.2M | 36% |
+| <img src='src/drivers/alo-ast-2026.svg' width='44' height='32' align='center'> | 39.0 pts | $6.0M | 10% |
+| <img src='src/drivers/per-cad-2026.svg' width='44' height='32' align='center'> | 19.0 pts | $3.0M | 21% |
+| <img src='src/drivers/alb-wil-2026.svg' width='44' height='32' align='center'> | 0.0 pts | $4.0M | 10% |
+| <img src='src/drivers/bot-cad-2026.svg' width='44' height='32' align='center'> | -117.0 pts | $3.0M | 20% |
+| <img src='src/drivers/str-ast-2026.svg' width='44' height='32' align='center'> | -147.0 pts | $3.0M | 4% |
 
 #### 🏢 Constructors Standings
 
@@ -120,28 +120,28 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 
 #### 👤 Drivers Standings
 
-| Driver | Team | Total fantasy pts | Value | Selected % |
-| :--- | :--- | :--- | :--- | :--- |
-| <img src='src/drivers/ver-red-2025.svg' width='44' height='32' align='center'> | <img src='src/constructors/red-2025.svg' width='44' height='32' align='center'> | 776.0 pts | $30.1M | 21% |
-| <img src='src/drivers/nor-mcl-2025.svg' width='44' height='32' align='center'> | <img src='src/constructors/mcl-2025.svg' width='44' height='32' align='center'> | 707.0 pts | $30.3M | 23% |
-| <img src='src/drivers/pia-mcl-2025.svg' width='44' height='32' align='center'> | <img src='src/constructors/mcl-2025.svg' width='44' height='32' align='center'> | 644.0 pts | $25.1M | 35% |
-| <img src='src/drivers/rus-mer-2025.svg' width='44' height='32' align='center'> | <img src='src/constructors/mer-2025.svg' width='44' height='32' align='center'> | 580.0 pts | $23.7M | 12% |
-| <img src='src/drivers/lec-fer-2025.svg' width='44' height='32' align='center'> | <img src='src/constructors/fer-2025.svg' width='44' height='32' align='center'> | 407.0 pts | $23.0M | 14% |
-| <img src='src/drivers/ham-fer-2025.svg' width='44' height='32' align='center'> | <img src='src/constructors/fer-2025.svg' width='44' height='32' align='center'> | 391.0 pts | $21.9M | 11% |
-| <img src='src/drivers/ant-mer-2025.svg' width='44' height='32' align='center'> | <img src='src/constructors/mer-2025.svg' width='44' height='32' align='center'> | 311.0 pts | $18.1M | 21% |
-| <img src='src/drivers/bea-haa-2025.svg' width='44' height='32' align='center'> | <img src='src/constructors/haa-2025.svg' width='44' height='32' align='center'> | 206.0 pts | $9.3M | 43% |
-| <img src='src/drivers/alb-wil-2025.svg' width='44' height='32' align='center'> | <img src='src/constructors/wil-2025.svg' width='44' height='32' align='center'> | 198.0 pts | $12.6M | 27% |
-| <img src='src/drivers/tsu-red-2025.svg' width='44' height='32' align='center'> | <img src='src/constructors/red-2025.svg' width='44' height='32' align='center'> | 183.0 pts | $11.4M | 6% |
-| <img src='src/drivers/oco-haa-2025.svg' width='44' height='32' align='center'> | <img src='src/constructors/haa-2025.svg' width='44' height='32' align='center'> | 177.0 pts | $7.9M | 22% |
-| <img src='src/drivers/hul-kck-2025.svg' width='44' height='32' align='center'> | <img src='src/constructors/kck-2025.svg' width='44' height='32' align='center'> | 147.0 pts | $5.0M | 32% |
-| <img src='src/drivers/str-ast-2025.svg' width='44' height='32' align='center'> | <img src='src/constructors/ast-2025.svg' width='44' height='32' align='center'> | 146.0 pts | $6.7M | 10% |
-| <img src='src/drivers/sai-wil-2025.svg' width='44' height='32' align='center'> | <img src='src/constructors/wil-2025.svg' width='44' height='32' align='center'> | 130.0 pts | $7.7M | 44% |
-| <img src='src/drivers/had-vrb-2025.svg' width='44' height='32' align='center'> | <img src='src/constructors/vrb-2025.svg' width='44' height='32' align='center'> | 111.0 pts | $6.9M | 56% |
-| <img src='src/drivers/law-vrb-2025.svg' width='44' height='32' align='center'> | <img src='src/constructors/vrb-2025.svg' width='44' height='32' align='center'> | 64.0 pts | $5.9M | 12% |
-| <img src='src/drivers/gas-alp-2025.svg' width='44' height='32' align='center'> | <img src='src/constructors/alp-2025.svg' width='44' height='32' align='center'> | 58.0 pts | $6.5M | 20% |
-| <img src='src/drivers/alo-ast-2025.svg' width='44' height='32' align='center'> | <img src='src/constructors/ast-2025.svg' width='44' height='32' align='center'> | 58.0 pts | $4.7M | 38% |
-| <img src='src/drivers/bor-kck-2025.svg' width='44' height='32' align='center'> | <img src='src/constructors/kck-2025.svg' width='44' height='32' align='center'> | 53.0 pts | $5.5M | 24% |
-| <img src='src/drivers/col-alp-2025.svg' width='44' height='32' align='center'> | <img src='src/constructors/alp-2025.svg' width='44' height='32' align='center'> | 8.0 pts | $4.5M | 10% |
+| Driver | Total fantasy pts | Value | Selected % |
+| :--- | :--- | :--- | :--- |
+| <img src='src/drivers/ver-red-2025.svg' width='44' height='32' align='center'> | 776.0 pts | $30.1M | 21% |
+| <img src='src/drivers/nor-mcl-2025.svg' width='44' height='32' align='center'> | 707.0 pts | $30.3M | 23% |
+| <img src='src/drivers/pia-mcl-2025.svg' width='44' height='32' align='center'> | 644.0 pts | $25.1M | 35% |
+| <img src='src/drivers/rus-mer-2025.svg' width='44' height='32' align='center'> | 580.0 pts | $23.7M | 12% |
+| <img src='src/drivers/lec-fer-2025.svg' width='44' height='32' align='center'> | 407.0 pts | $23.0M | 14% |
+| <img src='src/drivers/ham-fer-2025.svg' width='44' height='32' align='center'> | 391.0 pts | $21.9M | 11% |
+| <img src='src/drivers/ant-mer-2025.svg' width='44' height='32' align='center'> | 311.0 pts | $18.1M | 21% |
+| <img src='src/drivers/bea-haa-2025.svg' width='44' height='32' align='center'> | 206.0 pts | $9.3M | 43% |
+| <img src='src/drivers/alb-wil-2025.svg' width='44' height='32' align='center'> | 198.0 pts | $12.6M | 27% |
+| <img src='src/drivers/tsu-red-2025.svg' width='44' height='32' align='center'> | 183.0 pts | $11.4M | 6% |
+| <img src='src/drivers/oco-haa-2025.svg' width='44' height='32' align='center'> | 177.0 pts | $7.9M | 22% |
+| <img src='src/drivers/hul-kck-2025.svg' width='44' height='32' align='center'> | 147.0 pts | $5.0M | 32% |
+| <img src='src/drivers/str-ast-2025.svg' width='44' height='32' align='center'> | 146.0 pts | $6.7M | 10% |
+| <img src='src/drivers/sai-wil-2025.svg' width='44' height='32' align='center'> | 130.0 pts | $7.7M | 44% |
+| <img src='src/drivers/had-vrb-2025.svg' width='44' height='32' align='center'> | 111.0 pts | $6.9M | 56% |
+| <img src='src/drivers/law-vrb-2025.svg' width='44' height='32' align='center'> | 64.0 pts | $5.9M | 12% |
+| <img src='src/drivers/gas-alp-2025.svg' width='44' height='32' align='center'> | 58.0 pts | $6.5M | 20% |
+| <img src='src/drivers/alo-ast-2025.svg' width='44' height='32' align='center'> | 58.0 pts | $4.7M | 38% |
+| <img src='src/drivers/bor-kck-2025.svg' width='44' height='32' align='center'> | 53.0 pts | $5.5M | 24% |
+| <img src='src/drivers/col-alp-2025.svg' width='44' height='32' align='center'> | 8.0 pts | $4.5M | 10% |
 
 #### 🏢 Constructors Standings
 
@@ -166,28 +166,28 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 
 #### 👤 Drivers Standings
 
-| Driver | Team | Total fantasy pts | Value | Selected % |
-| :--- | :--- | :--- | :--- | :--- |
-| <img src='src/drivers/ver-red-2024.svg' width='44' height='32' align='center'> | <img src='src/constructors/red-2024.svg' width='44' height='32' align='center'> | 754.0 pts | $32.3M | 36% |
-| <img src='src/drivers/nor-mcl-2024.svg' width='44' height='32' align='center'> | <img src='src/constructors/mcl-2024.svg' width='44' height='32' align='center'> | 695.0 pts | $27.5M | 30% |
-| <img src='src/drivers/lec-fer-2024.svg' width='44' height='32' align='center'> | <img src='src/constructors/fer-2024.svg' width='44' height='32' align='center'> | 684.0 pts | $26.1M | 31% |
-| <img src='src/drivers/pia-mcl-2024.svg' width='44' height='32' align='center'> | <img src='src/constructors/mcl-2024.svg' width='44' height='32' align='center'> | 584.0 pts | $25.7M | 19% |
-| <img src='src/drivers/sai-fer-2024.svg' width='44' height='32' align='center'> | <img src='src/constructors/fer-2024.svg' width='44' height='32' align='center'> | 504.0 pts | $24.4M | 19% |
-| <img src='src/drivers/ham-mer-2024.svg' width='44' height='32' align='center'> | <img src='src/constructors/mer-2024.svg' width='44' height='32' align='center'> | 495.0 pts | $25.8M | 15% |
-| <img src='src/drivers/rus-mer-2024.svg' width='44' height='32' align='center'> | <img src='src/constructors/mer-2024.svg' width='44' height='32' align='center'> | 455.0 pts | $23.2M | 13% |
-| <img src='src/drivers/per-red-2024.svg' width='44' height='32' align='center'> | <img src='src/constructors/red-2024.svg' width='44' height='32' align='center'> | 319.0 pts | $23.2M | 8% |
-| <img src='src/drivers/alo-ast-2024.svg' width='44' height='32' align='center'> | <img src='src/constructors/ast-2024.svg' width='44' height='32' align='center'> | 173.0 pts | $15.3M | 28% |
-| <img src='src/drivers/mag-haa-2024.svg' width='44' height='32' align='center'> | <img src='src/constructors/haa-2024.svg' width='44' height='32' align='center'> | 165.0 pts | $14.3M | 18% |
-| <img src='src/drivers/zho-kck-2024.svg' width='44' height='32' align='center'> | <img src='src/constructors/kck-2024.svg' width='44' height='32' align='center'> | 105.0 pts | $9.6M | 16% |
-| <img src='src/drivers/gas-alp-2024.svg' width='44' height='32' align='center'> | <img src='src/constructors/alp-2024.svg' width='44' height='32' align='center'> | 92.0 pts | $11.8M | 27% |
-| <img src='src/drivers/str-ast-2024.svg' width='44' height='32' align='center'> | <img src='src/constructors/ast-2024.svg' width='44' height='32' align='center'> | 87.0 pts | $14.3M | 11% |
-| <img src='src/drivers/hul-haa-2024.svg' width='44' height='32' align='center'> | <img src='src/constructors/haa-2024.svg' width='44' height='32' align='center'> | 86.0 pts | $11.8M | 34% |
-| <img src='src/drivers/tsu-vrb-2024.svg' width='44' height='32' align='center'> | <img src='src/constructors/vrb-2024.svg' width='44' height='32' align='center'> | 69.0 pts | $11.9M | 33% |
-| <img src='src/drivers/bot-kck-2024.svg' width='44' height='32' align='center'> | <img src='src/constructors/kck-2024.svg' width='44' height='32' align='center'> | 46.0 pts | $7.1M | 28% |
-| <img src='src/drivers/law-vrb-2024.svg' width='44' height='32' align='center'> | <img src='src/constructors/vrb-2024.svg' width='44' height='32' align='center'> | 35.0 pts | $10.9M | 5% |
-| <img src='src/drivers/doo-alp-2024.svg' width='44' height='32' align='center'> | <img src='src/constructors/alp-2024.svg' width='44' height='32' align='center'> | 8.0 pts | $10.9M | 1% |
-| <img src='src/drivers/col-wil-2024.svg' width='44' height='32' align='center'> | <img src='src/constructors/wil-2024.svg' width='44' height='32' align='center'> | 7.0 pts | $7.4M | 19% |
-| <img src='src/drivers/alb-wil-2024.svg' width='44' height='32' align='center'> | <img src='src/constructors/wil-2024.svg' width='44' height='32' align='center'> | -9.0 pts | $8.6M | 48% |
+| Driver | Total fantasy pts | Value | Selected % |
+| :--- | :--- | :--- | :--- |
+| <img src='src/drivers/ver-red-2024.svg' width='44' height='32' align='center'> | 754.0 pts | $32.3M | 36% |
+| <img src='src/drivers/nor-mcl-2024.svg' width='44' height='32' align='center'> | 695.0 pts | $27.5M | 30% |
+| <img src='src/drivers/lec-fer-2024.svg' width='44' height='32' align='center'> | 684.0 pts | $26.1M | 31% |
+| <img src='src/drivers/pia-mcl-2024.svg' width='44' height='32' align='center'> | 584.0 pts | $25.7M | 19% |
+| <img src='src/drivers/sai-fer-2024.svg' width='44' height='32' align='center'> | 504.0 pts | $24.4M | 19% |
+| <img src='src/drivers/ham-mer-2024.svg' width='44' height='32' align='center'> | 495.0 pts | $25.8M | 15% |
+| <img src='src/drivers/rus-mer-2024.svg' width='44' height='32' align='center'> | 455.0 pts | $23.2M | 13% |
+| <img src='src/drivers/per-red-2024.svg' width='44' height='32' align='center'> | 319.0 pts | $23.2M | 8% |
+| <img src='src/drivers/alo-ast-2024.svg' width='44' height='32' align='center'> | 173.0 pts | $15.3M | 28% |
+| <img src='src/drivers/mag-haa-2024.svg' width='44' height='32' align='center'> | 165.0 pts | $14.3M | 18% |
+| <img src='src/drivers/zho-kck-2024.svg' width='44' height='32' align='center'> | 105.0 pts | $9.6M | 16% |
+| <img src='src/drivers/gas-alp-2024.svg' width='44' height='32' align='center'> | 92.0 pts | $11.8M | 27% |
+| <img src='src/drivers/str-ast-2024.svg' width='44' height='32' align='center'> | 87.0 pts | $14.3M | 11% |
+| <img src='src/drivers/hul-haa-2024.svg' width='44' height='32' align='center'> | 86.0 pts | $11.8M | 34% |
+| <img src='src/drivers/tsu-vrb-2024.svg' width='44' height='32' align='center'> | 69.0 pts | $11.9M | 33% |
+| <img src='src/drivers/bot-kck-2024.svg' width='44' height='32' align='center'> | 46.0 pts | $7.1M | 28% |
+| <img src='src/drivers/law-vrb-2024.svg' width='44' height='32' align='center'> | 35.0 pts | $10.9M | 5% |
+| <img src='src/drivers/doo-alp-2024.svg' width='44' height='32' align='center'> | 8.0 pts | $10.9M | 1% |
+| <img src='src/drivers/col-wil-2024.svg' width='44' height='32' align='center'> | 7.0 pts | $7.4M | 19% |
+| <img src='src/drivers/alb-wil-2024.svg' width='44' height='32' align='center'> | -9.0 pts | $8.6M | 48% |
 
 #### 🏢 Constructors Standings
 
@@ -212,28 +212,28 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 
 #### 👤 Drivers Standings
 
-| Driver | Team | Total fantasy pts | Value | Selected % |
-| :--- | :--- | :--- | :--- | :--- |
-| <img src='src/drivers/ver-red-2023.svg' width='44' height='32' align='center'> | <img src='src/constructors/red-2023.svg' width='44' height='32' align='center'> | 1014.0 pts | $30.0M | 65% |
-| <img src='src/drivers/per-red-2023.svg' width='44' height='32' align='center'> | <img src='src/constructors/red-2023.svg' width='44' height='32' align='center'> | 579.0 pts | $20.8M | 43% |
-| <img src='src/drivers/ham-mer-2023.svg' width='44' height='32' align='center'> | <img src='src/constructors/mer-2023.svg' width='44' height='32' align='center'> | 506.0 pts | $25.3M | 18% |
-| <img src='src/drivers/nor-mcl-2023.svg' width='44' height='32' align='center'> | <img src='src/constructors/mcl-2023.svg' width='44' height='32' align='center'> | 438.0 pts | $19.8M | 25% |
-| <img src='src/drivers/alo-ast-2023.svg' width='44' height='32' align='center'> | <img src='src/constructors/ast-2023.svg' width='44' height='32' align='center'> | 403.0 pts | $15.8M | 77% |
-| <img src='src/drivers/sai-fer-2023.svg' width='44' height='32' align='center'> | <img src='src/constructors/fer-2023.svg' width='44' height='32' align='center'> | 394.0 pts | $20.4M | 23% |
-| <img src='src/drivers/rus-mer-2023.svg' width='44' height='32' align='center'> | <img src='src/constructors/mer-2023.svg' width='44' height='32' align='center'> | 384.0 pts | $20.2M | 20% |
-| <img src='src/drivers/lec-fer-2023.svg' width='44' height='32' align='center'> | <img src='src/constructors/fer-2023.svg' width='44' height='32' align='center'> | 335.0 pts | $23.5M | 28% |
-| <img src='src/drivers/pia-mcl-2023.svg' width='44' height='32' align='center'> | <img src='src/constructors/mcl-2023.svg' width='44' height='32' align='center'> | 279.0 pts | $15.4M | 17% |
-| <img src='src/drivers/str-ast-2023.svg' width='44' height='32' align='center'> | <img src='src/constructors/ast-2023.svg' width='44' height='32' align='center'> | 231.0 pts | $14.0M | 26% |
-| <img src='src/drivers/gas-alp-2023.svg' width='44' height='32' align='center'> | <img src='src/constructors/alp-2023.svg' width='44' height='32' align='center'> | 230.0 pts | $14.5M | 28% |
-| <img src='src/drivers/tsu-alt-2023.svg' width='44' height='32' align='center'> | <img src='src/constructors/alt-2023.svg' width='44' height='32' align='center'> | 160.0 pts | $9.4M | 10% |
-| <img src='src/drivers/zho-alf-2023.svg' width='44' height='32' align='center'> | <img src='src/constructors/alf-2023.svg' width='44' height='32' align='center'> | 135.0 pts | $7.7M | 16% |
-| <img src='src/drivers/alb-wil-2023.svg' width='44' height='32' align='center'> | <img src='src/constructors/wil-2023.svg' width='44' height='32' align='center'> | 126.0 pts | $11.3M | 13% |
-| <img src='src/drivers/oco-alp-2023.svg' width='44' height='32' align='center'> | <img src='src/constructors/alp-2023.svg' width='44' height='32' align='center'> | 120.0 pts | $13.5M | 10% |
-| <img src='src/drivers/mag-haa-2023.svg' width='44' height='32' align='center'> | <img src='src/constructors/haa-2023.svg' width='44' height='32' align='center'> | 89.0 pts | $9.6M | 13% |
-| <img src='src/drivers/hul-haa-2023.svg' width='44' height='32' align='center'> | <img src='src/constructors/haa-2023.svg' width='44' height='32' align='center'> | 59.0 pts | $6.2M | 23% |
-| <img src='src/drivers/ric-alt-2023.svg' width='44' height='32' align='center'> | <img src='src/constructors/alt-2023.svg' width='44' height='32' align='center'> | 49.0 pts | $5.5M | 12% |
-| <img src='src/drivers/bot-alf-2023.svg' width='44' height='32' align='center'> | <img src='src/constructors/alf-2023.svg' width='44' height='32' align='center'> | 43.0 pts | $9.6M | 18% |
-| <img src='src/drivers/sar-wil-2023.svg' width='44' height='32' align='center'> | <img src='src/constructors/wil-2023.svg' width='44' height='32' align='center'> | 3.0 pts | $5.8M | 8% |
+| Driver | Total fantasy pts | Value | Selected % |
+| :--- | :--- | :--- | :--- |
+| <img src='src/drivers/ver-red-2023.svg' width='44' height='32' align='center'> | 1014.0 pts | $30.0M | 65% |
+| <img src='src/drivers/per-red-2023.svg' width='44' height='32' align='center'> | 579.0 pts | $20.8M | 43% |
+| <img src='src/drivers/ham-mer-2023.svg' width='44' height='32' align='center'> | 506.0 pts | $25.3M | 18% |
+| <img src='src/drivers/nor-mcl-2023.svg' width='44' height='32' align='center'> | 438.0 pts | $19.8M | 25% |
+| <img src='src/drivers/alo-ast-2023.svg' width='44' height='32' align='center'> | 403.0 pts | $15.8M | 77% |
+| <img src='src/drivers/sai-fer-2023.svg' width='44' height='32' align='center'> | 394.0 pts | $20.4M | 23% |
+| <img src='src/drivers/rus-mer-2023.svg' width='44' height='32' align='center'> | 384.0 pts | $20.2M | 20% |
+| <img src='src/drivers/lec-fer-2023.svg' width='44' height='32' align='center'> | 335.0 pts | $23.5M | 28% |
+| <img src='src/drivers/pia-mcl-2023.svg' width='44' height='32' align='center'> | 279.0 pts | $15.4M | 17% |
+| <img src='src/drivers/str-ast-2023.svg' width='44' height='32' align='center'> | 231.0 pts | $14.0M | 26% |
+| <img src='src/drivers/gas-alp-2023.svg' width='44' height='32' align='center'> | 230.0 pts | $14.5M | 28% |
+| <img src='src/drivers/tsu-alt-2023.svg' width='44' height='32' align='center'> | 160.0 pts | $9.4M | 10% |
+| <img src='src/drivers/zho-alf-2023.svg' width='44' height='32' align='center'> | 135.0 pts | $7.7M | 16% |
+| <img src='src/drivers/alb-wil-2023.svg' width='44' height='32' align='center'> | 126.0 pts | $11.3M | 13% |
+| <img src='src/drivers/oco-alp-2023.svg' width='44' height='32' align='center'> | 120.0 pts | $13.5M | 10% |
+| <img src='src/drivers/mag-haa-2023.svg' width='44' height='32' align='center'> | 89.0 pts | $9.6M | 13% |
+| <img src='src/drivers/hul-haa-2023.svg' width='44' height='32' align='center'> | 59.0 pts | $6.2M | 23% |
+| <img src='src/drivers/ric-alt-2023.svg' width='44' height='32' align='center'> | 49.0 pts | $5.5M | 12% |
+| <img src='src/drivers/bot-alf-2023.svg' width='44' height='32' align='center'> | 43.0 pts | $9.6M | 18% |
+| <img src='src/drivers/sar-wil-2023.svg' width='44' height='32' align='center'> | 3.0 pts | $5.8M | 8% |
 
 #### 🏢 Constructors Standings
 
