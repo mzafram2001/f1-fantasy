@@ -74,14 +74,14 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 | Driver | Team | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- | :--- |
 | <img src='src/drivers/ant-mer-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/mer-2026.svg' width='44' height='32' align='center'> | 720.0 pts | $27.4M | 36% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/red-2026.svg' width='44' height='32' align='center'> | 513.0 pts | $28.5M | 22% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/fer-2026.svg' width='44' height='32' align='center'> | 483.0 pts | $24.7M | 18% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/fer-2026.svg' width='44' height='32' align='center'> | 480.0 pts | $24.4M | 27% |
+| <img src='src/drivers/ver-red-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/red-2026.svg' width='44' height='32' align='center'> | 513.0 pts | $28.5M | 22% |
+| <img src='src/drivers/ham-fer-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/fer-2026.svg' width='44' height='32' align='center'> | 483.0 pts | $24.7M | 18% |
+| <img src='src/drivers/lec-fer-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/fer-2026.svg' width='44' height='32' align='center'> | 480.0 pts | $24.4M | 27% |
 | <img src='src/drivers/rus-mer-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/mer-2026.svg' width='44' height='32' align='center'> | 434.0 pts | $27.6M | 21% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/mcl-2026.svg' width='44' height='32' align='center'> | 380.0 pts | $26.0M | 8% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/mcl-2026.svg' width='44' height='32' align='center'> | 278.0 pts | $23.3M | 9% |
+| <img src='src/drivers/nor-mcl-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/mcl-2026.svg' width='44' height='32' align='center'> | 380.0 pts | $26.0M | 8% |
+| <img src='src/drivers/pia-mcl-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/mcl-2026.svg' width='44' height='32' align='center'> | 278.0 pts | $23.3M | 9% |
 | <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/vrb-2026.svg' width='44' height='32' align='center'> | 227.0 pts | $10.5M | 28% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/red-2026.svg' width='44' height='32' align='center'> | 214.0 pts | $16.5M | 28% |
+| <img src='src/drivers/had-red-2026.svg' width='44' height='32' align='center'> | <img src='src/constructors/red-2026.svg' width='44' height='32' align='center'> | 214.0 pts | $16.5M | 28% |
 | <img src='src/drivers/default.svg' width='44' height='32' align='center'> | <img src='src/constructors/haa-2026.svg' width='44' height='32' align='center'> | 168.0 pts | $10.1M | 13% |
 
 #### 🏢 Top 5 Constructors
