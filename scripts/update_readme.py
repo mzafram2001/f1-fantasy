@@ -120,7 +120,8 @@ def generate_season_markdown(base_json_path, latest_json_path=None, is_latest_se
             
         img_team = f"<img src='{svg_team_path}' width='44' height='32' align='center'>"
         
-        md.append(f"| {img_driver} **{name}** | {img_team} {team} | {season_pts} pts | ${val}M | {sel} |")
+        # ELIMINADOS: **{name}** y {team} de las columnas correspondientes
+        md.append(f"| {img_driver} | {img_team} | {season_pts} pts | ${val}M | {sel} |")
 
     md.extend(
         [
@@ -147,7 +148,8 @@ def generate_season_markdown(base_json_path, latest_json_path=None, is_latest_se
             
         img_team = f"<img src='{svg_path}' width='44' height='32' align='center'>"
         
-        md.append(f"| {img_team} **{name}** | {season_pts} pts | ${val}M | {sel} |")
+        # ELIMINADO: **{name}** de la primera columna
+        md.append(f"| {img_team} | {season_pts} pts | ${val}M | {sel} |")
 
     md.extend(["", "</details>", ""])
     return "\n".join(md)
@@ -206,7 +208,7 @@ def update_readme():
     with open(README_PATH, "w", encoding="utf-8") as f:
         f.write(readme_content)
 
-    print(f"README.md updated successfully con imágenes 44x32!")
+    print(f"README.md updated successfully solo con imágenes!")
 
 
 if __name__ == "__main__":
