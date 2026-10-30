@@ -24,11 +24,13 @@ def get_round_files(season_dir, is_latest_season=False):
 
     return os.path.join(season_dir, files[-1]), None
 
+
 def format_percentage(val):
     try:
         return f"{int(float(val) * 100)}%"
     except (ValueError, TypeError):
         return "0%"
+
 
 def generate_season_markdown(base_json_path, latest_json_path=None, is_latest_season=False):
     with open(base_json_path, "r", encoding="utf-8") as f:
@@ -47,12 +49,10 @@ def generate_season_markdown(base_json_path, latest_json_path=None, is_latest_se
                 t.get("Team_Name"): t for t in latest_data.get("Teams", [])
             }
 
-    # 🔥 Mapa dinámico de Team_Name -> Team_Code (porque los pilotos no traen el Team_Code)
     team_code_map = {t.get("Team_Name"): t.get("Team_Code", "unk").lower() for t in data.get("Teams", [])}
     if latest_data:
         team_code_map.update({t.get("Team_Name"): t.get("Team_Code", "unk").lower() for t in latest_data.get("Teams", [])})
 
-    # 🔥 HELPER 100% SÓLIDO
     def get_best_val(item_name, key, maps, base_item, default=0, is_market_data=False):
         latest_item = maps.get(item_name, base_item)
         val = latest_item.get(key)
@@ -103,18 +103,24 @@ def generate_season_markdown(base_json_path, latest_json_path=None, is_latest_se
         val = get_best_val(name, "Value", latest_drivers_map, d, is_market_data=True)
         sel = format_percentage(get_best_val(name, "Selected_Percentage", latest_drivers_map, d, is_market_data=True))
         
-        # 🏎️ Extraer códigos directamente del JSON
         d_code = d.get("Driver_Code", "unk").lower()
         t_code = team_code_map.get(team, "unk")
         
-        # Lógica de fallback para archivos inexistentes
-        svg_path = f"src/drivers/{d_code}-{t_code}-{season}.svg"
-        if not os.path.exists(svg_path):
-            svg_path = "src/drivers/default.svg"
+        # 🏎️ SVG Piloto
+        svg_driver_path = f"src/drivers/{d_code}-{t_code}-{season}.svg"
+        if not os.path.exists(svg_driver_path):
+            svg_driver_path = "src/drivers/default.svg"
             
-        img_driver = f"<img src='{svg_path}' width='22' align='center'>"
+        img_driver = f"<img src='{svg_driver_path}' width='44' height='32' align='center'>"
         
-        md.append(f"| {img_driver} **{name}** | {team} | {season_pts} pts | ${val}M | {sel} |")
+        # 🏢 SVG Equipo (Inyectado en la columna Team)
+        svg_team_path = f"src/constructors/{t_code}-{season}.svg"
+        if not os.path.exists(svg_team_path):
+            svg_team_path = "src/constructors/default.svg"
+            
+        img_team = f"<img src='{svg_team_path}' width='44' height='32' align='center'>"
+        
+        md.append(f"| {img_driver} **{name}** | {img_team} {team} | {season_pts} pts | ${val}M | {sel} |")
 
     md.extend(
         [
@@ -133,19 +139,19 @@ def generate_season_markdown(base_json_path, latest_json_path=None, is_latest_se
         val = get_best_val(name, "Value", latest_teams_map, t, is_market_data=True)
         sel = format_percentage(get_best_val(name, "Selected_Percentage", latest_teams_map, t, is_market_data=True))
         
-        # 🏢 Extraer código del equipo
         t_code = t.get("Team_Code", "unk").lower()
         
         svg_path = f"src/constructors/{t_code}-{season}.svg"
         if not os.path.exists(svg_path):
             svg_path = "src/constructors/default.svg"
             
-        img_team = f"<img src='{svg_path}' width='22' align='center'>"
+        img_team = f"<img src='{svg_path}' width='44' height='32' align='center'>"
         
         md.append(f"| {img_team} **{name}** | {season_pts} pts | ${val}M | {sel} |")
 
     md.extend(["", "</details>", ""])
     return "\n".join(md)
+
 
 def update_readme():
     if not os.path.exists(DATA_DIR):
@@ -200,7 +206,8 @@ def update_readme():
     with open(README_PATH, "w", encoding="utf-8") as f:
         f.write(readme_content)
 
-    print(f"README.md updated successfully con SVGs dinámicos!")
+    print(f"README.md updated successfully con imágenes 44x32!")
+
 
 if __name__ == "__main__":
     update_readme()
