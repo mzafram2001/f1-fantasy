@@ -71,7 +71,6 @@ def generate_season_markdown(base_json_path, latest_json_path=None, is_latest_se
     race_id = meta.get("race_id", 0)
 
     drivers = data.get("Drivers", [])
-    # ELIMINADO EL CORTE [:10] para mostrar todos
     sorted_drivers = sorted(
         drivers,
         key=lambda x: get_best_val(x.get("Driver_Name"), "Season_Fantasy_Points", latest_drivers_map, x, default=0),
@@ -79,7 +78,6 @@ def generate_season_markdown(base_json_path, latest_json_path=None, is_latest_se
     )
 
     teams = data.get("Teams", [])
-    # ELIMINADO EL CORTE [:5] para mostrar todos
     sorted_teams = sorted(
         teams,
         key=lambda x: get_best_val(x.get("Team_Name"), "Season_Fantasy_Points", latest_teams_map, x, default=0),
@@ -92,10 +90,10 @@ def generate_season_markdown(base_json_path, latest_json_path=None, is_latest_se
         f"<details{open_attr}>",
         f"<summary><b>🏎️ {season} Season — Round {race_id:02d}</b></summary>",
         "",
-        "#### 👤 Drivers Standings",  # Título actualizado
+        "#### 👤 Drivers Standings",
         "",
-        "| Driver | Team | Total fantasy pts | Value | Selected % |",
-        "| :--- | :--- | :--- | :--- | :--- |",
+        "| Driver | Total fantasy pts | Value | Selected % |",
+        "| :--- | :--- | :--- | :--- |",
     ]
 
     for d in sorted_drivers:
@@ -116,19 +114,12 @@ def generate_season_markdown(base_json_path, latest_json_path=None, is_latest_se
             
         img_driver = f"<img src='{svg_driver_path}' width='44' height='32' align='center'>"
         
-        # 🏢 SVG Equipo (Inyectado en la columna Team)
-        svg_team_path = f"src/constructors/{t_code}-{season}.svg"
-        if not os.path.exists(svg_team_path):
-            svg_team_path = "src/constructors/default.svg"
-            
-        img_team = f"<img src='{svg_team_path}' width='44' height='32' align='center'>"
-        
-        md.append(f"| {img_driver} | {img_team} | {season_pts} pts | ${val}M | {sel} |")
+        md.append(f"| {img_driver} | {season_pts} pts | ${val}M | {sel} |")
 
     md.extend(
         [
             "",
-            "#### 🏢 Constructors Standings",  # Título actualizado
+            "#### 🏢 Constructors Standings",
             "",
             "| Team | Total fantasy pts | Value | Selected % |",
             "| :--- | :--- | :--- | :--- |",
@@ -209,7 +200,7 @@ def update_readme():
     with open(README_PATH, "w", encoding="utf-8") as f:
         f.write(readme_content)
 
-    print(f"README.md updated successfully con tablas completas!")
+    print(f"README.md updated successfully sin columna de equipo en pilotos!")
 
 
 if __name__ == "__main__":
