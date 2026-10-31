@@ -83,7 +83,7 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 | <img src='src/drivers/law-vrb-2026.svg' width='44' height='32' align='center'> | 227.0 pts | $10.5M | 28% |
 | <img src='src/drivers/had-red-2026.svg' width='44' height='32' align='center'> | 214.0 pts | $16.5M | 28% |
 | <img src='src/drivers/oco-haa-2026.svg' width='44' height='32' align='center'> | 168.0 pts | $10.1M | 13% |
-| <img src='src/drivers/lin-vrb-2026.svg' width='44' height='32' align='center'> | 147.0 pts | $10.6M | 44% |
+| <img src='src/drivers/lin-vrb-2026.svg' width='44' height='32' align='center'> | 147.0 pts | $10.6M | 43% |
 | <img src='src/drivers/gas-alp-2026.svg' width='44' height='32' align='center'> | 139.0 pts | $9.6M | 20% |
 | <img src='src/drivers/sai-wil-2026.svg' width='44' height='32' align='center'> | 120.0 pts | $8.2M | 22% |
 | <img src='src/drivers/col-alp-2026.svg' width='44' height='32' align='center'> | 105.0 pts | $8.2M | 19% |
@@ -281,4 +281,4 @@ print(df_drivers.sort_values(by="Season_Fantasy_Points", ascending=False).head()
 >
 > ☕ If this dataset saves you time in your analysis or fantasy leagues, you can also [buy me a coffee on Ko-fi](https://ko-fi.com/mzm0102).
 <br>
-<!-- LAST_CHECKED_START -->Last checked: 2026-10-30<!-- LAST_CHECKED_END -->
+<!-- LAST_CHECKED_START -->Last checked: 2026-10-31<!-- LAST_CHECKED_END -->
