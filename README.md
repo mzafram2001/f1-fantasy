@@ -67,50 +67,50 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 
 <!-- SEASONS_SUMMARY_START -->
 <details open>
-<summary><b>🏎️ 2026 Season — Round 18</b></summary>
+<summary><b>🏎️ 2026 Season — Round 19</b></summary>
 
 #### 👤 Drivers Standings
 
 | Driver | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- |
-| <img src='src/drivers/ant-mer-2026.svg' width='44' height='32' align='center'> | 726.0 pts | $27.4M | 36% |
-| <img src='src/drivers/ver-red-2026.svg' width='44' height='32' align='center'> | 520.0 pts | $28.5M | 21% |
-| <img src='src/drivers/ham-fer-2026.svg' width='44' height='32' align='center'> | 493.0 pts | $24.7M | 18% |
-| <img src='src/drivers/lec-fer-2026.svg' width='44' height='32' align='center'> | 488.0 pts | $24.4M | 27% |
-| <img src='src/drivers/rus-mer-2026.svg' width='44' height='32' align='center'> | 443.0 pts | $27.6M | 21% |
-| <img src='src/drivers/nor-mcl-2026.svg' width='44' height='32' align='center'> | 385.0 pts | $26.0M | 8% |
-| <img src='src/drivers/pia-mcl-2026.svg' width='44' height='32' align='center'> | 278.0 pts | $23.3M | 9% |
-| <img src='src/drivers/law-vrb-2026.svg' width='44' height='32' align='center'> | 222.0 pts | $10.5M | 28% |
-| <img src='src/drivers/had-red-2026.svg' width='44' height='32' align='center'> | 218.0 pts | $16.5M | 28% |
-| <img src='src/drivers/oco-haa-2026.svg' width='44' height='32' align='center'> | 168.0 pts | $9.9M | 13% |
-| <img src='src/drivers/lin-vrb-2026.svg' width='44' height='32' align='center'> | 150.0 pts | $10.6M | 43% |
-| <img src='src/drivers/gas-alp-2026.svg' width='44' height='32' align='center'> | 141.0 pts | $9.6M | 20% |
-| <img src='src/drivers/sai-wil-2026.svg' width='44' height='32' align='center'> | 120.0 pts | $8.2M | 22% |
-| <img src='src/drivers/col-alp-2026.svg' width='44' height='32' align='center'> | 105.0 pts | $8.2M | 19% |
-| <img src='src/drivers/bor-aud-2026.svg' width='44' height='32' align='center'> | 84.0 pts | $6.4M | 31% |
-| <img src='src/drivers/bea-haa-2026.svg' width='44' height='32' align='center'> | 81.0 pts | $6.2M | 52% |
-| <img src='src/drivers/hul-aud-2026.svg' width='44' height='32' align='center'> | 48.0 pts | $7.2M | 36% |
-| <img src='src/drivers/alo-ast-2026.svg' width='44' height='32' align='center'> | 39.0 pts | $6.0M | 10% |
-| <img src='src/drivers/per-cad-2026.svg' width='44' height='32' align='center'> | 19.0 pts | $3.0M | 21% |
-| <img src='src/drivers/alb-wil-2026.svg' width='44' height='32' align='center'> | 0.0 pts | $4.0M | 10% |
-| <img src='src/drivers/bot-cad-2026.svg' width='44' height='32' align='center'> | -117.0 pts | $3.0M | 20% |
-| <img src='src/drivers/str-ast-2026.svg' width='44' height='32' align='center'> | -147.0 pts | $3.0M | 4% |
+| <img src='src/drivers/ant-mer-2026.svg' width='44' height='32' align='center'> | 744.0 pts | $27.5M | 36% |
+| <img src='src/drivers/ver-red-2026.svg' width='44' height='32' align='center'> | 562.0 pts | $28.8M | 21% |
+| <img src='src/drivers/ham-fer-2026.svg' width='44' height='32' align='center'> | 521.0 pts | $25.0M | 18% |
+| <img src='src/drivers/lec-fer-2026.svg' width='44' height='32' align='center'> | 500.0 pts | $24.7M | 27% |
+| <img src='src/drivers/rus-mer-2026.svg' width='44' height='32' align='center'> | 447.0 pts | $27.3M | 21% |
+| <img src='src/drivers/nor-mcl-2026.svg' width='44' height='32' align='center'> | 398.0 pts | $25.9M | 8% |
+| <img src='src/drivers/pia-mcl-2026.svg' width='44' height='32' align='center'> | 285.0 pts | $23.0M | 9% |
+| <img src='src/drivers/law-vrb-2026.svg' width='44' height='32' align='center'> | 254.0 pts | $11.1M | 28% |
+| <img src='src/drivers/had-red-2026.svg' width='44' height='32' align='center'> | 233.0 pts | $16.3M | 28% |
+| <img src='src/drivers/gas-alp-2026.svg' width='44' height='32' align='center'> | 138.0 pts | $9.0M | 20% |
+| <img src='src/drivers/lin-vrb-2026.svg' width='44' height='32' align='center'> | 133.0 pts | $10.0M | 43% |
+| <img src='src/drivers/sai-wil-2026.svg' width='44' height='32' align='center'> | 127.0 pts | $8.4M | 22% |
+| <img src='src/drivers/col-alp-2026.svg' width='44' height='32' align='center'> | 106.0 pts | $7.6M | 19% |
+| <img src='src/drivers/bor-aud-2026.svg' width='44' height='32' align='center'> | 95.0 pts | $5.8M | 31% |
+| <img src='src/drivers/bea-haa-2026.svg' width='44' height='32' align='center'> | 66.0 pts | $5.6M | 52% |
+| <img src='src/drivers/hul-aud-2026.svg' width='44' height='32' align='center'> | 49.0 pts | $7.8M | 36% |
+| <img src='src/drivers/per-cad-2026.svg' width='44' height='32' align='center'> | 36.0 pts | $3.0M | 21% |
+| <img src='src/drivers/alo-ast-2026.svg' width='44' height='32' align='center'> | 20.0 pts | $5.4M | 10% |
+| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | 16.0 pts | $6.6M | 0% |
+| <img src='src/drivers/alb-wil-2026.svg' width='44' height='32' align='center'> | 11.0 pts | $3.8M | 10% |
+| <img src='src/drivers/bot-cad-2026.svg' width='44' height='32' align='center'> | -133.0 pts | $3.0M | 20% |
+| <img src='src/drivers/str-ast-2026.svg' width='44' height='32' align='center'> | -167.0 pts | $3.0M | 4% |
 
 #### 🏢 Constructors Standings
 
 | Team | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- |
-| <img src='src/constructors/mer-2026.svg' width='44' height='32' align='center'> | 1455.0 pts | $34.0M | 35% |
-| <img src='src/constructors/fer-2026.svg' width='44' height='32' align='center'> | 1207.0 pts | $28.5M | 41% |
-| <img src='src/constructors/red-2026.svg' width='44' height='32' align='center'> | 955.0 pts | $33.0M | 8% |
-| <img src='src/constructors/mcl-2026.svg' width='44' height='32' align='center'> | 904.0 pts | $32.7M | 10% |
-| <img src='src/constructors/vrb-2026.svg' width='44' height='32' align='center'> | 557.0 pts | $17.1M | 33% |
-| <img src='src/constructors/alp-2026.svg' width='44' height='32' align='center'> | 379.0 pts | $18.5M | 7% |
-| <img src='src/constructors/haa-2026.svg' width='44' height='32' align='center'> | 298.0 pts | $12.6M | 24% |
-| <img src='src/constructors/aud-2026.svg' width='44' height='32' align='center'> | 273.0 pts | $11.0M | 21% |
-| <img src='src/constructors/wil-2026.svg' width='44' height='32' align='center'> | 201.0 pts | $12.0M | 9% |
-| <img src='src/constructors/ast-2026.svg' width='44' height='32' align='center'> | -74.0 pts | $5.1M | 3% |
-| <img src='src/constructors/cad-2026.svg' width='44' height='32' align='center'> | -103.0 pts | $3.0M | 9% |
+| <img src='src/constructors/mer-2026.svg' width='44' height='32' align='center'> | 1482.0 pts | $34.0M | 35% |
+| <img src='src/constructors/fer-2026.svg' width='44' height='32' align='center'> | 1252.0 pts | $28.8M | 41% |
+| <img src='src/constructors/red-2026.svg' width='44' height='32' align='center'> | 1012.0 pts | $33.3M | 8% |
+| <img src='src/constructors/mcl-2026.svg' width='44' height='32' align='center'> | 926.0 pts | $33.0M | 10% |
+| <img src='src/constructors/vrb-2026.svg' width='44' height='32' align='center'> | 582.0 pts | $17.7M | 33% |
+| <img src='src/constructors/alp-2026.svg' width='44' height='32' align='center'> | 382.0 pts | $18.2M | 7% |
+| <img src='src/constructors/haa-2026.svg' width='44' height='32' align='center'> | 301.0 pts | $12.8M | 24% |
+| <img src='src/constructors/aud-2026.svg' width='44' height='32' align='center'> | 290.0 pts | $11.6M | 21% |
+| <img src='src/constructors/wil-2026.svg' width='44' height='32' align='center'> | 234.0 pts | $12.6M | 9% |
+| <img src='src/constructors/cad-2026.svg' width='44' height='32' align='center'> | -102.0 pts | $3.0M | 9% |
+| <img src='src/constructors/ast-2026.svg' width='44' height='32' align='center'> | -111.0 pts | $4.5M | 3% |
 
 </details>
 
@@ -281,4 +281,4 @@ print(df_drivers.sort_values(by="Season_Fantasy_Points", ascending=False).head()
 >
 > ☕ If this dataset saves you time in your analysis or fantasy leagues, you can also [buy me a coffee on Ko-fi](https://ko-fi.com/mzm0102).
 <br>
-<!-- LAST_CHECKED_START -->Last checked: 2026-11-01<!-- LAST_CHECKED_END -->
+<!-- LAST_CHECKED_START -->Last checked: 2026-11-02<!-- LAST_CHECKED_END -->
