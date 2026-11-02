@@ -91,7 +91,7 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 | <img src='src/drivers/hul-aud-2026.svg' width='44' height='32' align='center'> | 49.0 pts | $7.8M | 36% |
 | <img src='src/drivers/per-cad-2026.svg' width='44' height='32' align='center'> | 36.0 pts | $3.0M | 21% |
 | <img src='src/drivers/alo-ast-2026.svg' width='44' height='32' align='center'> | 20.0 pts | $5.4M | 10% |
-| <img src='src/drivers/default.svg' width='44' height='32' align='center'> | 16.0 pts | $6.6M | 0% |
+| <img src='src/drivers/hir-haa-2026.svg' width='44' height='32' align='center'> | 16.0 pts | $6.6M | 0% |
 | <img src='src/drivers/alb-wil-2026.svg' width='44' height='32' align='center'> | 11.0 pts | $3.8M | 10% |
 | <img src='src/drivers/bot-cad-2026.svg' width='44' height='32' align='center'> | -133.0 pts | $3.0M | 20% |
 | <img src='src/drivers/str-ast-2026.svg' width='44' height='32' align='center'> | -167.0 pts | $3.0M | 4% |
