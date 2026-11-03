@@ -73,11 +73,11 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 
 | Driver | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- |
-| <img src='src/drivers/ant-mer-2026.svg' width='44' height='32' align='center'> | 744.0 pts | $27.5M | 36% |
-| <img src='src/drivers/ver-red-2026.svg' width='44' height='32' align='center'> | 562.0 pts | $28.8M | 21% |
+| <img src='src/drivers/ant-mer-2026.svg' width='44' height='32' align='center'> | 744.0 pts | $27.5M | 37% |
+| <img src='src/drivers/ver-red-2026.svg' width='44' height='32' align='center'> | 562.0 pts | $28.8M | 20% |
 | <img src='src/drivers/ham-fer-2026.svg' width='44' height='32' align='center'> | 521.0 pts | $25.0M | 18% |
-| <img src='src/drivers/lec-fer-2026.svg' width='44' height='32' align='center'> | 500.0 pts | $24.7M | 27% |
-| <img src='src/drivers/rus-mer-2026.svg' width='44' height='32' align='center'> | 447.0 pts | $27.3M | 21% |
+| <img src='src/drivers/lec-fer-2026.svg' width='44' height='32' align='center'> | 500.0 pts | $24.7M | 28% |
+| <img src='src/drivers/rus-mer-2026.svg' width='44' height='32' align='center'> | 447.0 pts | $27.3M | 20% |
 | <img src='src/drivers/nor-mcl-2026.svg' width='44' height='32' align='center'> | 398.0 pts | $25.9M | 8% |
 | <img src='src/drivers/pia-mcl-2026.svg' width='44' height='32' align='center'> | 285.0 pts | $23.0M | 9% |
 | <img src='src/drivers/law-vrb-2026.svg' width='44' height='32' align='center'> | 254.0 pts | $11.1M | 28% |
@@ -87,13 +87,13 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 | <img src='src/drivers/sai-wil-2026.svg' width='44' height='32' align='center'> | 127.0 pts | $8.4M | 22% |
 | <img src='src/drivers/col-alp-2026.svg' width='44' height='32' align='center'> | 106.0 pts | $7.6M | 19% |
 | <img src='src/drivers/bor-aud-2026.svg' width='44' height='32' align='center'> | 95.0 pts | $5.8M | 31% |
-| <img src='src/drivers/bea-haa-2026.svg' width='44' height='32' align='center'> | 66.0 pts | $5.6M | 52% |
+| <img src='src/drivers/bea-haa-2026.svg' width='44' height='32' align='center'> | 66.0 pts | $5.6M | 51% |
 | <img src='src/drivers/hul-aud-2026.svg' width='44' height='32' align='center'> | 49.0 pts | $7.8M | 36% |
 | <img src='src/drivers/per-cad-2026.svg' width='44' height='32' align='center'> | 36.0 pts | $3.0M | 21% |
 | <img src='src/drivers/alo-ast-2026.svg' width='44' height='32' align='center'> | 20.0 pts | $5.4M | 10% |
 | <img src='src/drivers/hir-haa-2026.svg' width='44' height='32' align='center'> | 16.0 pts | $6.6M | 0% |
 | <img src='src/drivers/alb-wil-2026.svg' width='44' height='32' align='center'> | 11.0 pts | $3.8M | 10% |
-| <img src='src/drivers/bot-cad-2026.svg' width='44' height='32' align='center'> | -133.0 pts | $3.0M | 20% |
+| <img src='src/drivers/bot-cad-2026.svg' width='44' height='32' align='center'> | -133.0 pts | $3.0M | 19% |
 | <img src='src/drivers/str-ast-2026.svg' width='44' height='32' align='center'> | -167.0 pts | $3.0M | 4% |
 
 #### 🏢 Constructors Standings
@@ -101,7 +101,7 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 | Team | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- |
 | <img src='src/constructors/mer-2026.svg' width='44' height='32' align='center'> | 1482.0 pts | $34.0M | 35% |
-| <img src='src/constructors/fer-2026.svg' width='44' height='32' align='center'> | 1252.0 pts | $28.8M | 41% |
+| <img src='src/constructors/fer-2026.svg' width='44' height='32' align='center'> | 1252.0 pts | $28.8M | 42% |
 | <img src='src/constructors/red-2026.svg' width='44' height='32' align='center'> | 1012.0 pts | $33.3M | 8% |
 | <img src='src/constructors/mcl-2026.svg' width='44' height='32' align='center'> | 926.0 pts | $33.0M | 10% |
 | <img src='src/constructors/vrb-2026.svg' width='44' height='32' align='center'> | 582.0 pts | $17.7M | 33% |
@@ -281,4 +281,4 @@ print(df_drivers.sort_values(by="Season_Fantasy_Points", ascending=False).head()
 >
 > ☕ If this dataset saves you time in your analysis or fantasy leagues, you can also [buy me a coffee on Ko-fi](https://ko-fi.com/mzm0102).
 <br>
-<!-- LAST_CHECKED_START -->Last checked: 2026-11-02<!-- LAST_CHECKED_END -->
+<!-- LAST_CHECKED_START -->Last checked: 2026-11-03<!-- LAST_CHECKED_END -->
