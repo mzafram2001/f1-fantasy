@@ -2,7 +2,7 @@
     "Meta": {
         "season": 2026,
         "race_id": 20,
-        "generated_at": "2026-11-05T09:21:38.222471"
+        "generated_at": "2026-11-06T09:15:15.841430"
     },
     "Drivers": [
         {
@@ -222,18 +222,6 @@
             "Race_Points": 0.0
         },
         {
-            "Driver_Name": "R. Hirakawa",
-            "Driver_Code": "HIR",
-            "Team_Name": "Haas F1 Team",
-            "Round_Fantasy_Points": 0.0,
-            "Season_Fantasy_Points": 16.0,
-            "Selected_Percentage": 0.0,
-            "Value": 6.6,
-            "Qualifying_Points": 0.0,
-            "Sprint_Points": 0.0,
-            "Race_Points": 0.0
-        },
-        {
             "Driver_Name": "A. Albon",
             "Driver_Code": "ALB",
             "Team_Name": "Williams",
@@ -241,6 +229,18 @@
             "Season_Fantasy_Points": 11.0,
             "Selected_Percentage": 0.1,
             "Value": 3.8,
+            "Qualifying_Points": 0.0,
+            "Sprint_Points": 0.0,
+            "Race_Points": 0.0
+        },
+        {
+            "Driver_Name": "R. Câmara",
+            "Driver_Code": "CAM",
+            "Team_Name": "Haas F1 Team",
+            "Round_Fantasy_Points": 0.0,
+            "Season_Fantasy_Points": 0.0,
+            "Selected_Percentage": 0.0,
+            "Value": 6.0,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
             "Race_Points": 0.0
