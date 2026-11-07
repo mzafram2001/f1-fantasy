@@ -2,7 +2,7 @@
     "Meta": {
         "season": 2026,
         "race_id": 20,
-        "generated_at": "2026-11-06T09:15:15.841430"
+        "generated_at": "2026-11-07T08:39:36.097355"
     },
     "Drivers": [
         {
@@ -47,7 +47,7 @@
             "Team_Name": "Ferrari",
             "Round_Fantasy_Points": 0.0,
             "Season_Fantasy_Points": 500.0,
-            "Selected_Percentage": 0.28,
+            "Selected_Percentage": 0.27,
             "Value": 24.7,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
@@ -71,7 +71,7 @@
             "Team_Name": "McLaren",
             "Round_Fantasy_Points": 0.0,
             "Season_Fantasy_Points": 398.0,
-            "Selected_Percentage": 0.08,
+            "Selected_Percentage": 0.09,
             "Value": 25.9,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
@@ -167,7 +167,7 @@
             "Team_Name": "Audi",
             "Round_Fantasy_Points": 0.0,
             "Season_Fantasy_Points": 95.0,
-            "Selected_Percentage": 0.31,
+            "Selected_Percentage": 0.32,
             "Value": 5.8,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
@@ -191,7 +191,7 @@
             "Team_Name": "Audi",
             "Round_Fantasy_Points": 0.0,
             "Season_Fantasy_Points": 49.0,
-            "Selected_Percentage": 0.36,
+            "Selected_Percentage": 0.35,
             "Value": 7.8,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
@@ -287,7 +287,7 @@
             "Team_Code": "FER",
             "Round_Fantasy_Points": 0.0,
             "Season_Fantasy_Points": 1252.0,
-            "Selected_Percentage": 0.42,
+            "Selected_Percentage": 0.41,
             "Value": 28.8,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
