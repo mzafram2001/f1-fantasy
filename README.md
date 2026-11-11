@@ -74,7 +74,7 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 | Driver | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- |
 | <img src='src/drivers/ant-mer-2026.svg' width='44' height='32' align='center'> | 770.0 pts | $27.6M | 37% |
-| <img src='src/drivers/ver-red-2026.svg' width='44' height='32' align='center'> | 627.0 pts | $29.1M | 21% |
+| <img src='src/drivers/ver-red-2026.svg' width='44' height='32' align='center'> | 627.0 pts | $29.1M | 22% |
 | <img src='src/drivers/ham-fer-2026.svg' width='44' height='32' align='center'> | 547.0 pts | $25.1M | 18% |
 | <img src='src/drivers/lec-fer-2026.svg' width='44' height='32' align='center'> | 526.0 pts | $25.0M | 26% |
 | <img src='src/drivers/rus-mer-2026.svg' width='44' height='32' align='center'> | 478.0 pts | $27.2M | 20% |
@@ -107,7 +107,7 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 | <img src='src/constructors/vrb-2026.svg' width='44' height='32' align='center'> | 626.0 pts | $18.3M | 33% |
 | <img src='src/constructors/alp-2026.svg' width='44' height='32' align='center'> | 399.0 pts | $17.6M | 7% |
 | <img src='src/constructors/aud-2026.svg' width='44' height='32' align='center'> | 322.0 pts | $12.2M | 21% |
-| <img src='src/constructors/haa-2026.svg' width='44' height='32' align='center'> | 296.0 pts | $12.2M | 24% |
+| <img src='src/constructors/haa-2026.svg' width='44' height='32' align='center'> | 296.0 pts | $12.2M | 23% |
 | <img src='src/constructors/wil-2026.svg' width='44' height='32' align='center'> | 237.0 pts | $13.2M | 9% |
 | <img src='src/constructors/ast-2026.svg' width='44' height='32' align='center'> | -116.0 pts | $3.9M | 3% |
 | <img src='src/constructors/cad-2026.svg' width='44' height='32' align='center'> | -117.0 pts | $3.0M | 9% |
@@ -281,4 +281,4 @@ print(df_drivers.sort_values(by="Season_Fantasy_Points", ascending=False).head()
 >
 > ☕ If this dataset saves you time in your analysis or fantasy leagues, you can also [buy me a coffee on Ko-fi](https://ko-fi.com/mzm0102).
 <br>
-<!-- LAST_CHECKED_START -->Last checked: 2026-11-10<!-- LAST_CHECKED_END -->
+<!-- LAST_CHECKED_START -->Last checked: 2026-11-11<!-- LAST_CHECKED_END -->
