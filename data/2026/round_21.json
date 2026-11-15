@@ -2,7 +2,7 @@
     "Meta": {
         "season": 2026,
         "race_id": 21,
-        "generated_at": "2026-11-14T08:53:34.336782"
+        "generated_at": "2026-11-15T09:11:22.938801"
     },
     "Drivers": [
         {
@@ -375,7 +375,7 @@
             "Team_Code": "AST",
             "Round_Fantasy_Points": 0.0,
             "Season_Fantasy_Points": -116.0,
-            "Selected_Percentage": 0.03,
+            "Selected_Percentage": 0.04,
             "Value": 3.9,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,

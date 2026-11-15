@@ -109,7 +109,7 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 | <img src='src/constructors/aud-2026.svg' width='44' height='32' align='center'> | 322.0 pts | $12.2M | 21% |
 | <img src='src/constructors/haa-2026.svg' width='44' height='32' align='center'> | 296.0 pts | $12.2M | 23% |
 | <img src='src/constructors/wil-2026.svg' width='44' height='32' align='center'> | 237.0 pts | $13.2M | 9% |
-| <img src='src/constructors/ast-2026.svg' width='44' height='32' align='center'> | -116.0 pts | $3.9M | 3% |
+| <img src='src/constructors/ast-2026.svg' width='44' height='32' align='center'> | -116.0 pts | $3.9M | 4% |
 | <img src='src/constructors/cad-2026.svg' width='44' height='32' align='center'> | -117.0 pts | $3.0M | 9% |
 
 </details>
@@ -281,4 +281,4 @@ print(df_drivers.sort_values(by="Season_Fantasy_Points", ascending=False).head()
 >
 > ☕ If this dataset saves you time in your analysis or fantasy leagues, you can also [buy me a coffee on Ko-fi](https://ko-fi.com/mzm0102).
 <br>
-<!-- LAST_CHECKED_START -->Last checked: 2026-11-14<!-- LAST_CHECKED_END -->
+<!-- LAST_CHECKED_START -->Last checked: 2026-11-15<!-- LAST_CHECKED_END -->
