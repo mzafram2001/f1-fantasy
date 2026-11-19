@@ -81,7 +81,7 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 
 <!-- SEASONS_SUMMARY_START -->
 <details open>
-<summary><b>🏎️ 2026 Season — Round 20</b></summary>
+<summary><b>🏎️ 2026 Season — Round 20 · Brazilian Grand Prix</b> <img src='src/circuits/interlagos.svg' width='28' height='20' align='center'></summary>
 
 #### 👤 Drivers Standings
 
@@ -295,4 +295,4 @@ print(df_drivers.sort_values(by="Season_Fantasy_Points", ascending=False).head()
 >
 > ☕ If this dataset saves you time in your analysis or fantasy leagues, you can also [buy me a coffee on Ko-fi](https://ko-fi.com/mzm0102).
 <br>
-<!-- LAST_CHECKED_START -->Last checked: 2026-11-18<!-- LAST_CHECKED_END -->
+<!-- LAST_CHECKED_START -->Last checked: 2026-11-19<!-- LAST_CHECKED_END -->
