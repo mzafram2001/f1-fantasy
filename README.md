@@ -10,8 +10,6 @@ An open-source, automated historical dataset of F1 Fantasy statistics.
 
 This repository automatically fetches, cleans, and structures official F1 Fantasy data after every Grand Prix weekend. Providing points breakdowns, value fluctuations, selection trends, and constructor stats for analytics, machine learning and data visualization.
 
----
-
 ## 📂 Repository structure
 
 ```text
@@ -20,15 +18,15 @@ f1-fantasy/
 ├── .github/
 │   ├── workflows/
 │   │   └── get_round_data.yml
-│   │ 
+│   │
 │   └── FUNDING.yml
-│ 
+│
 ├── data/
 │   ├── 2023/
 │   │   ├── round_01.json
 │   │   ├── round_02.json
 │   │   └── ...
-│   │ 
+│   │
 │   ├── 2024/
 │   │   ├── round_01.json
 │   │   ├── round_02.json
@@ -38,14 +36,20 @@ f1-fantasy/
 │
 ├── scripts/
 │   ├── get_round_data.py
+│   ├── meta_utils.py
 │   └── update_readme.py
 │
 ├── src/
+│   ├── circuits/
+│   │   ├── austin.svg
+│   │   ├── bahrain.svg
+│   │   └── ...
+│   │
 │   ├── constructors/
 │   │   ├── alf-2023.svg
 │   │   ├── alp-2023.svg
 │   │   └── ...
-│   │ 
+│   │
 │   └── drivers/
 │       ├── alb-wil-2023.svg
 │       ├── ant-mer-2026.svg
@@ -56,26 +60,40 @@ f1-fantasy/
 └── README.md
 ```
 
----
-
 ## 📊 Data schema
 
-Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON schema divided into **Meta**, **Drivers**, and **Teams**. Both driver and team arrays share identical attributes:
+Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON schema divided into **Meta**, **Drivers**, and **Teams**.
+
+### `Meta`
+
+| Attribute | Type | Description | Example |
+| :--- | :--- | :--- | :--- |
+| `Id` | `String` | Unique round identifier (`{season}_{round}`) | `"2026_12"` |
+| `Season` | `Integer` | Championship season year | `2026` |
+| `Race_Id` | `Integer` | Official round number within the season | `12` |
+| `Event_Name` | `String` | Official Grand Prix name | `"Dutch Grand Prix"` |
+| `Is_Sprint` | `Boolean` | Whether the weekend includes a Sprint session | `true` |
+| `Circuit` | `Object` | Circuit metadata (`Id`, `City`, `Country_Code`, `Country_Name`, `Svg_Path`) | `{"Id": "zandvoort", ...}` |
+| `Start_Times` | `Object` | Session UTC timestamps (`Qualifying`, `Sprint_Qualifying`, `Sprint`, `Race`) | `{"Race": "2026-08-23T13:00:00Z", ...}` |
+| `Generated_At` | `String` | ISO-8601 timestamp of when the file was generated | `"2026-11-18T10:01:13.873807"` |
+
+### `Drivers` & `Teams`
+
+Both driver and team arrays share standardized attributes:
 
 | Attribute | Type | Description | Example |
 | :--- | :--- | :--- | :--- |
 | `Driver_Name` / `Team_Name` | `String` | Display name of the driver or team | `"K. Antonelli"` / `"Mercedes"` |
 | `Driver_Code` / `Team_Code` | `String` | Three-letter shorthand identifier (TLA) | `"ANT"` / `"MER"` |
 | `Team_Name` *(Drivers only)* | `String` | Constructor associated with the driver | `"Mercedes"` |
+| `Team_Code` *(Drivers only)* | `String` | Three-letter code of the driver's constructor | `"MER"` |
 | `Round_Fantasy_Points` | `Float` | Total fantasy points scored in the current round | `55.0` |
 | `Season_Fantasy_Points` | `Float` | Total cumulative fantasy points scored up to this round | `305.0` |
 | `Selected_Percentage` | `Float` | Player selection rate across fantasy teams | `0.33` *(33%)* |
-| `Value` | `Float` | Current asset price for the round (in $M) | `24.7` |
+| `Value` | `Float` | Current asset price for the round (in \$M) | `24.7` |
 | `Qualifying_Points` | `Float` | Fantasy points earned in qualifying | `10.0` |
 | `Sprint_Points` | `Float` | Fantasy points earned in sprint | `0.0` |
 | `Race_Points` | `Float` | Fantasy points earned in race | `45.0` |
-
----
 
 ## 💻 Data results
 
@@ -87,44 +105,44 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 
 | Driver | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- |
-| <img src='src/drivers/ant-mer-2026.svg' width='44' height='32' align='center'> | 770.0 pts | $27.6M | 37% |
-| <img src='src/drivers/ver-red-2026.svg' width='44' height='32' align='center'> | 627.0 pts | $29.1M | 22% |
-| <img src='src/drivers/ham-fer-2026.svg' width='44' height='32' align='center'> | 547.0 pts | $25.1M | 18% |
-| <img src='src/drivers/lec-fer-2026.svg' width='44' height='32' align='center'> | 526.0 pts | $25.0M | 26% |
-| <img src='src/drivers/rus-mer-2026.svg' width='44' height='32' align='center'> | 478.0 pts | $27.2M | 20% |
-| <img src='src/drivers/nor-mcl-2026.svg' width='44' height='32' align='center'> | 434.0 pts | $26.0M | 9% |
-| <img src='src/drivers/pia-mcl-2026.svg' width='44' height='32' align='center'> | 302.0 pts | $22.7M | 9% |
-| <img src='src/drivers/law-vrb-2026.svg' width='44' height='32' align='center'> | 265.0 pts | $11.7M | 28% |
-| <img src='src/drivers/had-red-2026.svg' width='44' height='32' align='center'> | 258.0 pts | $16.5M | 28% |
-| <img src='src/drivers/lin-vrb-2026.svg' width='44' height='32' align='center'> | 151.0 pts | $9.4M | 43% |
-| <img src='src/drivers/gas-alp-2026.svg' width='44' height='32' align='center'> | 146.0 pts | $8.4M | 20% |
-| <img src='src/drivers/sai-wil-2026.svg' width='44' height='32' align='center'> | 125.0 pts | $7.8M | 22% |
-| <img src='src/drivers/col-alp-2026.svg' width='44' height='32' align='center'> | 114.0 pts | $7.0M | 19% |
-| <img src='src/drivers/bor-aud-2026.svg' width='44' height='32' align='center'> | 103.0 pts | $6.4M | 33% |
-| <img src='src/drivers/bea-haa-2026.svg' width='44' height='32' align='center'> | 63.0 pts | $5.0M | 51% |
-| <img src='src/drivers/hul-aud-2026.svg' width='44' height='32' align='center'> | 53.0 pts | $7.2M | 34% |
-| <img src='src/drivers/per-cad-2026.svg' width='44' height='32' align='center'> | 42.0 pts | $3.6M | 21% |
-| <img src='src/drivers/alo-ast-2026.svg' width='44' height='32' align='center'> | 22.0 pts | $4.8M | 10% |
-| <img src='src/drivers/alb-wil-2026.svg' width='44' height='32' align='center'> | 9.0 pts | $4.4M | 11% |
-| <img src='src/drivers/cam-haa-2026.svg' width='44' height='32' align='center'> | -9.0 pts | $5.4M | 0% |
-| <img src='src/drivers/bot-cad-2026.svg' width='44' height='32' align='center'> | -153.0 pts | $3.0M | 19% |
-| <img src='src/drivers/str-ast-2026.svg' width='44' height='32' align='center'> | -184.0 pts | $3.0M | 4% |
+| <img src='src/drivers/ant-mer-2026.svg' width='44' height='32' align='center'> | 770.0 pts | \$27.6M | 37% |
+| <img src='src/drivers/ver-red-2026.svg' width='44' height='32' align='center'> | 627.0 pts | \$29.1M | 22% |
+| <img src='src/drivers/ham-fer-2026.svg' width='44' height='32' align='center'> | 547.0 pts | \$25.1M | 18% |
+| <img src='src/drivers/lec-fer-2026.svg' width='44' height='32' align='center'> | 526.0 pts | \$25.0M | 26% |
+| <img src='src/drivers/rus-mer-2026.svg' width='44' height='32' align='center'> | 478.0 pts | \$27.2M | 20% |
+| <img src='src/drivers/nor-mcl-2026.svg' width='44' height='32' align='center'> | 434.0 pts | \$26.0M | 9% |
+| <img src='src/drivers/pia-mcl-2026.svg' width='44' height='32' align='center'> | 302.0 pts | \$22.7M | 9% |
+| <img src='src/drivers/law-vrb-2026.svg' width='44' height='32' align='center'> | 265.0 pts | \$11.7M | 28% |
+| <img src='src/drivers/had-red-2026.svg' width='44' height='32' align='center'> | 258.0 pts | \$16.5M | 28% |
+| <img src='src/drivers/lin-vrb-2026.svg' width='44' height='32' align='center'> | 151.0 pts | \$9.4M | 43% |
+| <img src='src/drivers/gas-alp-2026.svg' width='44' height='32' align='center'> | 146.0 pts | \$8.4M | 20% |
+| <img src='src/drivers/sai-wil-2026.svg' width='44' height='32' align='center'> | 125.0 pts | \$7.8M | 22% |
+| <img src='src/drivers/col-alp-2026.svg' width='44' height='32' align='center'> | 114.0 pts | \$7.0M | 19% |
+| <img src='src/drivers/bor-aud-2026.svg' width='44' height='32' align='center'> | 103.0 pts | \$6.4M | 33% |
+| <img src='src/drivers/bea-haa-2026.svg' width='44' height='32' align='center'> | 63.0 pts | \$5.0M | 51% |
+| <img src='src/drivers/hul-aud-2026.svg' width='44' height='32' align='center'> | 53.0 pts | \$7.2M | 34% |
+| <img src='src/drivers/per-cad-2026.svg' width='44' height='32' align='center'> | 42.0 pts | \$3.6M | 21% |
+| <img src='src/drivers/alo-ast-2026.svg' width='44' height='32' align='center'> | 22.0 pts | \$4.8M | 10% |
+| <img src='src/drivers/alb-wil-2026.svg' width='44' height='32' align='center'> | 9.0 pts | \$4.4M | 11% |
+| <img src='src/drivers/cam-haa-2026.svg' width='44' height='32' align='center'> | -9.0 pts | \$5.4M | 0% |
+| <img src='src/drivers/bot-cad-2026.svg' width='44' height='32' align='center'> | -153.0 pts | \$3.0M | 19% |
+| <img src='src/drivers/str-ast-2026.svg' width='44' height='32' align='center'> | -184.0 pts | \$3.0M | 4% |
 
 #### 🏢 Constructors Standings
 
 | Team | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- |
-| <img src='src/constructors/mer-2026.svg' width='44' height='32' align='center'> | 1554.0 pts | $34.0M | 35% |
-| <img src='src/constructors/fer-2026.svg' width='44' height='32' align='center'> | 1314.0 pts | $29.1M | 41% |
-| <img src='src/constructors/red-2026.svg' width='44' height='32' align='center'> | 1102.0 pts | $33.6M | 8% |
-| <img src='src/constructors/mcl-2026.svg' width='44' height='32' align='center'> | 989.0 pts | $33.3M | 10% |
-| <img src='src/constructors/vrb-2026.svg' width='44' height='32' align='center'> | 626.0 pts | $18.3M | 33% |
-| <img src='src/constructors/alp-2026.svg' width='44' height='32' align='center'> | 399.0 pts | $17.6M | 7% |
-| <img src='src/constructors/aud-2026.svg' width='44' height='32' align='center'> | 322.0 pts | $12.2M | 21% |
-| <img src='src/constructors/haa-2026.svg' width='44' height='32' align='center'> | 296.0 pts | $12.2M | 23% |
-| <img src='src/constructors/wil-2026.svg' width='44' height='32' align='center'> | 237.0 pts | $13.2M | 9% |
-| <img src='src/constructors/ast-2026.svg' width='44' height='32' align='center'> | -116.0 pts | $3.9M | 4% |
-| <img src='src/constructors/cad-2026.svg' width='44' height='32' align='center'> | -117.0 pts | $3.0M | 9% |
+| <img src='src/constructors/mer-2026.svg' width='44' height='32' align='center'> | 1554.0 pts | \$34.0M | 35% |
+| <img src='src/constructors/fer-2026.svg' width='44' height='32' align='center'> | 1314.0 pts | \$29.1M | 41% |
+| <img src='src/constructors/red-2026.svg' width='44' height='32' align='center'> | 1102.0 pts | \$33.6M | 8% |
+| <img src='src/constructors/mcl-2026.svg' width='44' height='32' align='center'> | 989.0 pts | \$33.3M | 10% |
+| <img src='src/constructors/vrb-2026.svg' width='44' height='32' align='center'> | 626.0 pts | \$18.3M | 33% |
+| <img src='src/constructors/alp-2026.svg' width='44' height='32' align='center'> | 399.0 pts | \$17.6M | 7% |
+| <img src='src/constructors/aud-2026.svg' width='44' height='32' align='center'> | 322.0 pts | \$12.2M | 21% |
+| <img src='src/constructors/haa-2026.svg' width='44' height='32' align='center'> | 296.0 pts | \$12.2M | 23% |
+| <img src='src/constructors/wil-2026.svg' width='44' height='32' align='center'> | 237.0 pts | \$13.2M | 9% |
+| <img src='src/constructors/ast-2026.svg' width='44' height='32' align='center'> | -116.0 pts | \$3.9M | 4% |
+| <img src='src/constructors/cad-2026.svg' width='44' height='32' align='center'> | -117.0 pts | \$3.0M | 9% |
 
 </details>
 
@@ -136,26 +154,26 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 
 | Driver | Total fantasy pts | Value | Selected % |
 | :--- | :--- | :--- | :--- |
-| <img src='src/drivers/ver-red-2025.svg' width='44' height='32' align='center'> | 776.0 pts | $30.1M | 21% |
-| <img src='src/drivers/nor-mcl-2025.svg' width='44' height='32' align='center'> | 707.0 pts | $30.3M | 23% |
-| <img src='src/drivers/pia-mcl-2025.svg' width='44' height='32' align='center'> | 644.0 pts | $25.1M | 35% |
-| <img src='src/drivers/rus-mer-2025.svg' width='44' height='32' align='center'> | 580.0 pts | $23.7M | 12% |
-| <img src='src/drivers/lec-fer-2025.svg' width='44' height='32' align='center'> | 407.0 pts | $23.0M | 14% |
-| <img src='src/drivers/ham-fer-2025.svg' width='44' height='32' align='center'> | 391.0 pts | $21.9M | 11% |
-| <img src='src/drivers/ant-mer-2025.svg' width='44' height='32' align='center'> | 311.0 pts | $18.1M | 21% |
-| <img src='src/drivers/bea-haa-2025.svg' width='44' height='32' align='center'> | 206.0 pts | $9.3M | 43% |
-| <img src='src/drivers/alb-wil-2025.svg' width='44' height='32' align='center'> | 198.0 pts | $12.6M | 27% |
-| <img src='src/drivers/tsu-red-2025.svg' width='44' height='32' align='center'> | 183.0 pts | $11.4M | 6% |
-| <img src='src/drivers/oco-haa-2025.svg' width='44' height='32' align='center'> | 177.0 pts | $7.9M | 22% |
-| <img src='src/drivers/hul-kck-2025.svg' width='44' height='32' align='center'> | 147.0 pts | $5.0M | 32% |
-| <img src='src/drivers/str-ast-2025.svg' width='44' height='32' align='center'> | 146.0 pts | $6.7M | 10% |
-| <img src='src/drivers/sai-wil-2025.svg' width='44' height='32' align='center'> | 130.0 pts | $7.7M | 44% |
-| <img src='src/drivers/had-vrb-2025.svg' width='44' height='32' align='center'> | 111.0 pts | $6.9M | 56% |
-| <img src='src/drivers/law-vrb-2025.svg' width='44' height='32' align='center'> | 64.0 pts | $5.9M | 12% |
-| <img src='src/drivers/gas-alp-2025.svg' width='44' height='32' align='center'> | 58.0 pts | $6.5M | 20% |
-| <img src='src/drivers/alo-ast-2025.svg' width='44' height='32' align='center'> | 58.0 pts | $4.7M | 38% |
-| <img src='src/drivers/bor-kck-2025.svg' width='44' height='32' align='center'> | 53.0 pts | $5.5M | 24% |
-| <img src='src/drivers/col-alp-2025.svg' width='44' height='32' align='center'> | 8.0 pts | $4.5M | 10% |
+| <img src='src/drivers/ver-red-2025.svg' width='44' height='32' align='center'> | 776.0 pts | \$30.1M | 21% |
+| <img src='src/drivers/nor-mcl-2025.svg' width='44' height='32' align='center'> | 707.0 pts | \$30.3M | 23% |
+| <img src='src/drivers/pia-mcl-2025.svg' width='44' height='32' align='center'> | 644.0 pts | \$25.1M | 35% |
+| <img src='src/drivers/rus-mer-2025.svg' width='44' height='32' align='center'> | 580.0 pts | \$23.7M | 12% |
+| <img src='src/drivers/lec-fer-2025.svg' width='44' height='32' align='center'> | 407.0 pts | \$23.0M | 14% |
+| <img src='src/drivers/ham-fer-2025.svg' width='44' height='32' align='center'> | 391.0 pts | \$21.9M | 11% |
+| <img src='src/drivers/ant-mer-2025.svg' width='44' height='32' align='center'> | 311.0 pts | \$18.1M | 21% |
+| <img src='src/drivers/bea-haa-2025.svg' width='44' height='32' align='center'> | 206.0 pts | \$9.3M | 43% |
+| <img src='src/drivers/alb-wil-2025.svg' width='44' height='32' align='center'> | 198.0 pts | \$12.6M | 27% |
+| <img src='src/drivers/tsu-red-2025.svg' width='44' height='32' align='center'> | 183.0 pts | \$11.4M | 6% |
+| <img src='src/drivers/oco-haa-2025.svg' width='44' height='32' align='center'> | 177.0 pts | \$7.9M | 22% |
+| <img src='src/drivers/hul-kck-2025.svg' width='44' height='32' align='center'> | 147.0 pts | \$5.0M | 32% |
+| <img src='src/drivers/str-ast-2025.svg' width='44' height='32' align='center'> | 146.0 pts | \$6.7M | 10% |
+| <img src='src/drivers/sai-wil-2025.svg' width='44' height='32' align='center'> | 130.0 pts | \$7.7M | 44% |
+| <img src='src/drivers/had-vrb-2025.svg' width='44' height='32' align='center'> | 111.0 pts | \$6.9M | 56% |
+| <img src='src/drivers/law-vrb-2025.svg' width='44' height='32' align='center'> | 64.0 pts | \$5.9M | 12% |
+| <img src='src/drivers/gas-alp-2025.svg' width='44' height='32' align='center'> | 58.0 pts | \$6.5M | 20% |
+| <img src='src/drivers/alo-ast-2025.svg' width='44' height='32' align='center'> | 58.0 pts | \$4.7M | 38% |
+| <img src='src/drivers/bor-kck-2025.svg' width='44' height='32' align='center'> | 53.0 pts | \$5.5M | 24% |
+| <img src='src/drivers/col-alp-2025.svg' width='44' height='32' align='center'> | 8.0 pts | \$4.5M | 10% |
 
 #### 🏢 Constructors Standings
 
@@ -165,12 +183,12 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 | <img src='src/constructors/red-2025.svg' width='44' height='32' align='center'> | 1227.0 pts | $31.1M | 11% |
 | <img src='src/constructors/mer-2025.svg' width='44' height='32' align='center'> | 1185.0 pts | $28.4M | 19% |
 | <img src='src/constructors/fer-2025.svg' width='44' height='32' align='center'> | 1145.0 pts | $31.8M | 18% |
-| <img src='src/constructors/wil-2025.svg' width='44' height='32' align='center'> | 490.0 pts | $19.5M | 25% |
-| <img src='src/constructors/haa-2025.svg' width='44' height='32' align='center'> | 482.0 pts | $15.6M | 18% |
-| <img src='src/constructors/vrb-2025.svg' width='44' height='32' align='center'> | 462.0 pts | $16.2M | 27% |
-| <img src='src/constructors/ast-2025.svg' width='44' height='32' align='center'> | 344.0 pts | $10.3M | 16% |
-| <img src='src/constructors/kck-2025.svg' width='44' height='32' align='center'> | 307.0 pts | $8.7M | 15% |
-| <img src='src/constructors/alp-2025.svg' width='44' height='32' align='center'> | 165.0 pts | $10.1M | 11% |
+| <img src='src/constructors/wil-2025.svg' width='44' height='32' align='center'> | 490.0 pts | \$19.5M | 25% |
+| <img src='src/constructors/haa-2025.svg' width='44' height='32' align='center'> | 482.0 pts | \$15.6M | 18% |
+| <img src='src/constructors/vrb-2025.svg' width='44' height='32' align='center'> | 462.0 pts | \$16.2M | 27% |
+| <img src='src/constructors/ast-2025.svg' width='44' height='32' align='center'> | 344.0 pts | \$10.3M | 16% |
+| <img src='src/constructors/kck-2025.svg' width='44' height='32' align='center'> | 307.0 pts | \$8.7M | 15% |
+| <img src='src/constructors/alp-2025.svg' width='44' height='32' align='center'> | 165.0 pts | \$10.1M | 11% |
 
 </details>
 
@@ -268,25 +286,30 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 
 <!-- SEASONS_SUMMARY_END -->
 
----
-
 ## ⚡ Quick start
 
-```
+```python
 import pandas as pd
 
-# Load round data directly from GitHub into a DataFrame
-url = "https://raw.githubusercontent.com/mzafram2001/f1-fantasy/main/data/2026/round_11.json"
-data = pd.read_json(url)
+# Load round data directly from GitHub
+url = "[https://raw.githubusercontent.com/mzafram2001/f1-fantasy/main/data/2026/round_11.json](https://raw.githubusercontent.com/mzafram2001/f1-fantasy/main/data/2026/round_11.json)"
+data = pd.read_json(url, typ="series")
 
 # Convert Drivers into a Pandas DataFrame
-df_drivers = pd.DataFrame(data["Drivers"].tolist())
+df_drivers = pd.DataFrame(data["Drivers"])
 print(df_drivers.sort_values(by="Season_Fantasy_Points", ascending=False).head())
 ```
 
 ---
 
-> [!CAUTION]
+> [!WARNING]
+> **Data sources & credits:**
+>
+> * Fantasy stats fetched via [`skelmis-f1-fantasy`](https://pypi.org/project/skelmis-f1-fantasy/).
+> * Season schedules, session UTC times, and circuit metadata powered by [`jolpica-f1`](https://github.com/jolpica/jolpica-f1).
+> * Circuit SVG layouts sourced from [`TracingInsights/f1db`](https://github.com/TracingInsights/f1db).
+
+> [!IMPORTANT]
 > **Disclaimer:** Data is collected from public sources. This repository is for educational and research purposes only. Not financial advice.
 
 > [!TIP]
