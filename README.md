@@ -5,6 +5,7 @@
 ![Format](https://img.shields.io/badge/Format-JSON-orange)
 ![Stack](https://img.shields.io/badge/Stack-Python-yellow)
 ![Last updated](https://img.shields.io/github/last-commit/mzafram2001/f1-fantasy?label=Last%20update)
+[![Update F1 Fantasy data](https://github.com/mzafram2001/f1-fantasy/actions/workflows/get_round_data.yml/badge.svg)](https://github.com/mzafram2001/f1-fantasy/actions/workflows/get_round_data.yml)
 
 An open-source, automated historical dataset of F1 Fantasy statistics.
 
@@ -37,7 +38,8 @@ f1-fantasy/
 ├── scripts/
 │   ├── get_round_data.py
 │   ├── meta_utils.py
-│   └── update_readme.py
+│   ├── update_readme.py
+│   └── validate_data.py
 │
 ├── src/
 │   ├── circuits/
