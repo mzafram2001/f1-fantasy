@@ -52,15 +52,15 @@ def validate_entity(entity, kind, path, season, errors, warnings):
         if not os.path.exists(team_svg):
             warnings.append(f"{path}: falta SVG de equipo {team_svg} (usará default.svg)")
 
-    # Comprobación aritmética del desglose de puntos
+    # Comprobación aritmética del desglose de puntos (solo aviso por sanciones post-carrera en la API)
     q_pts = float(entity["Qualifying_Points"])
     s_pts = float(entity["Sprint_Points"])
     r_pts = float(entity["Race_Points"])
     total_round = float(entity["Round_Fantasy_Points"])
 
     if abs((q_pts + s_pts + r_pts) - total_round) > 0.1:
-        errors.append(
-            f"{path} [{kind} {code}]: desglose no cuadra "
+        warnings.append(
+            f"{path} [{kind} {code}]: desglose oficial difiere del total "
             f"({q_pts} + {s_pts} + {r_pts} != {total_round})"
         )
 
