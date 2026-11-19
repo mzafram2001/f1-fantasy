@@ -20,6 +20,7 @@ f1-fantasy/
 ├── .github/
 │   ├── workflows/
 │   │   └── get_round_data.yml
+│   │ 
 │   └── FUNDING.yml
 │ 
 ├── data/
@@ -27,6 +28,7 @@ f1-fantasy/
 │   │   ├── round_01.json
 │   │   ├── round_02.json
 │   │   └── ...
+│   │ 
 │   ├── 2024/
 │   │   ├── round_01.json
 │   │   ├── round_02.json
@@ -36,6 +38,17 @@ f1-fantasy/
 ├── scripts/
 │   ├── get_round_data.py
 │   └── update_readme.py
+│
+├── src/
+│   ├── constructors/
+│   │   ├── alf-2023.svg
+│   │   ├── alp-2023.svg
+│   │   └── ...
+│   │ 
+│   └── drivers/
+│       ├── alb-wil-2023.svg
+│       ├── ant-mer-2026.svg
+│       └── ...
 │
 ├── AUTHORS.md
 ├── LICENSE.md
