@@ -130,7 +130,7 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 
 
 <details>
-<summary><b>🏎️ 2025 Season — Round 24</b></summary>
+<summary><b>🏎️ 2025 Season — Round 24 · Abu Dhabi Grand Prix</b> <img src='src/circuits/yas-marina.svg' width='28' height='20' align='center'></summary>
 
 #### 👤 Drivers Standings
 
@@ -176,7 +176,7 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 
 
 <details>
-<summary><b>🏎️ 2024 Season — Round 24</b></summary>
+<summary><b>🏎️ 2024 Season — Round 24 · Abu Dhabi Grand Prix</b> <img src='src/circuits/yas-marina.svg' width='28' height='20' align='center'></summary>
 
 #### 👤 Drivers Standings
 
@@ -222,7 +222,7 @@ Each round file (`data/{season}/round_{id}.json`) follows a standardized JSON sc
 
 
 <details>
-<summary><b>🏎️ 2023 Season — Round 22</b></summary>
+<summary><b>🏎️ 2023 Season — Round 22 · Abu Dhabi Grand Prix</b> <img src='src/circuits/yas-marina.svg' width='28' height='20' align='center'></summary>
 
 #### 👤 Drivers Standings
 
