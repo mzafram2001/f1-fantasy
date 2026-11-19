@@ -44,51 +44,68 @@ def generate_season_markdown(base_json_path, latest_json_path=None, is_latest_se
         with open(latest_json_path, "r", encoding="utf-8") as f:
             latest_data = json.load(f)
             latest_drivers_map = {
-                d.get("Driver_Name"): d for d in latest_data.get("Drivers", [])
+                d.get("Driver_Code"): d for d in latest_data.get("Drivers", [])
             }
             latest_teams_map = {
-                t.get("Team_Name"): t for t in latest_data.get("Teams", [])
+                t.get("Team_Code"): t for t in latest_data.get("Teams", [])
             }
 
-    team_code_map = {t.get("Team_Name"): t.get("Team_Code", "unk").lower() for t in data.get("Teams", [])}
+    team_code_map = {
+        t.get("Team_Name"): t.get("Team_Code", "unk").lower()
+        for t in data.get("Teams", [])
+    }
     if latest_data:
-        team_code_map.update({t.get("Team_Name"): t.get("Team_Code", "unk").lower() for t in latest_data.get("Teams", [])})
+        team_code_map.update({
+            t.get("Team_Name"): t.get("Team_Code", "unk").lower()
+            for t in latest_data.get("Teams", [])
+        })
 
-    def get_best_val(item_name, key, maps, base_item, default=0, is_market_data=False):
-        latest_item = maps.get(item_name, base_item)
+    def get_best_val(item_code, key, maps, base_item, default=0, is_market_data=False):
+        latest_item = maps.get(item_code, base_item)
         val = latest_item.get(key)
-        
+
         if val is None or val == "":
             return base_item.get(key, default)
-            
+
         if is_market_data and (val == 0 or val == 0.0):
             return base_item.get(key, default)
-            
+
         return val
 
     meta = data.get("Meta", {})
-    season = meta.get("season", "N/A")
-    race_id = meta.get("race_id", 0)
+    season = meta.get("Season", meta.get("season", "N/A"))
+    race_id = meta.get("Race_Id", meta.get("race_id", 0))
+    event_name = meta.get("Event_Name")
+    circuit = meta.get("Circuit") or {}
+    circuit_svg = circuit.get("Svg_Path")
 
     drivers = data.get("Drivers", [])
     sorted_drivers = sorted(
         drivers,
-        key=lambda x: get_best_val(x.get("Driver_Name"), "Season_Fantasy_Points", latest_drivers_map, x, default=0),
+        key=lambda x: get_best_val(
+            x.get("Driver_Code"), "Season_Fantasy_Points", latest_drivers_map, x, default=0
+        ),
         reverse=True,
     )
 
     teams = data.get("Teams", [])
     sorted_teams = sorted(
         teams,
-        key=lambda x: get_best_val(x.get("Team_Name"), "Season_Fantasy_Points", latest_teams_map, x, default=0),
+        key=lambda x: get_best_val(
+            x.get("Team_Code"), "Season_Fantasy_Points", latest_teams_map, x, default=0
+        ),
         reverse=True,
     )
 
     open_attr = " open" if is_latest_season else ""
+    event_suffix = f" · {event_name}" if event_name else ""
+    circuit_img = ""
+    if circuit_svg and os.path.exists(circuit_svg):
+        circuit_img = f" <img src='{circuit_svg}' width='28' height='20' align='center'>"
 
     md = [
         f"<details{open_attr}>",
-        f"<summary><b>🏎️ {season} Season — Round {race_id:02d}</b></summary>",
+        f"<summary><b>🏎️ {season} Season — Round {race_id:02d}{event_suffix}</b>{circuit_img}</summary>",
         "",
         "#### 👤 Drivers Standings",
         "",
@@ -97,23 +114,27 @@ def generate_season_markdown(base_json_path, latest_json_path=None, is_latest_se
     ]
 
     for d in sorted_drivers:
-        name = d.get("Driver_Name", "N/A")
-        team = get_best_val(name, "Team_Name", latest_drivers_map, d, "N/A")
-        
-        season_pts = get_best_val(name, "Season_Fantasy_Points", latest_drivers_map, d)
-        val = get_best_val(name, "Value", latest_drivers_map, d, is_market_data=True)
-        sel = format_percentage(get_best_val(name, "Selected_Percentage", latest_drivers_map, d, is_market_data=True))
-        
-        d_code = d.get("Driver_Code", "unk").lower()
-        t_code = team_code_map.get(team, "unk")
-        
-        # 🏎️ SVG Piloto
-        svg_driver_path = f"src/drivers/{d_code}-{t_code}-{season}.svg"
+        d_code = d.get("Driver_Code", "unk")
+        team = get_best_val(d_code, "Team_Name", latest_drivers_map, d, "N/A")
+
+        season_pts = get_best_val(d_code, "Season_Fantasy_Points", latest_drivers_map, d)
+        val = get_best_val(d_code, "Value", latest_drivers_map, d, is_market_data=True)
+        sel = format_percentage(
+            get_best_val(d_code, "Selected_Percentage", latest_drivers_map, d, is_market_data=True)
+        )
+
+        raw_t_code = get_best_val(d_code, "Team_Code", latest_drivers_map, d, default=None)
+        if raw_t_code and raw_t_code != "N/A":
+            t_code = raw_t_code.lower()
+        else:
+            t_code = team_code_map.get(team, "unk")
+
+        svg_driver_path = f"src/drivers/{d_code.lower()}-{t_code}-{season}.svg"
         if not os.path.exists(svg_driver_path):
             svg_driver_path = "src/drivers/default.svg"
-            
+
         img_driver = f"<img src='{svg_driver_path}' width='44' height='32' align='center'>"
-        
+
         md.append(f"| {img_driver} | {season_pts} pts | ${val}M | {sel} |")
 
     md.extend(
@@ -127,20 +148,20 @@ def generate_season_markdown(base_json_path, latest_json_path=None, is_latest_se
     )
 
     for t in sorted_teams:
-        name = t.get("Team_Name", "N/A")
-        
-        season_pts = get_best_val(name, "Season_Fantasy_Points", latest_teams_map, t)
-        val = get_best_val(name, "Value", latest_teams_map, t, is_market_data=True)
-        sel = format_percentage(get_best_val(name, "Selected_Percentage", latest_teams_map, t, is_market_data=True))
-        
-        t_code = t.get("Team_Code", "unk").lower()
-        
-        svg_path = f"src/constructors/{t_code}-{season}.svg"
+        t_code = t.get("Team_Code", "unk")
+
+        season_pts = get_best_val(t_code, "Season_Fantasy_Points", latest_teams_map, t)
+        val = get_best_val(t_code, "Value", latest_teams_map, t, is_market_data=True)
+        sel = format_percentage(
+            get_best_val(t_code, "Selected_Percentage", latest_teams_map, t, is_market_data=True)
+        )
+
+        svg_path = f"src/constructors/{t_code.lower()}-{season}.svg"
         if not os.path.exists(svg_path):
             svg_path = "src/constructors/default.svg"
-            
+
         img_team = f"<img src='{svg_path}' width='44' height='32' align='center'>"
-        
+
         md.append(f"| {img_team} | {season_pts} pts | ${val}M | {sel} |")
 
     md.extend(["", "</details>", ""])
@@ -168,7 +189,7 @@ def update_readme():
     for idx, season in enumerate(seasons):
         season_dir = os.path.join(DATA_DIR, season)
         is_latest = (idx == 0)
-        
+
         base_file, latest_file = get_round_files(season_dir, is_latest_season=is_latest)
 
         if base_file:
@@ -190,17 +211,21 @@ def update_readme():
 
     summary_pattern = r"(<!-- SEASONS_SUMMARY_START -->)(.*?)(<!-- SEASONS_SUMMARY_END -->)"
     if re.search(summary_pattern, readme_content, flags=re.DOTALL):
-        readme_content = re.sub(summary_pattern, f"\\1\n{full_summary_md}\n\\3", readme_content, flags=re.DOTALL)
+        readme_content = re.sub(
+            summary_pattern, f"\\1\n{full_summary_md}\n\\3", readme_content, flags=re.DOTALL
+        )
 
     today_str = datetime.now().strftime("%Y-%m-%d")
     checked_pattern = r"(<!-- LAST_CHECKED_START -->)(.*?)(<!-- LAST_CHECKED_END -->)"
     if re.search(checked_pattern, readme_content, flags=re.DOTALL):
-        readme_content = re.sub(checked_pattern, f"\\1Last checked: {today_str}\\3", readme_content, flags=re.DOTALL)
+        readme_content = re.sub(
+            checked_pattern, f"\\1Last checked: {today_str}\\3", readme_content, flags=re.DOTALL
+        )
 
     with open(README_PATH, "w", encoding="utf-8") as f:
         f.write(readme_content)
 
-    print(f"README.md updated successfully sin columna de equipo en pilotos!")
+    print("README.md updated successfully!")
 
 
 if __name__ == "__main__":

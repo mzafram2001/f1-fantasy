@@ -3,6 +3,7 @@ import json
 import os
 from datetime import datetime
 from fantasy import APIClient, Client
+from meta_utils import build_meta, fetch_season_schedule
 
 # Mapeo de normalización de códigos de equipo
 TEAM_CODE_OVERRIDES = {
@@ -88,17 +89,13 @@ def merge_driver_records(records):
     return merged
 
 
-def save_round_json(processed_drivers, processed_teams, race_id=1, season=None):
+def save_round_json(processed_drivers, processed_teams, race_id=1, season=None, race_info=None):
     """Guarda la información de la ronda en un archivo JSON independiente."""
     if season is None:
         season = datetime.now().year
 
     payload = {
-        "Meta": {
-            "season": season,
-            "race_id": race_id,
-            "generated_at": datetime.now().isoformat(),
-        },
+        "Meta": build_meta(season=season, race_id=race_id, race_info=race_info),
         "Drivers": processed_drivers,
         "Teams": processed_teams,
     }
@@ -110,11 +107,12 @@ def save_round_json(processed_drivers, processed_teams, race_id=1, season=None):
 
     with open(filename, "w", encoding="utf-8") as f:
         json.dump(payload, f, indent=4, ensure_ascii=False)
+        f.write("\n")
 
     print(f"📁 Guardado local: {filename}")
 
 
-async def process_single_round(client, race_id, season, cumulative_drivers, cumulative_teams):
+async def process_single_round(client, race_id, season, cumulative_drivers, cumulative_teams, race_info=None):
     """Descarga, procesa y guarda los datos activos de una ronda."""
     url = f"/feeds/drivers/{race_id}_en.json"
 
@@ -137,21 +135,61 @@ async def process_single_round(client, race_id, season, cumulative_drivers, cumu
         cumulative_drivers.update(prev_d)
         cumulative_teams.update(prev_t)
 
-    # 1. PROCESAMIENTO DE PILOTOS ACTIVOS
+    # 1. PROCESAMIENTO DE EQUIPOS ACTIVOS (primero, para mapear Team_Code a los pilotos)
+    raw_teams = [
+        i for i in items
+        if i.get("PositionName") == "CONSTRUCTOR" and is_active(i)
+    ]
+    processed_teams = []
+
+    for t in raw_teams:
+        raw_code = t.get("DriverTLA", "N/A")
+        team_code = TEAM_CODE_OVERRIDES.get(raw_code, raw_code)
+
+        processed_teams.append({
+            "Team_Name": t.get("DisplayName", "N/A"),
+            "Team_Code": team_code,
+            "Round_Fantasy_Points": safe_float(t.get("GamedayPoints")),
+            "Season_Fantasy_Points": 0.0,
+            "Selected_Percentage": safe_percentage(t.get("SelectedPercentage")),
+            "Value": safe_float(t.get("Value")),
+            "Qualifying_Points": safe_float(t.get("QualifyingPoints")),
+            "Sprint_Points": safe_float(t.get("SprintPoints")),
+            "Race_Points": safe_float(t.get("RacePoints")),
+        })
+
+    team_code_by_name = {t["Team_Name"]: t["Team_Code"] for t in processed_teams}
+
+    for t in processed_teams:
+        code = t["Team_Code"]
+        prev_points = cumulative_teams.get(code, 0.0)
+        round_points = t["Round_Fantasy_Points"]
+        total = round(prev_points + round_points, 1)
+
+        cumulative_teams[code] = total
+        t["Season_Fantasy_Points"] = total
+
+    processed_teams.sort(
+        key=lambda x: x["Season_Fantasy_Points"],
+        reverse=True,
+    )
+
+    # 2. PROCESAMIENTO DE PILOTOS ACTIVOS
     raw_drivers = [
-        i for i in items 
+        i for i in items
         if i.get("PositionName") == "DRIVER" and is_active(i)
     ]
     drivers_by_code = {}
 
     for d in raw_drivers:
         driver_code = d.get("DriverTLA", "N/A")
+        team_name = d.get("TeamName", "N/A")
 
-        # Se define Season_Fantasy_Points en su posición exacta
         driver_payload = {
             "Driver_Name": d.get("DisplayName", "N/A"),
             "Driver_Code": driver_code,
-            "Team_Name": d.get("TeamName", "N/A"),
+            "Team_Name": team_name,
+            "Team_Code": team_code_by_name.get(team_name, "N/A"),
             "Round_Fantasy_Points": safe_float(d.get("GamedayPoints")),
             "Season_Fantasy_Points": 0.0,
             "Selected_Percentage": safe_percentage(d.get("SelectedPercentage")),
@@ -182,49 +220,13 @@ async def process_single_round(client, race_id, season, cumulative_drivers, cumu
         reverse=True,
     )
 
-    # 2. PROCESAMIENTO DE EQUIPOS ACTIVOS
-    raw_teams = [
-        i for i in items 
-        if i.get("PositionName") == "CONSTRUCTOR" and is_active(i)
-    ]
-    processed_teams = []
-
-    for t in raw_teams:
-        raw_code = t.get("DriverTLA", "N/A")
-        team_code = TEAM_CODE_OVERRIDES.get(raw_code, raw_code)
-
-        processed_teams.append({
-            "Team_Name": t.get("DisplayName", "N/A"),
-            "Team_Code": team_code,
-            "Round_Fantasy_Points": safe_float(t.get("GamedayPoints")),
-            "Season_Fantasy_Points": 0.0,
-            "Selected_Percentage": safe_percentage(t.get("SelectedPercentage")),
-            "Value": safe_float(t.get("Value")),
-            "Qualifying_Points": safe_float(t.get("QualifyingPoints")),
-            "Sprint_Points": safe_float(t.get("SprintPoints")),
-            "Race_Points": safe_float(t.get("RacePoints")),
-        })
-
-    for t in processed_teams:
-        code = t["Team_Code"]
-        prev_points = cumulative_teams.get(code, 0.0)
-        round_points = t["Round_Fantasy_Points"]
-        total = round(prev_points + round_points, 1)
-
-        cumulative_teams[code] = total
-        t["Season_Fantasy_Points"] = total
-
-    processed_teams.sort(
-        key=lambda x: x["Season_Fantasy_Points"],
-        reverse=True,
-    )
-
     # 3. GUARDADO LOCAL EN JSON
     save_round_json(
         processed_drivers=processed_drivers,
         processed_teams=processed_teams,
         race_id=race_id,
         season=season,
+        race_info=race_info,
     )
 
     return True
@@ -242,7 +244,8 @@ async def main():
     client = Client(APIClient(user_guid=user_guid, token=token))
 
     season = datetime.now().year
-    max_rondas = 24
+    schedule = fetch_season_schedule(season)
+    max_rondas = max(schedule.keys(), default=24)
 
     cumulative_drivers = {}
     cumulative_teams = {}
@@ -257,6 +260,7 @@ async def main():
             season,
             cumulative_drivers,
             cumulative_teams,
+            race_info=schedule.get(race_id),
         )
 
         if not exito:
