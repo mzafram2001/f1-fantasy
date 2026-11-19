@@ -1,10 +1,13 @@
 import json
 import os
 from datetime import datetime
-from urllib.error import URLError
+from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 JOLPICA_BASE = "https://api.jolpi.ca/ergast/f1"
+F1DB_CIRCUITS_RAW_BASE = (
+    "https://raw.githubusercontent.com/TracingInsights/f1db/main/src/assets/circuits/black-outline"
+)
 HEADERS = {"User-Agent": "f1-fantasy-repo/1.0"}
 
 # circuitId de Jolpica -> (nombre SVG en src/circuits/, código ISO-3)
@@ -71,6 +74,32 @@ def fetch_season_schedule(season):
         return {}
 
 
+def ensure_circuit_svg(svg_slug, svg_path):
+    """Comprueba si existe el SVG del circuito y, si falta, lo descarga de f1db."""
+    if os.path.exists(svg_path):
+        return True
+
+    url = f"{F1DB_CIRCUITS_RAW_BASE}/{svg_slug}.svg"
+    try:
+        req = Request(url, headers=HEADERS)
+        with urlopen(req, timeout=20) as resp:
+            svg_bytes = resp.read()
+
+        if b"<svg" not in svg_bytes.lower():
+            print(f"⚠️ Respuesta inválida al descargar SVG desde {url}")
+            return False
+
+        os.makedirs(os.path.dirname(svg_path), exist_ok=True)
+        with open(svg_path, "wb") as f:
+            f.write(svg_bytes)
+
+        print(f"🆕 Circuito descargado automáticamente: {svg_path}")
+        return True
+    except (HTTPError, URLError, TimeoutError) as e:
+        print(f"⚠️ No se pudo descargar {svg_path} desde f1db ({e})")
+        return False
+
+
 def build_meta(season, race_id, race_info=None, generated_at=None, strict=False):
     """Construye el bloque Meta en Pascal_Snake_Case."""
     generated_at = generated_at or datetime.now().isoformat()
@@ -102,11 +131,10 @@ def build_meta(season, race_id, race_info=None, generated_at=None, strict=False)
         raise KeyError(f"circuitId no mapeado: '{jolpica_cid}' ({race_info['raceName']} {season})")
     else:
         print(f"⚠️ circuitId no mapeado en CIRCUIT_MAP: '{jolpica_cid}'")
-        svg_slug, country_code = jolpica_cid, None
+        svg_slug, country_code = jolpica_cid.replace("_", "-"), None
 
     svg_path = f"src/circuits/{svg_slug}.svg"
-    if not os.path.exists(svg_path):
-        print(f"⚠️ No existe el archivo SVG: {svg_path}")
+    ensure_circuit_svg(svg_slug, svg_path)
 
     country_name = COUNTRY_NAME_OVERRIDES.get(loc["country"], loc["country"])
     sprint_obj = race_info.get("Sprint")
