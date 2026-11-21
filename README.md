@@ -304,20 +304,20 @@ print(df_drivers.sort_values(by="Season_Fantasy_Points", ascending=False).head()
 
 ---
 
-> [!WARNING]
+> [!IMPORTANT]
 > **Data sources & credits:**
 >
 > * Fantasy stats fetched via [`skelmis-f1-fantasy`](https://pypi.org/project/skelmis-f1-fantasy/).
 > * Season schedules, session UTC times, and circuit metadata powered by [`jolpica-f1`](https://github.com/jolpica/jolpica-f1).
 > * Circuit SVG layouts sourced from [`TracingInsights/f1db`](https://github.com/TracingInsights/f1db).
 
-> [!IMPORTANT]
-> **Disclaimer:** Data is collected from public sources. This repository is for educational and research purposes only. Not financial advice.
+> [!CAUTION]
+> **Disclaimer:** Data is collected from public sources. This repository is for educational and research purposes only.
 
 > [!TIP]
 > **Want to help?**
 > ⭐ Do you like this project? If you find this data useful, please give it a star! It helps me keep updating it.
 >
-> ☕ If this dataset saves you time in your analysis or fantasy leagues, you can also [buy me a coffee on Ko-fi](https://ko-fi.com/mzm0102).
+> ☕ If this dataset saves you time in your analysis, you can also [buy me a coffee on Ko-fi](https://ko-fi.com/mzm0102).
 <br>
 <!-- LAST_CHECKED_START -->Last checked: 2026-11-21<!-- LAST_CHECKED_END -->
