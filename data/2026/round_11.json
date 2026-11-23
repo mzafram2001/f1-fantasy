@@ -3,22 +3,16 @@
         "Id": "2026_11",
         "Season": 2026,
         "Race_Id": 11,
-        "Event_Name": "Hungarian Grand Prix",
+        "Event_Name": null,
         "Is_Sprint": false,
-        "Circuit": {
-            "Id": "hungaroring",
-            "City": "Budapest",
-            "Country_Code": "HUN",
-            "Country_Name": "Hungary",
-            "Svg_Path": "src/circuits/hungaroring.svg"
-        },
+        "Circuit": null,
         "Start_Times": {
-            "Qualifying": "2026-07-25T14:00:00Z",
+            "Qualifying": null,
             "Sprint_Qualifying": null,
             "Sprint": null,
-            "Race": "2026-07-26T13:00:00Z"
+            "Race": null
         },
-        "Generated_At": "2026-11-22T15:50:34.610267"
+        "Generated_At": "2026-11-23T10:39:05.894724"
     },
     "Drivers": [
         {

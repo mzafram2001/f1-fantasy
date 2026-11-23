@@ -3,22 +3,16 @@
         "Id": "2026_12",
         "Season": 2026,
         "Race_Id": 12,
-        "Event_Name": "Dutch Grand Prix",
-        "Is_Sprint": true,
-        "Circuit": {
-            "Id": "zandvoort",
-            "City": "Zandvoort",
-            "Country_Code": "NLD",
-            "Country_Name": "Netherlands",
-            "Svg_Path": "src/circuits/zandvoort.svg"
-        },
+        "Event_Name": null,
+        "Is_Sprint": false,
+        "Circuit": null,
         "Start_Times": {
-            "Qualifying": "2026-08-22T14:00:00Z",
-            "Sprint_Qualifying": "2026-08-21T14:30:00Z",
-            "Sprint": "2026-08-22T10:00:00Z",
-            "Race": "2026-08-23T13:00:00Z"
+            "Qualifying": null,
+            "Sprint_Qualifying": null,
+            "Sprint": null,
+            "Race": null
         },
-        "Generated_At": "2026-11-22T15:50:35.008002"
+        "Generated_At": "2026-11-23T10:39:06.188154"
     },
     "Drivers": [
         {

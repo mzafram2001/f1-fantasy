@@ -3,22 +3,16 @@
         "Id": "2026_19",
         "Season": 2026,
         "Race_Id": 19,
-        "Event_Name": "Mexico City Grand Prix",
+        "Event_Name": null,
         "Is_Sprint": false,
-        "Circuit": {
-            "Id": "mexico-city",
-            "City": "Mexico City",
-            "Country_Code": "MEX",
-            "Country_Name": "Mexico",
-            "Svg_Path": "src/circuits/mexico-city.svg"
-        },
+        "Circuit": null,
         "Start_Times": {
-            "Qualifying": "2026-10-31T21:00:00Z",
+            "Qualifying": null,
             "Sprint_Qualifying": null,
             "Sprint": null,
-            "Race": "2026-11-01T20:00:00Z"
+            "Race": null
         },
-        "Generated_At": "2026-11-22T15:50:37.907121"
+        "Generated_At": "2026-11-23T10:39:08.175757"
     },
     "Drivers": [
         {

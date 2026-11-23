@@ -3,22 +3,16 @@
         "Id": "2026_04",
         "Season": 2026,
         "Race_Id": 4,
-        "Event_Name": "Miami Grand Prix",
-        "Is_Sprint": true,
-        "Circuit": {
-            "Id": "miami",
-            "City": "Miami",
-            "Country_Code": "USA",
-            "Country_Name": "United States",
-            "Svg_Path": "src/circuits/miami.svg"
-        },
+        "Event_Name": null,
+        "Is_Sprint": false,
+        "Circuit": null,
         "Start_Times": {
-            "Qualifying": "2026-05-02T20:00:00Z",
-            "Sprint_Qualifying": "2026-05-01T20:30:00Z",
-            "Sprint": "2026-05-02T16:00:00Z",
-            "Race": "2026-05-03T20:00:00Z"
+            "Qualifying": null,
+            "Sprint_Qualifying": null,
+            "Sprint": null,
+            "Race": null
         },
-        "Generated_At": "2026-11-22T15:50:31.730920"
+        "Generated_At": "2026-11-23T10:39:03.712631"
     },
     "Drivers": [
         {

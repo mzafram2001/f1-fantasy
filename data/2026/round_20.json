@@ -3,22 +3,16 @@
         "Id": "2026_20",
         "Season": 2026,
         "Race_Id": 20,
-        "Event_Name": "Brazilian Grand Prix",
+        "Event_Name": null,
         "Is_Sprint": false,
-        "Circuit": {
-            "Id": "interlagos",
-            "City": "São Paulo",
-            "Country_Code": "BRA",
-            "Country_Name": "Brazil",
-            "Svg_Path": "src/circuits/interlagos.svg"
-        },
+        "Circuit": null,
         "Start_Times": {
-            "Qualifying": "2026-11-07T18:00:00Z",
+            "Qualifying": null,
             "Sprint_Qualifying": null,
             "Sprint": null,
-            "Race": "2026-11-08T17:00:00Z"
+            "Race": null
         },
-        "Generated_At": "2026-11-22T15:50:38.315598"
+        "Generated_At": "2026-11-23T10:39:08.455297"
     },
     "Drivers": [
         {

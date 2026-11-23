@@ -3,22 +3,16 @@
         "Id": "2026_17",
         "Season": 2026,
         "Race_Id": 17,
-        "Event_Name": "Singapore Grand Prix",
-        "Is_Sprint": true,
-        "Circuit": {
-            "Id": "marina-bay",
-            "City": "Marina Bay",
-            "Country_Code": "SGP",
-            "Country_Name": "Singapore",
-            "Svg_Path": "src/circuits/marina-bay.svg"
-        },
+        "Event_Name": null,
+        "Is_Sprint": false,
+        "Circuit": null,
         "Start_Times": {
-            "Qualifying": "2026-10-10T13:00:00Z",
-            "Sprint_Qualifying": "2026-10-09T12:30:00Z",
-            "Sprint": "2026-10-10T09:00:00Z",
-            "Race": "2026-10-11T12:00:00Z"
+            "Qualifying": null,
+            "Sprint_Qualifying": null,
+            "Sprint": null,
+            "Race": null
         },
-        "Generated_At": "2026-11-22T15:50:36.992788"
+        "Generated_At": "2026-11-23T10:39:07.492682"
     },
     "Drivers": [
         {

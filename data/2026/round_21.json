@@ -3,22 +3,16 @@
         "Id": "2026_21",
         "Season": 2026,
         "Race_Id": 21,
-        "Event_Name": "Las Vegas Grand Prix",
+        "Event_Name": null,
         "Is_Sprint": false,
-        "Circuit": {
-            "Id": "las-vegas",
-            "City": "Las Vegas",
-            "Country_Code": "USA",
-            "Country_Name": "United States",
-            "Svg_Path": "src/circuits/las-vegas.svg"
-        },
+        "Circuit": null,
         "Start_Times": {
-            "Qualifying": "2026-11-21T04:00:00Z",
+            "Qualifying": null,
             "Sprint_Qualifying": null,
             "Sprint": null,
-            "Race": "2026-11-22T04:00:00Z"
+            "Race": null
         },
-        "Generated_At": "2026-11-22T15:50:38.701000"
+        "Generated_At": "2026-11-23T10:39:08.905415"
     },
     "Drivers": [
         {

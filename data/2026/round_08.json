@@ -3,22 +3,16 @@
         "Id": "2026_08",
         "Season": 2026,
         "Race_Id": 8,
-        "Event_Name": "Austrian Grand Prix",
+        "Event_Name": null,
         "Is_Sprint": false,
-        "Circuit": {
-            "Id": "spielberg",
-            "City": "Spielberg",
-            "Country_Code": "AUT",
-            "Country_Name": "Austria",
-            "Svg_Path": "src/circuits/spielberg.svg"
-        },
+        "Circuit": null,
         "Start_Times": {
-            "Qualifying": "2026-06-27T14:00:00Z",
+            "Qualifying": null,
             "Sprint_Qualifying": null,
             "Sprint": null,
-            "Race": "2026-06-28T13:00:00Z"
+            "Race": null
         },
-        "Generated_At": "2026-11-22T15:50:33.434431"
+        "Generated_At": "2026-11-23T10:39:05.016482"
     },
     "Drivers": [
         {

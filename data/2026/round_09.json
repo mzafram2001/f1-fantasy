@@ -3,22 +3,16 @@
         "Id": "2026_09",
         "Season": 2026,
         "Race_Id": 9,
-        "Event_Name": "British Grand Prix",
-        "Is_Sprint": true,
-        "Circuit": {
-            "Id": "silverstone",
-            "City": "Silverstone",
-            "Country_Code": "GBR",
-            "Country_Name": "United Kingdom",
-            "Svg_Path": "src/circuits/silverstone.svg"
-        },
+        "Event_Name": null,
+        "Is_Sprint": false,
+        "Circuit": null,
         "Start_Times": {
-            "Qualifying": "2026-07-04T15:00:00Z",
-            "Sprint_Qualifying": "2026-07-03T15:30:00Z",
-            "Sprint": "2026-07-04T11:00:00Z",
-            "Race": "2026-07-05T14:00:00Z"
+            "Qualifying": null,
+            "Sprint_Qualifying": null,
+            "Sprint": null,
+            "Race": null
         },
-        "Generated_At": "2026-11-22T15:50:33.815635"
+        "Generated_At": "2026-11-23T10:39:05.314714"
     },
     "Drivers": [
         {

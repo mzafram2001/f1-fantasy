@@ -3,22 +3,16 @@
         "Id": "2026_15",
         "Season": 2026,
         "Race_Id": 15,
-        "Event_Name": "Azerbaijan Grand Prix",
+        "Event_Name": null,
         "Is_Sprint": false,
-        "Circuit": {
-            "Id": "baku",
-            "City": "Baku",
-            "Country_Code": "AZE",
-            "Country_Name": "Azerbaijan",
-            "Svg_Path": "src/circuits/baku.svg"
-        },
+        "Circuit": null,
         "Start_Times": {
-            "Qualifying": "2026-09-25T12:00:00Z",
+            "Qualifying": null,
             "Sprint_Qualifying": null,
             "Sprint": null,
-            "Race": "2026-09-26T11:00:00Z"
+            "Race": null
         },
-        "Generated_At": "2026-11-22T15:50:36.196117"
+        "Generated_At": "2026-11-23T10:39:06.901405"
     },
     "Drivers": [
         {

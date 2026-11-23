@@ -101,7 +101,7 @@ Both driver and team arrays share standardized attributes:
 
 <!-- SEASONS_SUMMARY_START -->
 <details open>
-<summary><b>🏎️ 2026 Season — Round 21 · Las Vegas Grand Prix</b> <img src='src/circuits/las-vegas.svg' width='28' height='20' align='center'></summary>
+<summary><b>🏎️ 2026 Season — Round 21</b></summary>
 
 #### 👤 Drivers Standings
 
@@ -119,7 +119,7 @@ Both driver and team arrays share standardized attributes:
 | <img src='src/drivers/gas-alp-2026.svg' width='44' height='32' align='center'> | 172.0 pts | $9.0M | 21% |
 | <img src='src/drivers/sai-wil-2026.svg' width='44' height='32' align='center'> | 152.0 pts | $8.4M | 22% |
 | <img src='src/drivers/lin-vrb-2026.svg' width='44' height='32' align='center'> | 140.0 pts | $8.8M | 43% |
-| <img src='src/drivers/col-alp-2026.svg' width='44' height='32' align='center'> | 136.0 pts | $7.6M | 19% |
+| <img src='src/drivers/col-alp-2026.svg' width='44' height='32' align='center'> | 136.0 pts | $7.6M | 20% |
 | <img src='src/drivers/bor-aud-2026.svg' width='44' height='32' align='center'> | 117.0 pts | $7.0M | 33% |
 | <img src='src/drivers/bea-haa-2026.svg' width='44' height='32' align='center'> | 83.0 pts | $4.4M | 51% |
 | <img src='src/drivers/hul-aud-2026.svg' width='44' height='32' align='center'> | 64.0 pts | $7.0M | 34% |
@@ -320,4 +320,4 @@ print(df_drivers.sort_values(by="Season_Fantasy_Points", ascending=False).head()
 >
 > ☕ If this dataset saves you time in your analysis, you can also [buy me a coffee on Ko-fi](https://ko-fi.com/mzm0102).
 <br>
-<!-- LAST_CHECKED_START -->Last checked: 2026-11-22<!-- LAST_CHECKED_END -->
+<!-- LAST_CHECKED_START -->Last checked: 2026-11-23<!-- LAST_CHECKED_END -->
