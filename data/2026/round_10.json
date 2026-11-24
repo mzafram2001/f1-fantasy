@@ -3,16 +3,22 @@
         "Id": "2026_10",
         "Season": 2026,
         "Race_Id": 10,
-        "Event_Name": null,
+        "Event_Name": "Belgian Grand Prix",
         "Is_Sprint": false,
-        "Circuit": null,
+        "Circuit": {
+            "Id": "spa-francorchamps",
+            "City": "Spa",
+            "Country_Code": "BEL",
+            "Country_Name": "Belgium",
+            "Svg_Path": "src/circuits/spa-francorchamps.svg"
+        },
         "Start_Times": {
-            "Qualifying": null,
+            "Qualifying": "2026-07-18T14:00:00Z",
             "Sprint_Qualifying": null,
             "Sprint": null,
-            "Race": null
+            "Race": "2026-07-19T13:00:00Z"
         },
-        "Generated_At": "2026-11-23T10:39:05.608415"
+        "Generated_At": "2026-11-24T12:21:12.051401"
     },
     "Drivers": [
         {

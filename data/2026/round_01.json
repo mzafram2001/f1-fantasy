@@ -3,16 +3,22 @@
         "Id": "2026_01",
         "Season": 2026,
         "Race_Id": 1,
-        "Event_Name": null,
+        "Event_Name": "Australian Grand Prix",
         "Is_Sprint": false,
-        "Circuit": null,
+        "Circuit": {
+            "Id": "melbourne",
+            "City": "Melbourne",
+            "Country_Code": "AUS",
+            "Country_Name": "Australia",
+            "Svg_Path": "src/circuits/melbourne.svg"
+        },
         "Start_Times": {
-            "Qualifying": null,
+            "Qualifying": "2026-03-07T05:00:00Z",
             "Sprint_Qualifying": null,
             "Sprint": null,
-            "Race": null
+            "Race": "2026-03-08T04:00:00Z"
         },
-        "Generated_At": "2026-11-23T10:39:02.808457"
+        "Generated_At": "2026-11-24T12:21:07.892461"
     },
     "Drivers": [
         {

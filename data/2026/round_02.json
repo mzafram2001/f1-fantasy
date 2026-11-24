@@ -3,16 +3,22 @@
         "Id": "2026_02",
         "Season": 2026,
         "Race_Id": 2,
-        "Event_Name": null,
-        "Is_Sprint": false,
-        "Circuit": null,
-        "Start_Times": {
-            "Qualifying": null,
-            "Sprint_Qualifying": null,
-            "Sprint": null,
-            "Race": null
+        "Event_Name": "Chinese Grand Prix",
+        "Is_Sprint": true,
+        "Circuit": {
+            "Id": "shanghai",
+            "City": "Shanghai",
+            "Country_Code": "CHN",
+            "Country_Name": "China",
+            "Svg_Path": "src/circuits/shanghai.svg"
         },
-        "Generated_At": "2026-11-23T10:39:03.100983"
+        "Start_Times": {
+            "Qualifying": "2026-03-14T07:00:00Z",
+            "Sprint_Qualifying": "2026-03-13T07:30:00Z",
+            "Sprint": "2026-03-14T03:00:00Z",
+            "Race": "2026-03-15T07:00:00Z"
+        },
+        "Generated_At": "2026-11-24T12:21:08.454596"
     },
     "Drivers": [
         {

@@ -3,16 +3,22 @@
         "Id": "2026_22",
         "Season": 2026,
         "Race_Id": 22,
-        "Event_Name": null,
+        "Event_Name": "Qatar Grand Prix",
         "Is_Sprint": false,
-        "Circuit": null,
+        "Circuit": {
+            "Id": "lusail",
+            "City": "Lusail",
+            "Country_Code": "QAT",
+            "Country_Name": "Qatar",
+            "Svg_Path": "src/circuits/lusail.svg"
+        },
         "Start_Times": {
-            "Qualifying": null,
+            "Qualifying": "2026-11-28T18:00:00Z",
             "Sprint_Qualifying": null,
             "Sprint": null,
-            "Race": null
+            "Race": "2026-11-29T16:00:00Z"
         },
-        "Generated_At": "2026-11-23T10:39:09.346991"
+        "Generated_At": "2026-11-24T12:21:17.558954"
     },
     "Drivers": [
         {

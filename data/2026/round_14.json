@@ -3,16 +3,22 @@
         "Id": "2026_14",
         "Season": 2026,
         "Race_Id": 14,
-        "Event_Name": null,
+        "Event_Name": "Spanish Grand Prix",
         "Is_Sprint": false,
-        "Circuit": null,
+        "Circuit": {
+            "Id": "madring",
+            "City": "Madrid",
+            "Country_Code": "ESP",
+            "Country_Name": "Spain",
+            "Svg_Path": "src/circuits/madring.svg"
+        },
         "Start_Times": {
-            "Qualifying": null,
+            "Qualifying": "2026-09-12T14:00:00Z",
             "Sprint_Qualifying": null,
             "Sprint": null,
-            "Race": null
+            "Race": "2026-09-13T13:00:00Z"
         },
-        "Generated_At": "2026-11-23T10:39:06.600897"
+        "Generated_At": "2026-11-24T12:21:13.897900"
     },
     "Drivers": [
         {

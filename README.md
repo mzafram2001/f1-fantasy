@@ -101,7 +101,7 @@ Both driver and team arrays share standardized attributes:
 
 <!-- SEASONS_SUMMARY_START -->
 <details open>
-<summary><b>🏎️ 2026 Season — Round 21</b></summary>
+<summary><b>🏎️ 2026 Season — Round 21 · Las Vegas Grand Prix</b> <img src='src/circuits/las-vegas.svg' width='28' height='20' align='center'></summary>
 
 #### 👤 Drivers Standings
 
@@ -320,4 +320,4 @@ print(df_drivers.sort_values(by="Season_Fantasy_Points", ascending=False).head()
 >
 > ☕ If this dataset saves you time in your analysis, you can also [buy me a coffee on Ko-fi](https://ko-fi.com/mzm0102).
 <br>
-<!-- LAST_CHECKED_START -->Last checked: 2026-11-23<!-- LAST_CHECKED_END -->
+<!-- LAST_CHECKED_START -->Last checked: 2026-11-24<!-- LAST_CHECKED_END -->

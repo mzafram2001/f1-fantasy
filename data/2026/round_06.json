@@ -3,16 +3,22 @@
         "Id": "2026_06",
         "Season": 2026,
         "Race_Id": 6,
-        "Event_Name": null,
+        "Event_Name": "Monaco Grand Prix",
         "Is_Sprint": false,
-        "Circuit": null,
+        "Circuit": {
+            "Id": "monaco",
+            "City": "Monte Carlo",
+            "Country_Code": "MCO",
+            "Country_Name": "Monaco",
+            "Svg_Path": "src/circuits/monaco.svg"
+        },
         "Start_Times": {
-            "Qualifying": null,
+            "Qualifying": "2026-06-06T14:00:00Z",
             "Sprint_Qualifying": null,
             "Sprint": null,
-            "Race": null
+            "Race": "2026-06-07T13:00:00Z"
         },
-        "Generated_At": "2026-11-23T10:39:04.432949"
+        "Generated_At": "2026-11-24T12:21:10.056849"
     },
     "Drivers": [
         {

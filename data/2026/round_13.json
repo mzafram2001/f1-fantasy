@@ -3,16 +3,22 @@
         "Id": "2026_13",
         "Season": 2026,
         "Race_Id": 13,
-        "Event_Name": null,
+        "Event_Name": "Italian Grand Prix",
         "Is_Sprint": false,
-        "Circuit": null,
+        "Circuit": {
+            "Id": "monza",
+            "City": "Monza",
+            "Country_Code": "ITA",
+            "Country_Name": "Italy",
+            "Svg_Path": "src/circuits/monza.svg"
+        },
         "Start_Times": {
-            "Qualifying": null,
+            "Qualifying": "2026-09-05T14:00:00Z",
             "Sprint_Qualifying": null,
             "Sprint": null,
-            "Race": null
+            "Race": "2026-09-06T13:00:00Z"
         },
-        "Generated_At": "2026-11-23T10:39:06.300004"
+        "Generated_At": "2026-11-24T12:21:13.494742"
     },
     "Drivers": [
         {

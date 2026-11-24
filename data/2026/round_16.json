@@ -3,16 +3,22 @@
         "Id": "2026_16",
         "Season": 2026,
         "Race_Id": 16,
-        "Event_Name": null,
+        "Event_Name": "Bahrain Grand Prix in Malaysia",
         "Is_Sprint": false,
-        "Circuit": null,
+        "Circuit": {
+            "Id": "sepang",
+            "City": "Kuala Lumpur",
+            "Country_Code": "MYS",
+            "Country_Name": "Malaysia",
+            "Svg_Path": "src/circuits/sepang.svg"
+        },
         "Start_Times": {
-            "Qualifying": null,
+            "Qualifying": "2026-10-03T08:00:00Z",
             "Sprint_Qualifying": null,
             "Sprint": null,
-            "Race": null
+            "Race": "2026-10-04T07:00:00Z"
         },
-        "Generated_At": "2026-11-23T10:39:07.201522"
+        "Generated_At": "2026-11-24T12:21:14.819546"
     },
     "Drivers": [
         {

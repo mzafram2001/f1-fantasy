@@ -3,16 +3,22 @@
         "Id": "2026_18",
         "Season": 2026,
         "Race_Id": 18,
-        "Event_Name": null,
+        "Event_Name": "United States Grand Prix",
         "Is_Sprint": false,
-        "Circuit": null,
+        "Circuit": {
+            "Id": "austin",
+            "City": "Austin",
+            "Country_Code": "USA",
+            "Country_Name": "United States",
+            "Svg_Path": "src/circuits/austin.svg"
+        },
         "Start_Times": {
-            "Qualifying": null,
+            "Qualifying": "2026-10-24T21:00:00Z",
             "Sprint_Qualifying": null,
             "Sprint": null,
-            "Race": null
+            "Race": "2026-10-25T20:00:00Z"
         },
-        "Generated_At": "2026-11-23T10:39:07.876038"
+        "Generated_At": "2026-11-24T12:21:15.966104"
     },
     "Drivers": [
         {

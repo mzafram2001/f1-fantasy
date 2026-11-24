@@ -3,16 +3,22 @@
         "Id": "2026_07",
         "Season": 2026,
         "Race_Id": 7,
-        "Event_Name": null,
+        "Event_Name": "Barcelona Grand Prix",
         "Is_Sprint": false,
-        "Circuit": null,
+        "Circuit": {
+            "Id": "catalunya",
+            "City": "Barcelona",
+            "Country_Code": "ESP",
+            "Country_Name": "Spain",
+            "Svg_Path": "src/circuits/catalunya.svg"
+        },
         "Start_Times": {
-            "Qualifying": null,
+            "Qualifying": "2026-06-13T14:00:00Z",
             "Sprint_Qualifying": null,
             "Sprint": null,
-            "Race": null
+            "Race": "2026-06-14T13:00:00Z"
         },
-        "Generated_At": "2026-11-23T10:39:04.729076"
+        "Generated_At": "2026-11-24T12:21:10.572727"
     },
     "Drivers": [
         {
