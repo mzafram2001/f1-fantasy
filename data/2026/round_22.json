@@ -18,7 +18,7 @@
             "Sprint": null,
             "Race": "2026-11-29T16:00:00Z"
         },
-        "Generated_At": "2026-11-25T11:08:51.058755"
+        "Generated_At": "2026-11-26T10:43:58.829977"
     },
     "Drivers": [
         {
@@ -171,7 +171,7 @@
             "Team_Code": "VRB",
             "Round_Fantasy_Points": 0.0,
             "Season_Fantasy_Points": 140.0,
-            "Selected_Percentage": 0.43,
+            "Selected_Percentage": 0.42,
             "Value": 8.8,
             "Qualifying_Points": 0.0,
             "Sprint_Points": 0.0,
